@@ -12,11 +12,11 @@ Based on your learning experience about the protocol, identify missing pieces an
 
 ## Participate in the discussion
 
-Join the Ethereum R&D Discord. Use the *#protocol-fellowship* channel for general discussion but use the appropriate channels for conversations regarding specific topics, especially if you are seeking assistance or feedback from a mentor. Please keep this discussion relevant to what you are working on. Our intention is to keep these channels open, but if there is a lot of noise, restrictions may be added. You can also use the [Study Group discord] to discuss learning materials and contributions to the wiki. 
+Join the Ethereum R&D Discord. Use the *#protocol-fellowship* channel for general discussion but use the appropriate channels for conversations regarding specific topics, especially if you are seeking assistance or feedback from a mentor. Please keep this discussion relevant to what you are working on. Our intention is to keep these channels open, but if there is a lot of noise, restrictions may be added. You can also use the [Study Group discord](https://discord.gg/hFrSEHyjYZ)to discuss learning materials and contributions to the wiki. 
 
 ## Make weekly updates
 
-Weekly updates help us to see how you are progressing in your project. Making an update each week will not only keep you accountable to your project, but it will also track your ability to do the work. Remember that our goal is to help you find placement with a client team, research team, or help you to become a funded independent contributor.
+Weekly updates help us to see how you are progressing in your project. Making an update each week will not only keep you accountable to your project, but it will also track your ability to do the work. Additionally, weekly updates help you practice technical writing, explaining your ideas to others through written posts, which is one of the primary ways that infomation about Ethereum is spread. Remember that our goal is to help you find placement with a client team, research team, or help you to become a funded independent contributor.
 
 *How to make weekly updates*
 - Follow the guidelines in the [Repo Guide](./repo-guide.md)
@@ -25,7 +25,9 @@ Weekly updates help us to see how you are progressing in your project. Making an
 
 ## Get help from Mentors
 
-The EPF has a pool of [mentors](./mentors.md) that are here to assist your process. They can unlock roadblocks that you are having, give feedback on your progress, or help point you in the right direction if you are stuck. Mentors are NOT here to teach you how to do things, tell you what to do or hold you accountable to your project. Please be respectful of mentors’ time. Try to figure it out on your own first. If asking for help is necessary, be concise and direct.
+The EPF has a pool of [mentors](./mentors.md) that are here to assist your process. They can unlock roadblocks, give feedback on your progress, or help point you in the right direction if you are stuck. Mentors are NOT here to teach you how to do things, tell you what to do or hold you accountable to your project. 
+
+>Please be respectful of mentors’ time. Try to figure it out on your own first. If asking for help is necessary, be concise and direct.
 
 *How to interact with mentors*
 - Ask a question in the #protocol-fellowship channel and tag them.

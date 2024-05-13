@@ -55,9 +55,9 @@ We will be prioritizing candidates which have something that we consider a stron
 
 ## How it will work
 
-Applications are opened from mid till end of May, for two weeks. 
+Applications are opened from May 14 to May 26.
 
-The program will formally run for 5 months, from June through November. This gives us the opportunity to organize physical meetups at Ethereum conferences like [Devcon](https://devcon.org) and [EthCC](https://www.ethcc.io/).
+The program will run for 5 months, from June 10 through mid-November. This gives us the opportunity to organize physical meetups at Ethereum conferences like [Devcon](https://devcon.org) and [EthCC](https://www.ethcc.io/).
 
 Timeline of the 5 month program will follow these stages:
 
@@ -78,7 +78,7 @@ Timeline of the 5 month program will follow these stages:
 ### Program End
 - Project wrap up and looking forward to further contributing to the Ethereum ecosystem
 - Project showcase to group and mentors
-- In-person event at Devconnect in Istanbul
+- In-person event at Devcon SEA
 
 During the entire process, participants will have access to [mentors](./mentors.md) and the core developer community for things like answering questions and getting feedback on ideas. Participants should not expect the core developers to actively guide them.
 
@@ -94,5 +94,3 @@ Our goal is to provide an opportunity for you to get paid to learn. We will work
 ## Who is running the program?
 
 The program is funded by the Ethereum Foundation and run by the Protocol Support Team. It is important to note that the [Ethereum Foundation](https://ethereum.foundation/philosophy/) does not own, operate, or manage Ethereum but exists to support the protocol and the Ethereum community through funding and research.
-
-![Fellowship of the Protocol](/images/epf-hero.jpg)
