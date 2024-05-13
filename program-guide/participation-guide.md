@@ -12,7 +12,7 @@ Based on your learning experience about the protocol, identify missing pieces an
 
 ## Participate in the discussion
 
-Join the Ethereum R&D Discord. Use the *#protocol-fellowship* channel for general discussion but use the appropriate channels for conversations regarding specific topics, especially if you are seeking assistance or feedback from a mentor. Please keep this discussion relevant to what you are working on. Our intention is to keep these channels open, but if there is a lot of noise, restrictions may be added. You can also use the [Study Group discord](https://discord.gg/hFrSEHyjYZ)to discuss learning materials and contributions to the wiki. 
+Join the Ethereum R&D Discord. Use the *#protocol-fellowship* channel for general discussion but use the appropriate channels for conversations regarding specific topics, especially if you are seeking assistance or feedback from a mentor. Please keep this discussion relevant to what you are working on. Our intention is to keep these channels open, but if there is a lot of noise, restrictions may be added. You can also use the [Study Group discord](https://discord.gg/hFrSEHyjYZ) to discuss learning materials and contributions to the wiki. 
 
 ## Make weekly updates
 
