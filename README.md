@@ -29,3 +29,5 @@ These calls serve to discuss progress of projects, current issues participants a
 In addition to the weekly standup calls, we hold Office Hours calls which can be focused on specific topics proposed in advance. Find the upcoming call agenda in [Issues](https://github.com/eth-protocol-fellows/cohort-five/issues). Anybody can propose topic for this call by in its tracking issue. Office Hours are regularly happening on every Tuesday, 15:00 UTC.
 
 If you need any further assistance, contact cohort organizers @joshdavislight @taxmeifyoucan
+
+![](/images/epf-hero.jpg)
