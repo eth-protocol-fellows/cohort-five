@@ -12,7 +12,7 @@ In this folder, you can find organizational and other useful materials to get yo
 
 Research and development around core Ethereum protocol is very rich. Many topics you can deep dive to, study and build for months or years. Here are some useful overviews with sources to learn more about various Ethereum areas: 
 
-- (EPF Study Group and Protocol Wiki)[https://epf.wiki]
+- [EPF Study Group and Protocol Wiki](https://epf.wiki)
 - [Suggested reading](./reading.md) list with high level overview of areas in Ethereum protocol
 - [EthR&D Discord Guidebook](https://github.com/tvanepps/EthereumDiscordGuidebook) 
    - This guide contains many sources for orientation, not only for the R&D Discord but all of Ethereum R&D.
