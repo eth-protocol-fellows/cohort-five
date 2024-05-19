@@ -771,3 +771,4 @@ zkEVMs
 ZKSNARK
 ZKSNARKs
 Zksync
+Kolby
