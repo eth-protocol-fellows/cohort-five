@@ -60,3 +60,25 @@ By Sina
 ⁃ Error codes in the JSON-RPC API. This one needs a lot of cross-client communication. Standardizing error codes across clients json-rpcs 
 
 ⁃ Benchmarking APIs via [flood](https://github.com/paradigmxyz/flood) and optimising the methods in various clients, compare across clients (not only geth)
+
+### Grandine
+
+By Saulius Grigaitis
+
+The ideas below are for the Ethereum consensus layer client [Grandine](https://github.com/grandinetech/grandine) written in Rust.
+
+- Separated Validator Client - extract Grandine's built-in validator into a separate process.
+- Embeddable Grandine - refactor Grandine into an embeddable consensus client, and integrate it in Geth, Nethermind, Besu, Erigon, or Reth.
+- Performance improvements - speed, efficiency, and memory usage improvements across the entire client;
+- SSZ Stable containers - adding support for  [EIP-7495: SSZ StableContainer](https://eips.ethereum.org/EIPS/eip-7495) and join a testnet Nimbus <> Lodestar testnet;
+- Slasher - updating/refactoring/optimising Grandine's slasher;
+- P2P stack - improve Grandine's higher level P2P networking [layer](https://github.com/grandinetech/grandine) and/or rewrite [the middle layer](https://github.com/grandinetech/eth2_libp2p);
+- Rust-kzg - implement/update [PeerDAS related cryptography](https://github.com/ethereum/consensus-specs/blob/dev/specs/_features/eip7594/polynomial-commitments-sampling.md) in [Rust-kzg](https://github.com/grandinetech/rust-kzg), optimize MSM's and the rest of resource-intensive operations;
+- Logging - refactoring the current Grandine's logging approach to more modern (potentially using [tracing](https://github.com/tokio-rs/tracing));
+- PeerDAS improvements - the spec is still maturing for PeerDAS so there are a lot of changes and improvements that need to be implemented in Grandine;
+- E2E testing - improve Hive and Kurtosis test infrastructure;
+- Windows and MacOS support - Grandine's developers mainly use Linux, so Grandine is tested only on Linux. However, there are many Windows and MacOS users that would benefit from better support;
+- Redesign Rayon to allow lazy evaluation without deadlocks;
+- Adapt other consensus clients to run grandine-snapshot-tests;
+- Other - any other mutually agreed Grandine's area that can be improved.
+
