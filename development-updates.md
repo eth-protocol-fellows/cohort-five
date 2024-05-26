@@ -8,12 +8,13 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started. 
 
-| Name/GH                                   | Week 0                                                          | Week 1 | Week 2 |
-| ------------------------------------------| --------------------------------------------------------------- | ------ | ------ |
-| [Mario](github.com/taxmeifyoucan)         | [Update 0](https://proofof.cat/blog/)                           |        |        |
-| [DanGoron](https://github.com/gorondan)   | [Update 0](https://hackmd.io/@meA4-YJOSaqtagggpgcWMg/SJmdOEmXR) |        |        |
-| [ShyamPatel](github.com/shyam-patel-kira) | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |        |        |
-| [Hopinheimer](https://github.com/hopinheimer) | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0) |      |       |
+| Name/GH                                       | Week 0                                                          | Week 1 | Week 2 |
+| --------------------------------------------- | --------------------------------------------------------------- | ------ | ------ |
+| [DanGoron](https://github.com/gorondan)       | [Update 0](https://hackmd.io/@meA4-YJOSaqtagggpgcWMg/SJmdOEmXR) |        |        |
+| [Hopinheimer](https://github.com/hopinheimer) | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0) |        |        |
+| [RoryArredondo](https://github.com/arredr2)   | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                |        |        |
+| [ShyamPatel](github.com/shyam-patel-kira)     | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |        |        |
+
 ## Phase 2
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)

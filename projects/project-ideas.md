@@ -60,3 +60,45 @@ By Sina
 ⁃ Error codes in the JSON-RPC API. This one needs a lot of cross-client communication. Standardizing error codes across clients json-rpcs 
 
 ⁃ Benchmarking APIs via [flood](https://github.com/paradigmxyz/flood) and optimising the methods in various clients, compare across clients (not only geth)
+
+### Grandine
+
+By Saulius Grigaitis
+
+The ideas below are for the Ethereum consensus layer client [Grandine](https://github.com/grandinetech/grandine) written in Rust.
+
+- Separated Validator Client - extract Grandine's built-in validator into a separate process.
+- Embeddable Grandine - refactor Grandine into an embeddable consensus client, and integrate it in Geth, Nethermind, Besu, Erigon, or Reth.
+- Performance improvements - speed, efficiency, and memory usage improvements across the entire client;
+- SSZ Stable containers - adding support for  [EIP-7495: SSZ StableContainer](https://eips.ethereum.org/EIPS/eip-7495) and join a testnet Nimbus <> Lodestar testnet;
+- Slasher - updating/refactoring/optimising Grandine's slasher;
+- P2P stack - improve Grandine's higher level P2P networking [layer](https://github.com/grandinetech/grandine) and/or rewrite [the middle layer](https://github.com/grandinetech/eth2_libp2p);
+- Rust-kzg - implement/update [PeerDAS related cryptography](https://github.com/ethereum/consensus-specs/blob/dev/specs/_features/eip7594/polynomial-commitments-sampling.md) in [Rust-kzg](https://github.com/grandinetech/rust-kzg), optimize MSM's and the rest of resource-intensive operations;
+- Logging - refactoring the current Grandine's logging approach to more modern (potentially using [tracing](https://github.com/tokio-rs/tracing));
+- PeerDAS improvements - the spec is still maturing for PeerDAS so there are a lot of changes and improvements that need to be implemented in Grandine;
+- E2E testing - improve Hive and Kurtosis test infrastructure;
+- Windows and MacOS support - Grandine's developers mainly use Linux, so Grandine is tested only on Linux. However, there are many Windows and MacOS users that would benefit from better support;
+- Redesign Rayon to allow lazy evaluation without deadlocks;
+- Adapt other consensus clients to run grandine-snapshot-tests;
+- Other - any other mutually agreed Grandine's area that can be improved.
+
+
+### Lodestar: Deposit Contract Snapshot Interface (EIP-4881)
+
+By Lodestar Team
+
+Our TypeScript based consensus client requires implementing a self-contained specification, [EIP-4881](https://eips.ethereum.org/EIPS/eip-4881) into our `/eth/v1/beacon/deposit_snapshot` endpoint. This project will give a TypeScript-based candidate an understanding of the basic skills required of a protocol engineer by understanding a specification and implementing it into client software. In addition, you will be exposed to how deposits currently function within Ethereum, how weak subjectivity sync enables faster sync times and how merkle proofs secure Ethereum. For more information, please see: https://github.com/ChainSafe/lodestar/issues/4935
+
+
+### Lodestar: BeaconChain Harness for Client Testing
+
+By Lodestar Team
+
+This project aims to have a candidate contribute a suite of testing utilities for testing the correctness of changes that interact with `BeaconChain`. This lightweight suite should be able to create a local dev chain with blocks and state for ensuring correct functionality for protocol compliance. The candidate will gain vast exposure to common specifications detailing how the beacon chain functions, including block processing, state transitions, slashings, withdrawals and deposits. For more information, please see: https://github.com/ChainSafe/lodestar/issues/6518
+
+
+### Lodestar: Light Clients Research + Implementation
+
+By Lodestar Team
+
+In collaboration with the Nimbus consensus client team, there is ongoing research on the [light clients roadmap](https://hackmd.io/@etan-status/electra-lc) and how to improve this subsection of the protocol for more valuable building and experimentation. Some topics such as [slashings for sync committee messages (EIP-7657)](https://github.com/ethereum/consensus-specs/issues/3321) require more analysis and formal specifications, whereas [light client backfill](https://github.com/ethereum/consensus-specs/pull/3553) is ready for implementation on Lodestar alongside the Nimbus implementation. A candidate here will be able to focus on a niche part of the protocol to generate value for tooling and use cases without the need of full node infrastructure. Further summaries and information can be found on a [comprehensive summary of the light client roadmap](https://x.com/eawosikaa/status/1781672875545534605) and a [comprehensive summary relating to sync committee slashing](https://x.com/eawosikaa/status/1781659545846136876).
