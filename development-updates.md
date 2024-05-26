@@ -15,7 +15,6 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [RoryArredondo](https://github.com/arredr2) | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                |        |        |
 | [ShyamPatel](github.com/shyam-patel-kira)   | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |        |        |
 
-
 ## Phase 2
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)
