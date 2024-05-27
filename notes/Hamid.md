@@ -1,4 +1,4 @@
-👋 **Hello internet, this is **Hamid**.
+👋 Hello internet, this is **Hamid**.
 
 #### 💼 Brief Profile:
 - **👨‍💻 Software Engineer**
