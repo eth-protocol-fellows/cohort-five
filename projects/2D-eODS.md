@@ -59,7 +59,7 @@ My proposed solution is an implementation of eODS, implying a two dimensional **
 ### Horizontal separation: 
 Unbundling the Validator role between Operator and Delegator. 
 
-In practice, the separation, as first dimension of eODS, can be done by allowing node Operators to conduct self-accountability, i.e. protocol allows staking pools to maintain a delegation contract in a pre-defined, protocol legible format, that can be parsed in protocol, the same way deposit contract events data is being parsed today, in order to build a virtual Balance of delegated ETH in the Beacon state. The operators would be requested to declare the Principal delegated to them, to the protocol before geting activated for performing validator duties, so that the protocol is able to construct and disambiguate between `operator stake message` and `delegator stake message`.
+In practice, the separation, as first dimension of eODS, can be done by allowing node Operators to conduct self-accountability, i.e. protocol allows staking pools to maintain a delegation contract in a pre-defined, protocol legible format, that can be parsed in protocol, the same way deposit contract events data is being parsed today, in order to build a virtual Balance of delegated ETH in the Beacon state. The operators would be requested to declare the Principal delegated to them, to the protocol before getting activated for performing validator duties, so that the protocol is able to construct and disambiguate between `operator stake message` and `delegator stake message`.
 
 ### Vertical separation: 
 A further separation of each Validator roles resulted from the horizontal dimension of the separation (Operators & Delegators), between Heavy protocol services providers and Light protocol services providers, based on the [Two-tier staking approach to SSF](https://epf.wiki/#/wiki/research/eODS?id=the-two-tier-staking-approach-to-ssf). The difference between Heavy and Light, services comes from the capital requirements set upon the protocol services providers. 
@@ -118,7 +118,7 @@ The eODS specification is divided in 3 separate subfeatures to be built upon exi
 
 :::warning
 A sketch of the proposed specification changes to the consensus layer is included below. 
-Durring the implementation of the project these changes might extended, get altered or be removed.
+During the implementation of the project these changes might extended, get altered or be removed.
 :::
 
 ### eODS subfeature 1
@@ -132,9 +132,9 @@ Specifies the vertical dimension of the separation, by adding the following chan
     
   * Enable `delegator_pubkey` (BLS)
   
-    Delegators pubkeys will be parsed in-protocol part of the `delegation_receipts` of the querried delegation contract. Operator signs over the `DOMAIN_DEPOSIT` with it's private key.
+    Delegators pubkeys will be parsed in-protocol part of the `delegation_receipts` of the queried delegation contract. Operator signs over the `DOMAIN_DEPOSIT` with it's private key.
     
-  * The `process_deposit_receipt` function that handles `deposit_recipts` in the block processing routine will have to be adapted to accomodate delegations into the deposit operations.
+  * The `process_deposit_receipt` function that handles `deposit_recipts` in the block processing routine will have to be adapted to accommodate delegations into the deposit operations.
     
   * Build the Delegators index and virtual balance in the Beacon state
     - Add new `class Delegator`
@@ -155,16 +155,16 @@ Specifies the vertical dimension of the separation, by adding the following chan
     delegators_balances: List[Gwei, DELEGATOR_REGISTRY_LIMIT]# new in eODS
     ```
    
-    The validators balances is conssidered as `operator stake`
+    The validators balances is considered as `operator stake`
     
-    The ammount of the principal each Delegator provided (delegators balances) is conssidered as `delegator stake`, that is added under the Operator's domain.
+    The amount of the principal each Delegator provided (delegators balances) is considered as `delegator stake`, that is added under the Operator's domain.
      
-     - The state initiation routine will have to be adapted to accomodate delegations.
+     - The state initiation routine will have to be adapted to accommodate delegations.
      
 * Enable Delegator triggerable exits (0x01 credentials).
 
     Allow `0x01` Delegator initiated withdrawals. 
-    Delegator pubkey will be provided in-protocol by the querried delegation contract provided by Operator, and Operator signs over the `DOMAIN_DEPOSIT` with it's private key.
+    Delegator pubkey will be provided in-protocol by the queried delegation contract provided by Operator, and Operator signs over the `DOMAIN_DEPOSIT` with it's private key.
 
 ### eODS subfeature 2
 
@@ -211,19 +211,19 @@ The proposed timeline for the project is **9 months**, split in 3 work-packages 
 
 *Outline parts of the project and insight on how much time it will take to execute them.*
 
-### I. Horizontal sepration - subfeature 1
+### I. Horizontal separation - subfeature 1
 
 1. I've done some of the work related to this phase in the weeks preceding EPF, I plan to go deep in research of eth2 for 3 weeks (**Week 2 - Week 4**) and give my python skills a new shine for 1 week (**Week 5**)
-2. I plan to write the fully-fleshed specs of subfeature 1 in 8 weeks (**Week 6 - Week 13**) including getting fedback from mentors and case study tests.
+2. I plan to write the fully-fleshed specs of subfeature 1 in 8 weeks (**Week 6 - Week 13**) including getting feedback from mentors and case study tests.
 
 ### II. Vertical separation - subfeature 2
 
-1. I plan to write the fully-fleshed specs of subfeature 2, add protocol services feature, including getting fedback from mentors and case study tests in 12 weeks (after EPF, after delivering work package III).
+1. I plan to write the fully-fleshed specs of subfeature 2, add protocol services feature, including getting feedback from mentors and case study tests in 12 weeks (after EPF, after delivering work package III).
 
 ### III. Design of a plug-and-play interface for future integration of protocol services + subfeature 3
 
-1. I've done some of the work related to this phase in the weeks preceding EPF, especially durring EPS, I plan to have the conceptual design of the plug-and-play interface for future integration of protocol services done in in 4 weeks (**Week 14 - Week 17**) including getting fedback from mentors.
-2. I plan to write the as much of the specs of subfeature 3 in 4 weeks (**Week 18 - Week 21**) including getting fedback from mentors and case study tests, and continue past the EPF program time spam for as long as it needs to finish up this subfeature. I estimate I will fit in an extra 4-8 weeks (**Week 21+**).
+1. I've done some of the work related to this phase in the weeks preceding EPF, especially during EPS, I plan to have the conceptual design of the plug-and-play interface for future integration of protocol services done in in 4 weeks (**Week 14 - Week 17**) including getting feedback from mentors.
+2. I plan to write the as much of the specs of subfeature 3 in 4 weeks (**Week 18 - Week 21**) including getting feedback from mentors and case study tests, and continue past the EPF program time spam for as long as it needs to finish up this subfeature. I estimate I will fit in an extra 4-8 weeks (**Week 21+**).
 
 ## Possible challenges
 
@@ -253,8 +253,8 @@ Expected impact/followup:
     - light client
 
 Being a pretty ambitious project, I see the following realistic scenario:
-- finalize subfeature 1, the conceptual design of the plug-and-play interface for future integration of protocol services and as much as possible of subfeature 3 durring EPF period. 
-- finalize subfeature 3 in the months following the EPF if not done durring the EPF project time span.
+- finalize subfeature 1, the conceptual design of the plug-and-play interface for future integration of protocol services and as much as possible of subfeature 3 during EPF period. 
+- finalize subfeature 3 in the months following the EPF if not done during the EPF project time span.
 - propose EIP with subfeature 1 + 3
 - finalize subfeature 2 and add protocol services feature after EPF program and
 - propose EIP subfeature 2 + protocol services
