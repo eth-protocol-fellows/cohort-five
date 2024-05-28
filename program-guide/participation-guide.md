@@ -16,7 +16,7 @@ Join the Ethereum R&D Discord. Use the *#protocol-fellowship* channel for genera
 
 ## Make weekly updates
 
-Weekly updates help us to see how you are progressing in your project. Making an update each week will not only keep you accountable to your project, but it will also track your ability to do the work. Additionally, weekly updates help you practice technical writing, explaining your ideas to others through written posts, which is one of the primary ways that infomation about Ethereum is spread. Remember that our goal is to help you find placement with a client team, research team, or help you to become a funded independent contributor.
+Weekly updates help us to see how you are progressing in your project. Making an update each week will not only keep you accountable to your project, but it will also track your ability to do the work. Additionally, weekly updates help you practice technical writing, explaining your ideas to others through written posts, which is one of the primary ways that information about Ethereum is spread. Remember that our goal is to help you find placement with a client team, research team, or help you to become a funded independent contributor.
 
 *How to make weekly updates*
 - Follow the guidelines in the [Repo Guide](./repo-guide.md)

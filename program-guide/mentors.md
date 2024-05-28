@@ -29,6 +29,7 @@ In this EPF cohort, participants have an opportunity to be mentored by core deve
 | Radosław Kapka           | Prysm                      | Consensus layer, Beacon API                                   |
 | Ognyan Genev             | Portal Network             | Portal Network, trin client                                   |
 | Mike Ferris              | Portal Network             | Portal Network, rust, Glados                                  |
+| Kolby ML                 | Portal Network             | History/State Network, (execution layer) light clients        |
 | Justin Florentine        | Besu                       | Besu, Java,  Ethereum roadmap and EIPs                        |
 | Simon (siladu)           | Besu                       | Besu, Java, Engine API, EIPs                                  |
 | Mehdi Aouadi             | Teku                       | Consensus Layer, software engineering/architecture           |

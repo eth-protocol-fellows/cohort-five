@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Here are some frequently asked questions about EPF program.
+Here are some frequently asked questions about EPF program. Please also watch the [Ethereum Protocol Fellowship Cohort #4 Town Hall](https://www.youtube.com/watch?v=ovwXAgP9LS8&ab_channel=EthereumFoundation) to gain further insight into what to expect and tune in for the [EPF5 Town Hall](https://www.youtube.com/watch?v=nrwKxyBIYYk&ab_channel=EthereumProtocolFellowship) on 21 May at 4pm UTC! 
 
 - **Will I learn to develop applications on the Ethereum blockchain?**
     - No. This program is not focused on Solidity or other development of smart contracts. 
