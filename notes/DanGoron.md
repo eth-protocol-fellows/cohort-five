@@ -20,4 +20,6 @@ Weekly updates on my work under the EPF program can be found [here](/development
 
 I will also update the weekly list here:
 
-* [Week 0](https://hackmd.io/@meA4-YJOSaqtagggpgcWMg/SJmdOEmXR)
+* [Week 0](https://hackmd.io/@kboomro/SJmdOEmXR)
+
+* [Week 1](https://hackmd.io/@kboomro/r1PuZW9m0)
