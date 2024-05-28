@@ -2,7 +2,7 @@
 
 This is repository dedicated to coordination and resources for EPF cohort 5. 
 
-Learn more about EPF in [Program details](./program-guide/program-details.md) and [fourth cohort recap](https://blog.ethereum.org/2024/04/22/epf-4-recap).
+Learn more about EPF in [Program details](./program-guide/program-details.md), [cohort 5 town hall](https://www.youtube.com/watch?v=nrwKxyBIYYk) and [fourth cohort recap](https://blog.ethereum.org/2024/04/22/epf-4-recap).
 
 ## Getting started
 
