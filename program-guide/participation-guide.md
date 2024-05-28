@@ -33,7 +33,7 @@ The EPF has a pool of [mentors](./mentors.md) that are here to assist your proce
 - Ask a question in the #protocol-fellowship channel and tag them.
 - Ask a specific question about the topic you are working on in the appropriate channel
 - If an ongoing conversation is necessary, ask the mentor for a direct message contact
-- Add a comment in the [Office Hours](https://github.com/eth-protocol-fellows/cohort-three/issues) issue in the GitHub repo for the upcoming meeting outlining the problem you are having or the discussion you would like to happen
+- Add a comment in the [Office Hours](https://github.com/eth-protocol-fellows/cohort-five/issues) issue in the GitHub repo for the upcoming meeting outlining the problem you are having or the discussion you would like to happen
 
 ## Join weekly meetings
 
