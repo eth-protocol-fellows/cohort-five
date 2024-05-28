@@ -15,16 +15,22 @@ In project ideas from previous cohorts, you might find some up to date ideas whi
 
 ## Ideas proposed by core devs 
 
-### ePBS, Prysm
+### Prysm: ePBS
 
-- **ePBS**. Project at prysmaticlabs mentored by [@potuz](https://x.com/potuz_eth) and [@terencechain](https://x.com/terencechain). We currently have a fully specified [ePBS spec](https://github.com/potuz/consensus-specs/pull/2). And are actively working on a Go implementation as part of Prysm [here](https://github.com/prysmaticlabs/prysm/pull/13917). We plan to have a fully working PoC in the comming months and production code ready by exposition time in Devcon. Reading material includes some comprehensive documents. 
-    - The [design notes](https://hackmd.io/uWVGcvcKSoqS4P5c5NHG3g), 
-    - [forkchoice annotated spec](https://hackmd.io/9lWaVhSxSYWmTvODqnapMA), 
-    - [validator guide annotated spec](https://hackmd.io/@ttsao/epbs-annotated-validator),
-    - [design constraints](https://ethresear.ch/t/epbs-design-constraints/18728), 
-    - [payload boosts](https://ethresear.ch/t/payload-boosts-in-epbs/18769). 
+Project at prysmaticlabs mentored by [@potuz](https://x.com/potuz_eth) and [@terencechain](https://x.com/terencechain). We currently have a fully specified [ePBS spec](https://github.com/potuz/consensus-specs/pull/2). And are actively working on a Go implementation as part of Prysm [here](https://github.com/prysmaticlabs/prysm/pull/13917). We plan to have a fully working PoC in the comming months and production code ready by exposition time in Devcon. Reading material includes some comprehensive documents. 
+- The [design notes](https://hackmd.io/uWVGcvcKSoqS4P5c5NHG3g), 
+- [forkchoice annotated spec](https://hackmd.io/9lWaVhSxSYWmTvODqnapMA), 
+- [validator guide annotated spec](https://hackmd.io/@ttsao/epbs-annotated-validator),
+- [design constraints](https://ethresear.ch/t/epbs-design-constraints/18728), 
+- [payload boosts](https://ethresear.ch/t/payload-boosts-in-epbs/18769). 
 
 As for working conditions, we would not have weekly calls as in previous cohorts, but rather focus on code review and implementation work. Fellows are expected to carry their own research and asynchronously request help/discussions on Discord. Some areas of independent interest could be implementation of variations of ePBS like *slot auctions* or *execution tickets*. Please refer to [Barnabé's doc](https://mirror.xyz/barnabe.eth/QJ6W0mmyOwjec-2zuH6lZb0iEI2aYFB9gE-LHWIMzjQ) for a high level introduction. 
+
+### Prysm: Custom golang implementation of libp2p
+Mentored by [@nisdas](https://github.com/nisdas) and [@nalepae](https://github.com/nalepae).
+
+The project proposal involves developing an in-house implementation of the necessary parts of the libp2p protocol. 
+The complete project description is available [here](https://hackmd.io/@6-HLeMXARN2tdFLKKcqrxw/rkU0eLmEC).
 
 ### PandaOps tooling wishlist
 
