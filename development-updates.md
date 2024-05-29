@@ -14,6 +14,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Hopinheimer](https://github.com/hopinheimer) | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0) |        |        |
 | [RoryArredondo](https://github.com/arredr2)   | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                |        |        |
 | [ShyamPatel](github.com/shyam-patel-kira)     | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |        |        |
+| [MeldSun](https://github.com/meldsun0)        | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) |        |        |
 
 ## Phase 2
 
