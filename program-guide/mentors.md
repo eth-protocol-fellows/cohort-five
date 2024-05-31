@@ -35,6 +35,9 @@ In this EPF cohort, participants have an opportunity to be mentored by core deve
 | Mehdi Aouadi             | Teku                       | Consensus Layer, software engineering/architecture           |
 | Paul Harris              | Teku                       | Consensus layer                                               |
 | Georgios Konstantopoulos | Paradigm / Reth            | Execution layer, Rust and reth client                         |
+| Cayman Nava              | Lodestar                   | Consensus Layer, Lodestar                                     |
+| N.C.                     | Lodestar                   | Consensus Layer, Lodestar                                     |
+| Nico Flaig               | Lodestar                   | Consensus Layer, Lodestar                                     |
 
 
 ## How to get mentorship
