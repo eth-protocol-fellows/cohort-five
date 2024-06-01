@@ -38,7 +38,7 @@ In this EPF cohort, participants have an opportunity to be mentored by core deve
 | Cayman Nava              | Lodestar                   | Consensus Layer, Lodestar                                     |
 | N.C.                     | Lodestar                   | Consensus Layer, Lodestar                                     |
 | Nico Flaig               | Lodestar                   | Consensus Layer, Lodestar                                     |
-
+| Vid Kersic               | Independent                | Account Abstraction                                           |
 
 ## How to get mentorship
 
