@@ -15,6 +15,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [RoryArredondo](https://github.com/arredr2)   | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                |        |        |
 | [ShyamPatel](github.com/shyam-patel-kira)     | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |        |        |
 | [MeldSun](https://github.com/meldsun0)        | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) |        |        |
+| [Hamid Bateni](https://github.com/irnb)       | [Update 0](https://hackmd.io/@irnb/epf-update-0)                |        |        |
 
 ## Phase 2
 

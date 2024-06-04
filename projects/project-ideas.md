@@ -108,3 +108,25 @@ This project aims to have a candidate contribute a suite of testing utilities fo
 By Lodestar Team
 
 In collaboration with the Nimbus consensus client team, there is ongoing research on the [light clients roadmap](https://hackmd.io/@etan-status/electra-lc) and how to improve this subsection of the protocol for more valuable building and experimentation. Some topics such as [slashings for sync committee messages (EIP-7657)](https://github.com/ethereum/consensus-specs/issues/3321) require more analysis and formal specifications, whereas [light client backfill](https://github.com/ethereum/consensus-specs/pull/3553) is ready for implementation on Lodestar alongside the Nimbus implementation. A candidate here will be able to focus on a niche part of the protocol to generate value for tooling and use cases without the need of full node infrastructure. Further summaries and information can be found on a [comprehensive summary of the light client roadmap](https://x.com/eawosikaa/status/1781672875545534605) and a [comprehensive summary relating to sync committee slashing](https://x.com/eawosikaa/status/1781659545846136876).
+
+### Ipsilon
+
+By chfast and axic
+
+Research around the EVM, specifically (but limited to):
+- Consensus-level eth supply calculation and exposing it as an opcode
+- EVM memory repricing -- analysis and proposing a solution
+- EVM analysis and design of transfer functions (executing and non-executing), e.g. `PAY`, `TRANSFER`, etc. There are many pre-existing proposals.
+- Formally verify that EOF stack validation guarantees no stack underflows and overflows
+- EVMMAX prototyping (this will help validate and ship EVMMAX):
+  - Porting old MIMC code to new evmmax (https://github.com/jwasinger/mimc-evmmax)
+  - Adjusting the MIMC code for Poseidon
+- EOF research tooling:
+  - EOF support in Huff
+  - Visual analyzer for EOF written in Javascript
+      - To be used in Remix, block explorers, and other web tools
+  - EOF tooling for Foundry, display section sizes, etc. for optimization purposes
+  - Work on the debugging extension
+      - https://github.com/ipsilon/eof/issues/113
+  - Extend Remix debugger to support EOF
+  - Extend Foundry debugger to support EOF
