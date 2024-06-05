@@ -32,6 +32,12 @@ Mentored by [@nisdas](https://github.com/nisdas) and [@nalepae](https://github.c
 The project proposal involves developing an in-house implementation of the necessary parts of the libp2p protocol. 
 The complete project description is available [here](https://hackmd.io/@6-HLeMXARN2tdFLKKcqrxw/rkU0eLmEC).
 
+### Prysm: Light client support
+Mentored by [@rkapka](https://github.com/rkapka).
+
+The project's aim is to implement server-side support for Ethereum light clients. 
+The complete project description is available [here](https://hackmd.io/q8fe302MQIayhtb9Aj-BJQ).
+
 ### PandaOps tooling wishlist
 
 By Pari
