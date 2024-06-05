@@ -130,3 +130,35 @@ Research around the EVM, specifically (but limited to):
       - https://github.com/ipsilon/eof/issues/113
   - Extend Remix debugger to support EOF
   - Extend Foundry debugger to support EOF
+
+
+### Protocol Security
+
+By fredriksvantes
+
+#### Auditing/(Differential)Fuzzing
+##### Networking
+- devp2p (discv4, discv5, ENR, RLP, ...)
+- libp2p
+- JSON-RPC
+
+##### Cryptography
+hashtree
+constantine
+(c,go,rust implementations of)kzg(peerdas)
+
+##### Clients
+- Grandine
+
+##### Account Abstraction
+- Bundlers
+
+##### EIPs
+- EOF
+- 4444
+- PeerDAS
+- 7702 (txpool)
+
+##### Languages
+- Solidity compiler
+- Vyper compiler
