@@ -163,3 +163,31 @@ By fredriksvantes
 ##### Languages
 - Solidity compiler
 - Vyper compiler
+
+
+### Nimbus: Extend KZG implementation in Constantine for PeerDAS
+
+By Nimbus Team
+
+This involves extending Constantine's KZG implementation to support PeerDAS. Potential aspects include:
+- allowing for siwtching between c-zkg, Constantine, and potential other implementations
+- formally benchmarking between these backends, including for example across different hardware configurations such as ARM, pre-AVX x86, and AVX x86
+- allowing runtime detection and switching based on benchmarking of optimal cryptographic backends
+
+### Nimbus: Create C bindings for Constantine
+
+By Nimbus Team
+
+This project would involve creating C bindings for the Constantine cryptography library. This library is written in Nim, and implements the cryptography on which Ethereum depends. Once implemented, it should be benchmarked to compare with BLST and other Ethereum cryptographic library bindings.
+
+### Nimbus: Add support for Constantine as Nimbus cryptographic backend
+
+By Nimbus Team
+
+Nimbus currently uses BLST to implement BLS and KZG cryptography. Constantine supports this as well. This project would involve switching Nimbus to be able to use Constantine, then benchmarking and doing performance analysis of the result.
+
+### Nimbus: Fuzzing
+
+By Nimbus Team
+
+The Nimbus CL and EL implementations have many fuzzable protocol components, such as, but not necessarily limited to: SSZ, RLP, JSON-RPC, REST JSON, and libp2p. This project would involve fuzzing any subset of these and presenting results.
