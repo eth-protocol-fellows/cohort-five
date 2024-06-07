@@ -81,6 +81,7 @@ The ideas below are for the Ethereum consensus layer client [Grandine](https://g
 
 - Separated Validator Client - extract Grandine's built-in validator into a separate process.
 - Embeddable Grandine - refactor Grandine into an embeddable consensus client, and integrate it in Geth, Nethermind, Besu, Erigon, or Reth.
+- Performance profiling harness - research various profiling tools such as [profiling](https://github.com/aclysma/profiling), especially the tooling that has the potential to be integrated into CI for regular performance profiling, also identify Grandine's areas that need optimizations for CPU and memory consumption;
 - Performance improvements - speed, efficiency, and memory usage improvements across the entire client;
 - SSZ Stable containers - adding support for  [EIP-7495: SSZ StableContainer](https://eips.ethereum.org/EIPS/eip-7495) and join a testnet Nimbus <> Lodestar testnet;
 - Slasher - updating/refactoring/optimising Grandine's slasher;
@@ -91,9 +92,11 @@ The ideas below are for the Ethereum consensus layer client [Grandine](https://g
 - E2E testing - improve Hive and Kurtosis test infrastructure;
 - Windows and MacOS support - Grandine's developers mainly use Linux, so Grandine is tested only on Linux. However, there are many Windows and MacOS users that would benefit from better support;
 - Redesign Rayon to allow lazy evaluation without deadlocks;
+- [EIP-4881](https://eips.ethereum.org/EIPS/eip-4881) deposit snapshot implementation;
+- Lightclient implementation;
+- Integrate Grandine in various existing fuzzing projects and/or write new fuzzers;
 - Adapt other consensus clients to run grandine-snapshot-tests;
 - Other - any other mutually agreed Grandine's area that can be improved.
-
 
 ### Lodestar: Deposit Contract Snapshot Interface (EIP-4881)
 
