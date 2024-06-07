@@ -170,7 +170,7 @@ By fredriksvantes
 By Nimbus Team
 
 This involves extending Constantine's KZG implementation to support PeerDAS. Potential aspects include:
-- allowing for siwtching between c-zkg, Constantine, and potential other implementations
+- allowing for siwtching between c-kzg, Constantine, and potential other implementations
 - formally benchmarking between these backends, including for example across different hardware configurations such as ARM, pre-AVX x86, and AVX x86
 - allowing runtime detection and switching based on benchmarking of optimal cryptographic backends
 
