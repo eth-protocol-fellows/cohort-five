@@ -10,6 +10,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 
 | Name/GH                                       | Week 0                                                          | Week 1 | Week 2 |
 |-----------------------------------------------|-----------------------------------------------------------------|--------|--------|
+| [ChloeZhu](https://github.com/Chloezhu010)       | [Update 0](https://hackmd.io/@chloezhu/HJpABlzBR) |        |        |
 | [DanGoron](https://github.com/gorondan)       | [Update 0](https://hackmd.io/@meA4-YJOSaqtagggpgcWMg/SJmdOEmXR) |        |        |
 | [Hopinheimer](https://github.com/hopinheimer) | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0) |        |        |
 | [RoryArredondo](https://github.com/arredr2)   | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                |        |        |
