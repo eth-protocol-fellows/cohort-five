@@ -194,3 +194,27 @@ Nimbus currently uses BLST to implement BLS and KZG cryptography. Constantine su
 By Nimbus Team
 
 The Nimbus CL and EL implementations have many fuzzable protocol components, such as, but not necessarily limited to: SSZ, RLP, JSON-RPC, REST JSON, and libp2p. This project would involve fuzzing any subset of these and presenting results.
+
+### Besu: Portal Client
+
+By Besu Team
+
+Standalone, modular Portal Client written in Java - build a from-scratch implementation using Dagger for compile-time inversion of control.
+
+### Besu: PeerSpective - Peering Tool
+
+By Besu Team
+
+Standalone utility to visualize, interrogate and manipulate devp2p network peers. Will be used to deeply inspect and analyze peering handshakes and sub protocols used in execution layer clients.
+
+### Besu: Archive mode with Bonsai storage
+
+By Besu Team
+
+Implement Besu's Bonsai mode data storage to work with archive nodes.
+
+### Besu: SSZ Transaztions
+
+By Besu Team
+
+Introduce SSZ as a supported encoding format by implementing [EIP-6493](https://eips.ethereum.org/EIPS/eip-6493)
