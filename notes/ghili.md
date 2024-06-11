@@ -12,3 +12,4 @@ You can find me on Twitter [@ghiliweld](https://twitter.com/ghiliweld), I always
 
 # Weekly Updates
 [Week 0](https://hackmd.io/@ghili/HJoy-VBS0)
+[Week 1](https://hackmd.io/@ghili/ry9-_kISR)
