@@ -8,23 +8,23 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started. 
 
-| Name/GH                                       | Week 0                                                          | Week 1                                         | Week 2 |
-| --------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------- | ------ |
-| [Ashen](https://github.com/y1cunhui)          | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                   |                                                |        |
-| [BobLiu](https://github.com/Akagi201)         | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)       |                                                |        |
-| [Chirag](https://github.com/chirag-parmar)    | [Update 0](https://hackmd.io/@chirag-parmar/S13p6uVBR)          |                                                |        |
-| [ChloeZhu](https://github.com/Chloezhu010)    | [Update 0](https://hackmd.io/@chloezhu/HJpABlzBR)               |                                                |        |
-| [DanGoron](https://github.com/gorondan)       | [Update 0](https://hackmd.io/@meA4-YJOSaqtagggpgcWMg/SJmdOEmXR) |                                                |        |
-| [georgesheth](https://github.com/georgesheth) | [Update 0](https://hackmd.io/@georgesheth/SJ2FqiVSR)            |                                                |        |
-| [ghili](https://github.com/ghiliweld)         | [Update 0](https://hackmd.io/@ghili/HJoy-VBS0)                  | [Update 1](https://hackmd.io/@ghili/ry9-_kISR) |        |
-| [Hamid Bateni](https://github.com/irnb)       | [Update 0](https://hackmd.io/@irnb/epf-update-0)                |                                                |        |
-| [Hangleang](https://github.com/hangleang)     | [Update 0](https://hackmd.io/@hangleang/epf-week-0)             |                                                |        |
-| [Hopinheimer](https://github.com/hopinheimer) | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0) |                                                |        |
-| [MeldSun](https://github.com/meldsun0)        | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) |                                                |        |
-| [RoryArredondo](https://github.com/arredr2)   | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                |                                                |        |
-| [Saeid](github.com/xm0onh)                    | [Update 0](https://hackmd.io/@xm0on/rJaRNg4HA)                  |                                                |        |
-| [ShyamPatel](github.com/shyam-patel-kira)     | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |                                                |        |
-
+| Name/GH                                       | Week 0                                                                                                                                           | Week 1                                         | Week 2 |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ------ |
+| [AkshatGada](https://github.com/AkshatGada)   | [Update 0](https://icy-wizard-6d2.notion.site/Ethereum-protocol-fellowship-Cohort-5-Development-Updates-Week-0-43841095ac1a49128e37537c2ce9e604) |                                                |        |
+| [Ashen](https://github.com/y1cunhui)          | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                                                                                                    |                                                |        |
+| [BobLiu](https://github.com/Akagi201)         | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)                                                                                        |                                                |        |
+| [Chirag](https://github.com/chirag-parmar)    | [Update 0](https://hackmd.io/@chirag-parmar/S13p6uVBR)                                                                                           |                                                |        |
+| [ChloeZhu](https://github.com/Chloezhu010)    | [Update 0](https://hackmd.io/@chloezhu/HJpABlzBR)                                                                                                |                                                |        |
+| [DanGoron](https://github.com/gorondan)       | [Update 0](https://hackmd.io/@meA4-YJOSaqtagggpgcWMg/SJmdOEmXR)                                                                                  |                                                |        |
+| [georgesheth](https://github.com/georgesheth) | [Update 0](https://hackmd.io/@georgesheth/SJ2FqiVSR)                                                                                             |                                                |        |
+| [ghili](https://github.com/ghiliweld)         | [Update 0](https://hackmd.io/@ghili/HJoy-VBS0)                                                                                                   | [Update 1](https://hackmd.io/@ghili/ry9-_kISR) |        |
+| [Hamid Bateni](https://github.com/irnb)       | [Update 0](https://hackmd.io/@irnb/epf-update-0)                                                                                                 |                                                |        |
+| [Hangleang](https://github.com/hangleang)     | [Update 0](https://hackmd.io/@hangleang/epf-week-0)                                                                                              |                                                |        |
+| [Hopinheimer](https://github.com/hopinheimer) | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0)                                                                                  |                                                |        |
+| [MeldSun](https://github.com/meldsun0)        | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0)                                                                                  |                                                |        |
+| [RoryArredondo](https://github.com/arredr2)   | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                                                                                                 |                                                |        |
+| [Saeid](github.com/xm0onh)                    | [Update 0](https://hackmd.io/@xm0on/rJaRNg4HA)                                                                                                   |                                                |        |
+| [ShyamPatel](github.com/shyam-patel-kira)     | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                                                                                                  |                                                |        |
 
 ## Phase 2: Deep dive
 
