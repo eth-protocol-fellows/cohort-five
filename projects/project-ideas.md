@@ -181,7 +181,7 @@ This involves extending Constantine's KZG implementation to support PeerDAS. Pot
 
 By Nimbus Team
 
-This project would involve creating C bindings for the Constantine cryptography library. This library is written in Nim, and implements the cryptography on which Ethereum depends. Once implemented, it should be benchmarked to compare with BLST and other Ethereum cryptographic library bindings.
+This project would involve creating C bindings for the Constantine cryptography library. This library is written in Nim, and implements the cryptography on which Ethereum depends. Once implemented, it should be benchmarked to compare with BLST and other Ethereum cryptographic library bindings. In addition, these C bindings might be to existing or newly created assembly backends (e.g., for ARM).
 
 ### Nimbus: Add support for Constantine as Nimbus cryptographic backend
 
