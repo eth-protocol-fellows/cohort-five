@@ -10,6 +10,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 
 | Name/GH                                       | Week 0                                                          | Week 1 | Week 2 |
 | --------------------------------------------- | --------------------------------------------------------------- | ------ | ------ |
+| [Ashen](https://github.com/y1cunhui)          | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                   |        |        |
 | [BobLiu](https://github.com/Akagi201)         | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)       |        |        |
 | [Chirag](https://github.com/chirag-parmar)    | [Update 0](https://hackmd.io/@chirag-parmar/S13p6uVBR)          |        |        |
 | [ChloeZhu](https://github.com/Chloezhu010)    | [Update 0](https://hackmd.io/@chloezhu/HJpABlzBR)               |        |        |
