@@ -183,6 +183,8 @@ By Nimbus Team
 
 This project would involve creating C bindings for the Constantine cryptography library. This library is written in Nim, and implements the cryptography on which Ethereum depends. Once implemented, it should be benchmarked to compare with BLST and other Ethereum cryptographic library bindings. In addition, these C bindings might be to existing or newly created assembly backends (e.g., for ARM).
 
+C bindings for Constantine's Verkle cryptography support are of particular note due to active interest from other client teams in using Constantine in this capacity if they become available.
+
 ### Nimbus: Add support for Constantine as Nimbus cryptographic backend
 
 By Nimbus Team
