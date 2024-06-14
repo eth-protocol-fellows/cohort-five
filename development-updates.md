@@ -9,7 +9,7 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started.
 
 | Name/GH                                                      | Week 0                                                                                                                                           | Week 1                                                          | Week 2 |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- | ------ |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|--------|
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                                                                                                  | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        |        |
 | [Aditya Gupta](https://github.com/1010adigupta)              |                                                                                                                                                  | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       |        |
 | [AkshatGada](https://github.com/AkshatGada)                  | [Update 0](https://icy-wizard-6d2.notion.site/Ethereum-protocol-fellowship-Cohort-5-Development-Updates-Week-0-43841095ac1a49128e37537c2ce9e604) |                                                                 |        |
@@ -42,7 +42,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)
 
 | Name/GH | Week 3 | Week 4 | Week 5 | Project proposal |
-| ------- | ------ | ------ | ------ | ---------------- |
+|---------|--------|--------|--------|------------------|
 |         |        |        |        |                  |
 
 ## Phase 3: Execution
@@ -50,7 +50,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
 
 | Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
-| ------- | ------ | ------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
@@ -59,5 +59,5 @@ The actual project development is the main part of the program. Post your regula
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
 | Name/GH | Final dev update | Project presentation |
-| ------- | ---------------- | -------------------- |
+|---------|------------------|----------------------|
 |         |                  |                      |
