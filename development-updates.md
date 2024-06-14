@@ -25,6 +25,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Hamid Bateni](https://github.com/irnb)        | [Update 0](https://hackmd.io/@irnb/epf-update-0)                                                                                                 |                                                |        |
 | [Hangleang](https://github.com/hangleang)      | [Update 0](https://hackmd.io/@hangleang/epf-week-0)  |  [Update 1](https://hackmd.io/@hangleang/epf5-week1)                                              |        |
 | [Hopinheimer](https://github.com/hopinheimer)  | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0)                                                                                  |                                                |        |
+| [Krishang](https://github.com/kamuik16) | | [Update 1](https://hackmd.io/@kamuik16/SyVy4aKrR) | |
 | [MeldSun](https://github.com/meldsun0)         | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0)                                                                                  |                                                |        |
 | [Richa](https://github.com/Richa-iitr) | | [Update 1](https://hackmd.io/@iri/HJLnintSR) | |
 | [RoryArredondo](https://github.com/arredr2)    | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                                                                                                 |                                                |        |
