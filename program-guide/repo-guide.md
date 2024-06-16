@@ -35,7 +35,7 @@ You should:
 
 Project deliverables should be posted in various open places such as the Research forum, the Ethereum Magicians forums, github gists, hackmd documents and this repository. 
 
-Create a document under the path `/notes/<project-name>.md`. Take inspiration for writing your project from the [project template](/projects/project-template.md). Generally, your project document should include: 
+Create a document under the path `/projects/<project-name>.md`. Take inspiration for writing your project from the [project template](/projects/project-template.md). Generally, your project document should include: 
 
 - Basic description of project you are working on, scope, goals and roadmap
 - All necessary links to repos where development is happening, documentation, research posts and technical background 
