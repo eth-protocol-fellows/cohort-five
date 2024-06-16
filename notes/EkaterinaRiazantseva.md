@@ -29,3 +29,4 @@ The overview of the consensus clients:
 | Nimbus     | Nim     | Status     | [Nimbus Guide](https://nimbus.guide/)     | [Github](https://github.com/status-im/nimbus-eth2)     |
 | Prysm     | Go     | Offchain Labs     | [Prysm Docs](https://docs.prylabs.network/docs/getting-started)     | [Github](https://github.com/prysmaticlabs/prysm)     |
 | Teku     | Java     | ConsenSys     | [Teku Docs](https://consensys.io/teku)   | [Github](https://github.com/Consensys/teku)     |
+
