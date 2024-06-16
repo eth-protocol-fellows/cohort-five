@@ -34,6 +34,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [RoryArredondo](https://github.com/arredr2)                  | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC)                                                                                                 |                                                                 |        |
 | [Rupam Dey](https://github.com/rupam-04)                     |                                                                                                                                                  | [Update 1](https://hackmd.io/@rupam-04/week_0_and_week_1)       |        |
 | [Saeid](github.com/xm0onh)                                   | [Update 0](https://hackmd.io/@xm0on/rJaRNg4HA)                                                                                                   |                                                                 |        |
+| [Sayan](https://github.com/threehrsleep)                     |                                                                                                                                                  | [Update 1](https://hackmd.io/@threehrsleep/epf_week1)       |        |
 | [ShyamPatel](github.com/shyam-patel-kira)                    | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                                                                                                  |                                                                 |        |
 
 ## Phase 2: Deep dive
