@@ -16,3 +16,4 @@ So I am looking around to find a suitable idea to work on. I will update this la
 Here you can see my weekly updates as well in the [`development-updates.md`](https://github.com/eth-protocol-fellows/cohort-five/blob/main/development-updates.md):
 
 - [Week 0](https://hackmd.io/@Bastin/HJ6hOLQHC)
+- [Week 1](https://hackmd.io/@Bastin/HyM3AmnrA)
