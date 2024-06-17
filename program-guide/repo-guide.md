@@ -17,19 +17,19 @@ A good development update can take many forms. Every individual will probably ne
 
 - You don't need to explain everything, but sometimes it is good to try and explain things to see if you know how.
 - A bulleted list of factual statements about what you worked on is a great place to start.
-- Links are great. Forum posts. Pull requests. HackMD documents.
+- Links are great. Forum posts. Pull requests. HackMD documents. Any resources you have been studying or creating. 
 
 A great example are Danny Ryan's "finalized" series of development updates. For example this one: https://blog.ethereum.org/2021/04/02/finalized-no-25/
-You can also check out development updates from [previous cohorts](https://github.com/eth-protocol-fellows/cohort-three/blob/master/development-updates.md). 
+You can also check out development updates from [previous cohorts](https://github.com/eth-protocol-fellows/cohort-four/blob/master/development-updates.md). 
 
 You should: 
 
 - Post your first update within the first week of starting into the program, write about your initial research. 
-- Post your update somewhere public. Link it in the main [`development-updates.md` document](/development-updates.md). Publishing using an external blog, hackmd or forum post are all great.
+- Post your update somewhere public. Publishing using an external blog, hackmd or own website are all great. Link it in the main [`development-updates.md` document](/development-updates.md) in corresponding table. Open a PR from a branch dedicated to specific week in your fork of the repo. 
 - *if* you post your update somewhere external, make sure to provide a URL referencing your development update in the [`development-updates.md` document](/development-updates.md).
 - Make sure the markdown table is properly formatted before you push your commits. You can use a local IDE with markdown support, hackmd or [table formatting tool](https://github.com/nvuillam/markdown-table-formatter). 
-- Share your development update to current thread in R&D Discord `#protocol-fellowship` channel 
-
+- Share your development update to current thread in R&D Discord `#protocol-fellowship` channel
+- Not use an LLM or similar tech for generating your updates. The point is to excercise your technical writing and expressing ideas, generated updates won't be accepted. 
 
 ### Using `/projects/<project-name>.md`
 
@@ -42,7 +42,6 @@ Create a document under the path `/projects/<project-name>.md`. Take inspiration
 - List of participants working on the project
 
 This document can be created later in the program when your project is mature enough and you are ready to present it. It's generally recommend around month into the fellowship, weeks 4-6. 
-
 
 ### Using `/notes/<your-name>.md`
 
