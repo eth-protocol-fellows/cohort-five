@@ -183,6 +183,8 @@ By Nimbus Team
 
 This project would involve creating C bindings for the Constantine cryptography library. This library is written in Nim, and implements the cryptography on which Ethereum depends. Once implemented, it should be benchmarked to compare with BLST and other Ethereum cryptographic library bindings. In addition, these C bindings might be to existing or newly created assembly backends (e.g., for ARM).
 
+C bindings for Constantine's Verkle cryptography support are of particular note due to active interest from other client teams in using Constantine in this capacity if they become available.
+
 ### Nimbus: Add support for Constantine as Nimbus cryptographic backend
 
 By Nimbus Team
@@ -218,3 +220,53 @@ Implement Besu's Bonsai mode data storage to work with archive nodes.
 By Besu Team
 
 Introduce SSZ as a supported encoding format by implementing [EIP-6493](https://eips.ethereum.org/EIPS/eip-6493)
+
+### Trin: Add/Improve Portal Beacon network hive tests
+
+By Kolby ML
+
+Portal Beacon is a consensus layer light client implementation used for verifying post-merge data of various Portal Networks. (This is for light clients, as full nodes can use their already running consensus client for proving)
+
+Already existing tests can be found under `simulators/portal/beacon` at https://github.com/ethereum/hive
+
+Hive is a cross client black box testing framework for testing interoperability between client implementations of execution layer, consensus layer, and Portal Network clients
+
+### Trin: Add/Improve Portal State network hive tests
+
+By Kolby ML
+
+The description of what Hive is can be found in the post above.
+
+Portal State is an execution layer light client for archival state data. The goal is providing archival state access for all blocks, faster access for recent blocks for use in wallets etc, well at the same time being validate-able and requiring minimal resources e.x. a few gigabytes of storage.
+
+So the goal of this network is to one day be the backend of wallets. Instead of all users using centralized backends to access Ethereum such as Infura, they can use Portal, to access Ethereum in a light, validate-able and decentralized way. This is one use of Ethereum State data, but there are bound to be more.
+
+Already existing tests can be found under `simulators/portal/state` at https://github.com/ethereum/hive
+
+### Trin: Contribute to Trin's Execution Client, the first execution client being built to not use devp2p
+
+By Kolby ML
+
+To feed the Portal State network we need fine grain access to state data, well we could modify a pre-existing execution client, the issue is that they have very different incentives and goals. An example of this is Erigon and Reth's Receipt type doesn't support pre-byzantium receipts correctly, their JSON-RPC will return invalid receipts for older blocks. But we need that older valid receipt format for our History network. If the client we rely on priorities change in the future that poses a risk to our foundation.
+
+Different teams have different priorities which is normal, because of our requirements having the security of our own execution client means that our infrastructure is never at risk based on the decisions of a 3rd party which ensures the longevity of our project.
+
+Currently execution clients participate in a peer-to-peer network referred to as devp2p to get older blocks. With the inclusion of EIP 4444's devp2p will no longer serve or need older blocks to sync to the head of the chain. Older blocks will still be accessible through the Portal History network
+
+What are the current goals?
+
+- execute to the front of the chain so we can gossip the state trie's onto the Portal State Network
+
+How could others help?
+
+- Making it so we can resume execution after restart instead of starting from block 0
+- Add a caching layer between the database and evm, to reduce database calls on hot data and decrease io delays
+
+There is a lot of work to be done. Currently we don't need to interact with a consensus client as we can execute up to HEAD - 8192 from era/era1 files (an archive format which contain blocks), but in a week or two the client should* be able to reach HEAD - minus 8192 blocks and I will begin work on implementing the Engine API
+
+After a viable solution is built for our specific use case for the Portal state network, building out our execution client for other users could be interesting
+
+The difference between `Trin` and `Trin Execution`
+
+- Trin is an implementation of the Portal Network Specification https://github.com/ethereum/portal-network-specs which contains outlines for execution light clients or in other words light protocol access for Ethereum, it also contains specifications for an implementation of a consensus light client.
+- Trin Execution is an adjacent project with the goals of building an execution client which can feed the Portal State network. All execution clients to date don't include the required interfaces (and some don't have the state in the required formats), to feed Portal's state network. With Trin Execution being built to not use devp2p from day one and the upcoming addition of stateless execution clients, the idea of what is an execution client is likely to become much more diverse.
