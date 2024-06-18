@@ -15,3 +15,4 @@ I haven't decided on the project yet! However, I'm interested in doing research 
 Here you can see my weekly updates as well in the [`development-updates.md`](https://github.com/eth-protocol-fellows/cohort-five/blob/main/development-updates.md):
 
 * [Update 0](https://hackmd.io/@0xScarFace/week0)
+* [Update 1](https://hackmd.io/@0xScarFace/week_1)
