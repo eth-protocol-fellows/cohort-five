@@ -167,7 +167,7 @@ By fredriksvantes
 - Solidity compiler
 - Vyper compiler
 
-# The rated list DHT
+### The rated list DHT
 
 By Dankrad
 
