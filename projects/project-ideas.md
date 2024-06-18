@@ -223,7 +223,7 @@ Introduce SSZ as a supported encoding format by implementing [EIP-6493](https://
 
 ### Trin: Add/Improve Portal Beacon network hive tests
 
-By Kolby ML 
+By Kolby ML
 
 Portal Beacon is a consensus layer light client implementation used for verifying post-merge data of various Portal Networks. (This is for light clients, as full nodes can use their already running consensus client for proving)
 
@@ -233,11 +233,11 @@ Hive is a cross client black box testing framework for testing interoperability 
 
 ### Trin: Add/Improve Portal State network hive tests
 
-By Kolby ML 
+By Kolby ML
 
 The description of what Hive is can be found in the post above.
 
-Portal State is a execution layer light client for archival state data. The goal is providing archival state access for all blocks, faster access for recent blocks for use in wallets etc, well at the same time being validate-able and requiring minimal resources e.x. a few gigabytes of storage.
+Portal State is an execution layer light client for archival state data. The goal is providing archival state access for all blocks, faster access for recent blocks for use in wallets etc, well at the same time being validate-able and requiring minimal resources e.x. a few gigabytes of storage.
 
 So the goal of this network is to one day be the backend of wallets. Instead of all users using centralized backends to access Ethereum such as Infura, they can use Portal, to access Ethereum in a light, validate-able and decentralized way. This is one use of Ethereum State data, but there are bound to be more.
 
@@ -245,13 +245,13 @@ Already existing tests can be found under `simulators/portal/state` at https://g
 
 ### Trin: Contribute to Trin's Execution Client, the first execution client being built to not use devp2p
 
-By Kolby ML 
+By Kolby ML
 
 To feed the Portal State network we need fine grain access to state data, well we could modify a pre-existing execution client, the issue is that they have very different incentives and goals. An example of this is Erigon and Reth's Receipt type doesn't support pre-byzantium receipts correctly, their JSON-RPC will return invalid receipts for older blocks. But we need that older valid receipt format for our History network. If the client we rely on priorities change in the future that poses a risk to our foundation.
 
-Different teams have different priorities which is normal, because of our requirements having the security of our own execution client means that our infrastructure is never at risk based off of the decisions of a 3rd party which ensures the longevity of our project.
+Different teams have different priorities which is normal, because of our requirements having the security of our own execution client means that our infrastructure is never at risk based on the decisions of a 3rd party which ensures the longevity of our project.
 
-Currently execution clients participate in a peer-to-peer network referred to as devp2p to get older blocks. With the inclusion of EIP 4444's devp2p will no longer serve or need older blocks to sync to the head of the chain. Older blocks will accessible through the Portal History network
+Currently execution clients participate in a peer-to-peer network referred to as devp2p to get older blocks. With the inclusion of EIP 4444's devp2p will no longer serve or need older blocks to sync to the head of the chain. Older blocks will still be accessible through the Portal History network
 
 What are the current goals?
 
@@ -268,5 +268,5 @@ After a viable solution is built for our specific use case for the Portal state 
 
 The difference between `Trin` and `Trin Execution`
 
-- Trin is a implementation the Portal Network Specification https://github.com/ethereum/portal-network-specs which contains outlines for execution light clients or in other words light protocol access for Ethereum, it also contains specifications for an implementation of a consensus light client.
+- Trin is an implementation of the Portal Network Specification https://github.com/ethereum/portal-network-specs which contains outlines for execution light clients or in other words light protocol access for Ethereum, it also contains specifications for an implementation of a consensus light client.
 - Trin Execution is an adjacent project with the goals of building an execution client which can feed the Portal State network. All execution clients to date don't include the required interfaces (and some don't have the state in the required formats), to feed Portal's state network. With Trin Execution being built to not use devp2p from day one and the upcoming addition of stateless execution clients, the idea of what is an execution client is likely to become much more diverse.
