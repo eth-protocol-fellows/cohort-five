@@ -270,3 +270,32 @@ The difference between `Trin` and `Trin Execution`
 
 - Trin is an implementation of the Portal Network Specification https://github.com/ethereum/portal-network-specs which contains outlines for execution light clients or in other words light protocol access for Ethereum, it also contains specifications for an implementation of a consensus light client.
 - Trin Execution is an adjacent project with the goals of building an execution client which can feed the Portal State network. All execution clients to date don't include the required interfaces (and some don't have the state in the required formats), to feed Portal's state network. With Trin Execution being built to not use devp2p from day one and the upcoming addition of stateless execution clients, the idea of what is an execution client is likely to become much more diverse.
+
+### Lighthouse: Run network simulations using the shadow framework
+
+By Age Manning
+
+Run some network simulations using shadow: https://shadow.github.io/
+
+Lighthouse has some network simulations here: https://github.com/sigp/gossipsub-testground. It would be nice to try and get these to run on shadow rather than test ground. We could then start doing some more advanced network simulations to experiment with new features and upgrades.
+
+It looks like some work has been done which integrates lighthouse into shadow so perhaps we could leverage some of this: https://github.com/ppopth/ethereum-shadow
+
+### Lighthouse
+
+A non exhaustive list of some potential project ideas:
+
+- Make some common Lighthouse crates (types, eth2-type) easier to import.
+- Improve Lighthouse logging (e.g. look into integrating tracing)
+- Test improvements:
+  - Improving CI times by identifying and refactoring slow tests
+  - Eliminate flaky tests
+  - Improve test coverage in the validator-client crate
+  - Add deadlock detector to CI (check https://github.com/BurtonQin/lockbud)
+- Production-ize Lighthouse light client server
+- Direct integration (non-http) of Lighthoue-Reth
+
+List of mentors
+- Age Manning
+- Michael Sproul
+- Jimmy Chen
