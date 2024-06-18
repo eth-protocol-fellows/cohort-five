@@ -35,7 +35,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Rupam Dey](https://github.com/rupam-04)                     |                                                                                                                                                  | [Update 1](https://hackmd.io/@rupam-04/week_0_and_week_1)       |        |
 | [Saeid](github.com/xm0onh)                                   | [Update 0](https://hackmd.io/@xm0on/rJaRNg4HA)                                                                                                   |                                                                 |        |
 | [ShyamPatel](github.com/shyam-patel-kira)                    | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)      
-                                                           | 
+               | 
 | [Vaiz_07](github.com/07Vaishnavi-Singh)                      |
                | [Update 1](https://hackmd.io/@OAuY_pIeSGO9iefEVKripg/SyozK4nrR) |        |
 
