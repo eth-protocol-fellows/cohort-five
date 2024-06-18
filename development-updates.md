@@ -37,7 +37,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [ShyamPatel](github.com/shyam-patel-kira)                    | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)      
                                                            | 
 | [Vaiz_07](github.com/07Vaishnavi-Singh)                      |
-                                                           | [Update 1](https://hackmd.io/@OAuY_pIeSGO9iefEVKripg/SyozK4nrR) |        |
+               | [Update 1](https://hackmd.io/@OAuY_pIeSGO9iefEVKripg/SyozK4nrR) |        |
 
                                                            
 ## Phase 2: Deep dive
