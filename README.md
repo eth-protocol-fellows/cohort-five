@@ -22,12 +22,12 @@ There will be two regular weekly calls throughout the program.
 
 #### Standup calls 
 
-Standup calls are place to share your weekly updates with other fellows. These calls serve to discuss progress of projects, current issues participants are facing, their open questions and comments raised in development updates. Standup calls are dedicated to participants and their discussion, some mentors might show up occasionally. These calls occur weekly every Monday, 15:00 UTC. Use [this link](https://meet.ethquokkaops.io/epf-standup) to attend the weekly standup.
+Standup calls are a great place to share your weekly updates with other fellows. These calls serve to discuss progress of projects, current issues participants are facing, their open questions and comments raised in development updates. Standup calls are dedicated to participants and their discussion, some mentors might show up occasionally. These calls occur weekly every Monday, 15:00 UTC. Use [this link](https://meet.ethquokkaops.io/epf-standup) to attend the weekly standup.
 
 #### Office hours
 
 In addition to the weekly standup calls, we hold Office Hours calls which can be focused on specific topics proposed in advance. Find the upcoming call agenda in [Issues](https://github.com/eth-protocol-fellows/cohort-five/issues). Anybody can propose topics for this call by commenting on its tracking issue. Office Hours are regularly happening on every Tuesday, 15:00 UTC.
 
-If you need any further assistance, contact cohort organizers @joshdavislight @taxmeifyoucan
+If you need any further assistance, contact cohort organizers [@joshdavislight](https://github.com/JoshDavisLight) [@taxmeifyoucan](https://github.com/taxmeifyoucan)
 
 ![](/images/epf-hero.jpg)
