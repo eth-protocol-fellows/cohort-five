@@ -1,14 +1,14 @@
 # Ethereum Protocol Fellowship: Cohort 5
 
-This is repository dedicated to coordination and resources for EPF cohort 5. 
+This is a repository dedicated to coordination and resources for EPF cohort 5. 
 
 Learn more about EPF in [Program details](./program-guide/program-details.md), [cohort 5 town hall](https://www.youtube.com/watch?v=nrwKxyBIYYk) and [fourth cohort recap](https://blog.ethereum.org/2024/04/22/epf-4-recap).
 
 ## Getting started
 
-The EPF is fully permissionless and open program. Anybody is welcome to participate. All resources and work being done can be found in this repository. 
+The EPF is a fully permissionless and open program. Anybody is welcome to participate. All resources and work being done can be found in this repository. 
 
-First, read the [program guide](/program-guide/README.md) and [FAQ](/program-guide/faq.md). To start with the program, use this repository, check the [guide for participating](/program-guide/participation-guide.md) and open a PR to add your development updates. Find more resources about the protocol in [EPF.wiki](https://epf.wiki/#/wiki/epf).
+First, read the [program guide](/program-guide/README.md) and [FAQ](/program-guide/faq.md). To start with the program, use this repository, check the [guide for participating](/program-guide/participation-guide.md) and [open a PR to add your development updates](./program-guide/repo-guide.md#contributing-to-the-protocol-repository). Find more resources about the protocol in [EPF.wiki](https://epf.wiki/#/wiki/epf).
 
 Find ideas for projects and get inspiration in [proposed project ideas](/projects/project-ideas.md). 
 

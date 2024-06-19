@@ -1,4 +1,4 @@
-# Participate in the program
+# Contributing to The Protocol Repository
 
 As a participant in the program, you should be using this repository. The goal of this repo is to be:
 
@@ -9,33 +9,37 @@ As a participant in the program, you should be using this repository. The goal o
 
 Please, be open with anything you wish to improve about these processes. Feel free to be bold and simply open a pull request with the changes and we can discuss them there.
 
-## Development Updates
+## Publishing development updates
 
 One of the core goals of this program is to improve your technical writing and communication skills. One key way to do this is to get comfortable telling people about what you are working on. One of the expectations for program participants is a regularly cadenced development update. For the duration of the program, all participants should publish a development update at least once every two weeks.
 
-A good development update can take many forms. Every individual will probably need to find their own style. Here are some suggestions.
+A good development update can take many forms. Every individual will probably need to find their own style. Here are some suggestions:
 
 - You don't need to explain everything, but sometimes it is good to try and explain things to see if you know how.
 - A bulleted list of factual statements about what you worked on is a great place to start.
 - Links are great. Forum posts. Pull requests. HackMD documents. Any resources you have been studying or creating. 
 
-A great example are Danny Ryan's "finalized" series of development updates. For example this one: https://blog.ethereum.org/2021/04/02/finalized-no-25/
-You can also check out development updates from [previous cohorts](https://github.com/eth-protocol-fellows/cohort-four/blob/master/development-updates.md). 
+A great example is Danny Ryan's "finalized" series of development updates. Check out their update about their [work on the Merge devnets](https://blog.ethereum.org/2021/04/02/finalized-no-25/) for inspiration.
+You can also check out [development updates from previous cohorts](https://github.com/eth-protocol-fellows/cohort-four/blob/master/development-updates.md). 
+
+### Best practices
 
 You should: 
 
 - Post your first update within the first week of starting into the program, write about your initial research. 
-- Post your update somewhere public. Publishing using an external blog, hackmd or own website are all great. Link it in the main [`development-updates.md` document](/development-updates.md) in corresponding table. Open a PR from a branch dedicated to specific week in your fork of the repo, check the guide for using git below for more details. 
-- *if* you post your update somewhere external, make sure to provide a URL referencing your development update in the [`development-updates.md` document](/development-updates.md).
-- Make sure the markdown table is properly formatted before you push your commits. You can use a local IDE with markdown support, hackmd or [table formatting tool](https://github.com/nvuillam/markdown-table-formatter). 
-- Share your development update to current thread in R&D Discord `#protocol-fellowship` channel
-- Not use an LLM or similar tech for generating your updates. The point is to excercise your technical writing and expressing ideas, generated updates won't be accepted. 
+- Post your update somewhere public. Publishing using an external blog, [HackMD](https://hackmd.io/c/tutorials/%2Fs%2Ftutorials) or own website are all great. Link it in the main [`development-updates.md` document](/development-updates.md) in the corresponding table. Open a PR from a branch dedicated to a specific week in your fork of the repo, check the [guide for using git below](#using-git-for-collaboration) for more details.
+- Ensure that the content is published publicly before adding it's link in the [`development-updates.md` document](/development-updates.md). Trying out the link in your browser's incoginto / private mode is a great way to test this.
+- Make sure the markdown table is properly formatted before you push your commits. You can use a local IDE with markdown support, HackMD or [table formatting tool](https://github.com/nvuillam/markdown-table-formatter).
+- Share your development update to current thread in R&D Discord `#protocol-fellowship` channel.
+- Not use an LLM or similar tech for generating your updates. The point is to exercise your technical writing and expressing ideas, generated updates won't be accepted.
 
-### Using git 
+### Using git for collaboration
 
-The cohort coordination via a git repository is also meant as an exercise in using public repositories and collaborating with others. Although github offers a web user interface for editing the repo, it's much more convenient and practical to use git locally. Git is a versioning system used everywhere in software development and especially for collaborative FOSS projects. It's an important skill you can learn during the cohort. Check also resources on [using git in epf.wiki](https://epf.wiki/#/wiki/dev/cs-resources?id=terminals-shell-scripting-and-version-control).
+This cohort is designed to give you an experience of real-world collaboration in open-source software (FOSS) development using [Git](https://git-scm.com/video/what-is-version-control). Git tracks changes to code, making collaboration on projects seamless, especially in FOSS where public repositories are the norm. Consider using the Git command line interface (CLI) over using GitHub's web interface. It's an important skill you can learn during the cohort that will serve you well throughout your career. Check out the resources on [using git in the epf.wiki](https://epf.wiki/#/wiki/dev/cs-resources?id=terminals-shell-scripting-and-version-control).
 
-Install [git](https://git-scm.com/) using a preferred method on your machine and set it up with your github SSH key. You need to setup ssh and add the generated key to your github account if you haven't done so yet. With your git setup complete, fork the repo to your github account (by clicking the Fork button) and clone the fork locally, for example: 
+#### 1. Setting up your local repository
+
+Install [git](https://git-scm.com/) using a preferred method on your machine and set it up with your github SSH key. You need to [setup ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add the generated key to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) if you haven't done so yet. With your git setup complete, fork the repo to your github account (by clicking the Fork button) and clone the fork locally, for example: 
 
 ```
 git clone git@github.com:taxmeifyoucan/cohort-five.git
@@ -45,11 +49,17 @@ Now you have a local copy of the repo that you can use to update your fork. Let'
 cd cohort-five
 git remote add epf5 https://github.com/eth-protocol-fellows/cohort-five.git
 ```
-Previous steps are only to be done once. With the upstream added, you can keep your local repo updated by directly pulling from epf5 upstream. If you already added your own commits on top of it, rebase it before opening a PR:
+This completes your one time setup of the repository.
+
+#### 2. Keeping your local repository in up to date
+
+With the upstream added, you can keep your local repo updated by directly pulling from epf5 upstream. If you already added your own commits on top of it, rebase it before opening a PR:
 ```
 git fetch epf5
 git rebase epf5/main
 ```
+
+#### 3. Adding your updates
 
 To add your update, update your local `main` branch, create a branch for the corresponding week and commit your edits: 
 ```
@@ -63,7 +73,7 @@ After pushing to your fork of the repo, you are ready to open the PR. Got to the
 
 ### Using `/projects/<project-name>.md`
 
-Project deliverables should be posted in various open places such as the Research forum, the Ethereum Magicians forums, github gists, hackmd documents and this repository. 
+Project deliverables should be posted in various open places such as the Research forum, the Ethereum Magicians forums, github gists, HackMd documents and this repository. 
 
 Create a document under the path `/projects/<project-name>.md`. Take inspiration for writing your project from the [project template](/projects/project-template.md). Generally, your project document should include: 
 
@@ -71,7 +81,7 @@ Create a document under the path `/projects/<project-name>.md`. Take inspiration
 - All necessary links to repos where development is happening, documentation, research posts and technical background 
 - List of participants working on the project
 
-This document can be created later in the program when your project is mature enough and you are ready to present it. It's generally recommend around month into the fellowship, weeks 4-6. 
+This document can be created later in the program when your project is mature enough and you are ready to present it. It's generally recommended around a month (week 4-6) into the fellowship.
 
 ### Using `/notes/<your-name>.md`
 
@@ -88,9 +98,9 @@ This document isn't meant to be a "profile". It is meant to be used especially i
 
 Merge access will be granted relatively widely. Cohort organizers will merge your first PRs but then feel free to reach out to get the access. 
 
-When submitting a PR, make sure you are using the latest master branch. Otherwise rebase and keep your changes always on top to be sure you are not deleting content of others.
+When submitting a PR, make sure you are using the latest main branch. Otherwise [rebase and keep your changes always on top](#2-keeping-your-local-repository-in-up-to-date) to be sure you are not deleting content of others.
 
 When merging someone else's PR, use your best judgement and ask if you are unsure. 
 
-If your IDE or system creates some hidden config files (e.g. `.vscode/...), please make sure you don't upload them to the repo by updating the gitignore. 
+If your IDE or system creates some hidden config files (e.g. `.vscode/...`), please make sure you don't upload them to the repo by updating the `.gitignore`. 
 
