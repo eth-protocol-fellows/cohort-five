@@ -25,11 +25,41 @@ You can also check out development updates from [previous cohorts](https://githu
 You should: 
 
 - Post your first update within the first week of starting into the program, write about your initial research. 
-- Post your update somewhere public. Publishing using an external blog, hackmd or own website are all great. Link it in the main [`development-updates.md` document](/development-updates.md) in corresponding table. Open a PR from a branch dedicated to specific week in your fork of the repo. 
+- Post your update somewhere public. Publishing using an external blog, hackmd or own website are all great. Link it in the main [`development-updates.md` document](/development-updates.md) in corresponding table. Open a PR from a branch dedicated to specific week in your fork of the repo, check the guide for using git below for more details. 
 - *if* you post your update somewhere external, make sure to provide a URL referencing your development update in the [`development-updates.md` document](/development-updates.md).
 - Make sure the markdown table is properly formatted before you push your commits. You can use a local IDE with markdown support, hackmd or [table formatting tool](https://github.com/nvuillam/markdown-table-formatter). 
 - Share your development update to current thread in R&D Discord `#protocol-fellowship` channel
 - Not use an LLM or similar tech for generating your updates. The point is to excercise your technical writing and expressing ideas, generated updates won't be accepted. 
+
+### Using git 
+
+The cohort coordination via a git repository is also meant as an exercise in using public repositories and collaborating with others. Although github offers a web user interface for editing the repo, it's much more convenient and practical to use git locally. Git is a versioning system used everywhere in software development and especially for collaborative FOSS projects. It's an important skill you can learn during the cohort. Check also resources on [using git in epf.wiki](https://epf.wiki/#/wiki/dev/cs-resources?id=terminals-shell-scripting-and-version-control).
+
+Install [git](https://git-scm.com/) using a preferred method on your machine and set it up with your github SSH key. You need to setup ssh and add the generated key to your github account if you haven't done so yet. With your git setup complete, fork the repo to your github account (by clicking the Fork button) and clone the fork locally, for example: 
+
+```
+git clone git@github.com:taxmeifyoucan/cohort-five.git
+```
+Now you have a local copy of the repo that you can use to update your fork. Let's add the main repository as an upstream named `epf5`: 
+```
+cd cohort-five
+git remote add epf5 https://github.com/eth-protocol-fellows/cohort-five.git
+```
+Previous steps are only to be done once. With the upstream added, you can keep your local repo updated by directly pulling from epf5 upstream. If you already added your own commits on top of it, rebase it before opening a PR:
+```
+git fetch epf5
+git rebase epf5/main
+```
+
+To add your update, update your local `main` branch, create a branch for the corresponding week and commit your edits: 
+```
+git checkout -b week1
+emacs development-updates.md #add your update with your preferred editor
+git add .
+git commit
+git push
+```
+After pushing to your fork of the repo, you are ready to open the PR. Got to the github page and create a PR from your weekly branch to the main branch of this repository. 
 
 ### Using `/projects/<project-name>.md`
 
