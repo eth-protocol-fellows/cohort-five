@@ -2,14 +2,20 @@
 
 Hey there, I am Hangleang. I'm participating in the Protocol Fellowship to advance my expertise in decentralized technologies and also to contribute to open-source projects.
 
-I'm interested in various topics in mechanism design and cryptography, notably: verkle tree, stateless client and data availability schemes, as well as efficient software (in Rust).
+I'm interested in various topics in mechanism design and cryptography, notably: verkle tree, stateless client, light client, and data availability schemes.
 
-I'm looking to grow as a developer and become more familiar with low-level parts of the Ethereum stack, like p2p networking and SSZ serialization.
+I would like to be more familiar with low-level parts of the Ethereum stack, like p2p networking and SSZ serialization.
 
 You can find me on Twitter [@HangleangS](https://twitter.com/HangleangS), I always love to chat about Ethereum and surrounding topics. I recently tweet about ["The demand of Ethereum block space"](https://twitter.com/HangleangS/status/1801524889268142258), would love to know your opinions.
 
 Lastly, thanks to @ghili. I'm permissionlessly fork your note, cause we have some interests in common.
 
-# Weekly Updates
-[Week 0](https://hackmd.io/@hangleang/epf-week-0)
-[Week 1](https://hackmd.io/@hangleang/epf5-week1)
+### Resources
+
+- [Protocol Wiki](https://epf.wiki/) by EPS community
+- [Ethereum Consensus Specs Docs.](https://ethereum.github.io/consensus-specs/)
+- [eth2book](https://eth2book.info/latest/): A technical handbook on Ethereum’s move to proof of stake and beyond by Ben Edgington *(not up to date)*
+- [consensus-specs/v1.5.0-alpha.3](https://github.com/ethereum/consensus-specs/releases/tag/v1.5.0-alpha.3)
+- [pectra-devnets repo](https://github.com/ethpandaops/pectra-devnets) by EthPandaOps Team
+- [peerdas-devnet-1 specs](https://notes.ethereum.org/@ethpandaops/peerdas-devnet-1) by EthPandaOps Team
+- [libp2p-pubsub Peer Discovery with Kademlia DHT](https://medium.com/rahasak/libp2p-pubsub-peer-discovery-with-kademlia-dht-c8b131550ac7) 
