@@ -16,3 +16,5 @@ Here you can see my weekly updates as well in the [`development-updates.md`](htt
 
 * [Update 0](https://hackmd.io/@0xScarFace/week0)
 * [Update 1](https://hackmd.io/@0xScarFace/week_1)
+* [Update 2](https://hackmd.io/@0xScarFace/week2)
+* [Update 2] ...coming soon

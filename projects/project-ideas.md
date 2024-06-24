@@ -167,6 +167,14 @@ By fredriksvantes
 - Solidity compiler
 - Vyper compiler
 
+### The rated list DHT
+
+By Dankrad
+
+Prototyping DHT with rating for added protection.
+
+https://notes.ethereum.org/hfbmSM_9RYas6t013xjq6Q
+
 
 ### Nimbus: Extend KZG implementation in Constantine for PeerDAS
 
