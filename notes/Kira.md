@@ -17,4 +17,5 @@ In addition I'm also exploring other In-protocol PBS solutions/ideas if they exi
 I'll posting my weekly updates and notes on my [hackmd](https://hackmd.io/@kira50)
 
 * [Week 0](https://hackmd.io/@kira50/rJkBMnK7C)
+* [Week 1](https://hackmd.io/@kira50/BJKhLyTH0)
 

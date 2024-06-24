@@ -9,16 +9,16 @@
 
 🔗 Check [bateny.xyz](https://bateny.xyz) for more info.
 
-🚀 My goal is to become a core Ethereum developer and researcher.
+🚀 Privacy and Censorship resistance are my interest area
 
 ### 💡 Brainstorming Table
 
-| 📌 Title             | 📝 Short Description             | 🔗 Related Link |
-|----------------------|----------------------------------|-----------------|
-|                      |                                  |                 |
+| 📌 Title | 📝 Short Description | 🔗 Related Link |
+| ------- | ------------------- | -------------- |
+|         |                     |                |
 
 ### 📚 Interesting Resource Table
 
-| 📌 Title             | 📝 Short Description             | 🔗 Link         |
-|----------------------|----------------------------------|-----------------|
-|                      |                                  |                 |
+| 📌 Title      | 📝 Short Description                                                 | 🔗 Link                |
+| ------------- | -------------------------------------------------------------------- | ---------------------- |
+| The Eth2 Book | A technical handbook on Ethereum’s move to proof of stake and beyond | https://eth2book.info/ |
