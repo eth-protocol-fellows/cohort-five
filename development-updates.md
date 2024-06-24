@@ -11,7 +11,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | Name/GH                                         | Week 0                                | Week 1                                                          | Week 2 |
 |-------------------------------------------------|---------------------------------------|-----------------------------------------------------------------|--------|
 | [0xpanicError](https://github.com/0xpanicError) |                                       | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        |        |
-| [0xSulpiride](https://github.com/0xSulpiride)   |                                       | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            |        |
+| [0xSulpiride](https://github.com/0xSulpiride)   |                                       | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            | [Update 2](https://hackmd.io/@sulpiride/BJLYckU80)        |
 | [Abhimanyu](https://github.com/ABresting)       |                                       | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) |        |
 | [Aditya Gupta](https://github.com/1010adigupta) |                                       | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       |        |
 | [AkshatGada](https://github.com/AkshatGada)     | [Update 0](https://shorturl.at/uGf6M) | [Update 1](https://shorturl.at/kyukr)                           |        |
