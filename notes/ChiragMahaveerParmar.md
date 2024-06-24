@@ -27,13 +27,13 @@ Things learned:
 * Once the node is setup and running we can use the RPC to interact with it. Interestingly enough RPC can be made available through the Tor onion network also.
 
 Open Questions:
-1. What happened in the merge?
-3. How to setup RPC over the onion network?
-4. Why does the consensus client require authentication to connect to the execution client? Do they connect over the network? If yes, what about the extra overhead of network communications that can obviously be avoided?
+1. What happened in the merge? Before the merge validators were just validating empty payloads, as an analogy, miners only calculating hashes for a block without transactions or any other block related data. The merge increased difficulty on og ethereum chain and incorporated the blocks from it into the beacon chain.
+3. How to setup RPC over the onion network? still in process
+4. Why does the consensus client require authentication to connect to the execution client? Do they connect over the network? If yes, what about the extra overhead of network communications that can obviously be avoided? [the answer lies within](https://github.com/ethereum/execution-apis/blob/main/src/engine/authentication.md)
 5. How does the ephemery testnet work?
-6. why is syncing from genesis not secure and incompatible with data availability checks?
-7. what exactly are the data availability checks talked about in the previous question?
-8. what is snap sync? importantly what is the range proof? how is the state regenerated? what is state healing?
+6. why is syncing from genesis not secure and incompatible with data availability checks? weak subjectivity
+7. what exactly are the data availability checks talked about in the previous question? if the truth about the canonical chain cannot be established then data availability cannot be guaranteed(gurantees against witholding data by any node or group of nodes or even supermajority of nodes)
+8. what is snap sync? importantly what is the range proof? how is the state regenerated? what is state healing? 
 
 ### Pair the Curves [June 10]
 
@@ -52,7 +52,7 @@ Things learned:
 Open questions:
 1. Is there no simpler way to construct bilinear maps using elliptic curves? How did we land on using divisors? 
 
-### Beacon chain, weak subjectivity and the merge [June 11 - 16]
+### Beacon chain and the merge [June 11 - 16]
 
 [beacon chain explainer](https://ethos.dev/beacon-chain) - [the merge](https://www.youtube.com/watch?v=8N10a1EBhBc) - [why pos?](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) - [part2 of eth2book](https://eth2book.info/capella/part2/)
 
@@ -80,6 +80,10 @@ Things Learned:
 10. The BLS scheme is vulnerable to an attack, called the rogue public key attack. i can publish my public key to be my public key minus your public key. after which when i sign a message i can claim that both of us signed over it (but you didn't). The signature would verify as an aggregated signature, because when your public key is added to rogue public key the resulting aggregate would be my original public key.
 11. the merge essentially is merging the existing execution layer (without proof of work) into the new consensus layer or beacon chain. The contracts for PoS were launched on EL, where validators made deposits but they participated in the consensus game on the beacon chain. 
 12. PoS is subject to lesser economic risks compared to PoW. 
+13. SSZ serializes a data structure into a byte array but is dependent on knowledge of the schema to reconstruct the data structure. in other words, two different data structures can get serialized to the same byte array and without the schema of the data structure we won't know how to differentiate between the two.
+    * in the serialized string, dynamicaly sized datatypes are represented as 32 bit pointers and sotred at the last of the serialized string. Pointers are relative to the start of the containers in which synamically sized datatypes live.
+    * most importantly containers containing variable length types are themselves considered variable length. in other words if container A contains a List then container A is variable length. Interestingly, the list within container A uses pointers, and IFF container A is itself packed into another container B then even container A will use pointer.
+14. hash tree roots run over ssz. first we ssz then we split into 32 byte chunks and create merkle tree. The rules are more nuanced than this but this is the gist. Hash tree roots do something awesome, the take advantge of second preimage attacks on merkle trees, since inclusion proofs of the roots of subtrees guarantee inclusion of the entire body. [summaries and expansions](https://eth2book.info/capella/part2/building_blocks/merkleization/#summaries-and-expansions)
 
 
 questions:
@@ -87,16 +91,42 @@ questions:
 2. how is randao seeded initially? Is there a higher chance of bias?
 3. how much effort do we save for light clients by not choosing fisher yates shuffle?
 
+### Weak Subjectivity [June 18 - 20]
+
+[weak subjectivity period](https://www.symphonious.net/2019/11/27/exploring-ethereum-2-weak-subjectivity-period/) - [Weak subjectivity in Eth2.0](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2) - [https://ethresear.ch/t/weak-subjectivity-under-the-exit-queue-model/5187](https://ethresear.ch/t/weak-subjectivity-under-the-exit-queue-model/5187) - [abstract explanation of weak subjectivity](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity)
+
+This is a reading guide, start reading from point 0, don't skip reading any point. Hopefully this is the fastest knowledge transfer for you on the topic.
+
+0. First read adrian's blog completely
+1. adrian defines the problem from high level view. Once you understand the view, it must be clear that we try to attack a person who is syncing from a past block (let's say C0). The set of validators active at C0 is V0. This person is gonna want to know what is the next finalized checkpoint. For this person any checkpoint block that has signatures of 2/3 of validators in V0 is the next checkpoint. Now, since the entire network is running ahead of this person, validators who have exited after C0 till the current head can choose to act maliciously. Remember that this person doesn't know that these validators have exited becuase he is still at C0. Therefore, such a malicious act will not create slashing because the validators have already exited, just NOT for the person who is syncing from C0 (or before C0). If these "exited" validators form 1/3 of the validator set V0 (at C0 i.e in the past) they can create a conflicting finalized checkpoint.
+2. In adrian's view none of the validators will get slashed because the attack is played out in the past. What if the attacker took control of the current validator set and wants to launch the same attack at the current head. The attacker would have to give up 1/3 of his validators (that he took control of or has control of). This is a classic discouragement attack discussed very often.
+3. aditya and vitalik take the question one level higher. They simply ask, what if the attacker wanted to launch the same attack NOT on the current head(losing 1/3 validators) NEITHER so far back in the past(losing no validators) but somewhere in between. To make it clear this somewhere in between is still in the past, and the number of validators who have exited from this "somewhere in between" till the current head is lesser than 1\3 of the validator set at "somewhere in between". So the attacker can use these exited validators along with current non exited validators and launch the attack. In this case the attacker would lose a little lesser than 1\3 validators. 
+4. In reality, the attacker can also take advantage of activations that happen directly on the conflicting fork. Aditya and Vitalik's post take into account even activations. We should too and we will when we read their blogs but let's understand the gist of the problem we are trying to solve.
+5. Aditya and Vitalik, parameterize "somewhere in between" based on how many validators will get slashed; they put it as (1/3 - D). After parameterizing, they ask where can the attacker place this attack in the past, "at the earliest" (as close to the current head but still in the past). There are two unknown's in the question, D and the location of the attack. With two unknowns you usually get an algebraic equation out and you try to put different values in it and plot a graph or a table.  
+6. Check only the table in aditya's blog. There is an extra unknown, validator set size, this is because the exit rates and activation rates are dependent on the validator size.
+7. Now directly read the "calcuating the weak subjectivity period [complete version]" section in aditya's blog. If some of the mathematical equations don't make sense then maybe the points below help you.
+    * The chain is forkful and the attacker takes advantage of existing forks to finalize a different block.
+    * `|Q1 ∩ Q2|` are the number of validators who voted for both the forks, therefore these are the validators that wanted to create a conflicting checkpoint. Hence they will be slashed. We want the number to be lesser than or equal to `(1/3 - D) * |V1|`.
+    * `|Q1| ≥ 2/3 * |V1|` and `|Q2| ≥ 2/3 * |V2|` is the base conditizon to finalize any checkpoint.
+    * TODO: add more explanations for other mathematical expressions.
+
+### Gasper [June 17, June 21]
+
+[TODO] Didn't quite take notes but summarizing the learning sometime later would be useful as a refresher
+
+
 ### Side Quests: Deploying a node over a VPS
 
-TODO (everything )
-preimages
-pruning
-beacon backfilling
-execution client initially requires consensus client then it starts syncing and doesn't require it anymore. actualy the other way is true, the beacon chain requires the execution client because the head is optimistic. What is this process?
-if i have finality why do i need to download the entire chain
-state download and chain download are independent processes
+1. What are preimages? these are the preimages to the hashes in the state trie. If we store preimages we save computational work in the future. Hence clients also have an option to store or not to store preimages while syncing.
+2. what is pruning? pruning is removing stale data from the state trie. 
+3. state download and chain download are independent processes, why is that? chain download downloads headers verifies them and then downloads receipts and block bodies and verifies them against the headers. state download is downloading the state.
+4. if i have finality why do i need to download the entire chain?
+5. What is beacon backfilling?
+6. execution client initially requires consensus client then it starts syncing and doesn't require it anymore. After which the beacon chain requires the execution client because the head is optimistic. What is this process? beacon chain using checkpoint sync gives a target to execution client that it thinks is the tip of the chain. the execution client then starts from the target till the genesis(or whatever the local chain is from the last sync) to verify the entire chain and report to the beacon chain that the target indeed is correct. once this signal is given the beacon chain then follows the tip.
 
+### Interesting Attacks
+1. https://collective.flashbots.net/t/post-mortem-april-3rd-2023-mev-boost-relay-incident-and-related-timing-issue/1540
+2. https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs
 
 
 
