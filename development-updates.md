@@ -15,7 +15,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Abhimanyu](https://github.com/ABresting)       |                                       | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) |        |
 | [Aditya Gupta](https://github.com/1010adigupta) |                                       | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       |        |
 | [AkshatGada](https://github.com/AkshatGada)     | [Update 0](https://shorturl.at/uGf6M) | [Update 1](https://shorturl.at/kyukr)                           |        |
-| [Amin](github.com/amintalebi)                   |                                       | [Update 1](https://hackmd.io/@amintalebi/r1_tfDTBR)             |        | https://hackmd.io/iaAFwrKNQ1-1YX0t5ts2Ow
+| [Amin](github.com/amintalebi)                   |                                       | [Update 1](https://hackmd.io/@amintalebi/r1_tfDTBR)             |        [Update 2](https://hackmd.io/iaAFwrKNQ1-1YX0t5ts2Ow) | 
 |[Another Dev](https://github.com/Another-DevX) | |[Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) |
 | [Ashely Yan](https://github.com/AshliaYan)                   |                                                                                                                                                  | [Update 1](https://hackmd.io/@Ashelyyan/SyRBmmorC)              |        |
 | [Ashen](https://github.com/y1cunhui)                         | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                                                                                                    |                                                                 |        |
