@@ -18,4 +18,4 @@ I'll posting my weekly updates and notes on my [hackmd](https://hackmd.io/@kira5
 
 * [Week 0](https://hackmd.io/@kira50/rJkBMnK7C)
 * [Week 1](https://hackmd.io/@kira50/BJKhLyTH0)
-
+* [Week 2](https://hackmd.io/@kira50/SJ9zumwU0)

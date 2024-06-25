@@ -38,7 +38,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Hangleang](https://github.com/hangleang)                    | [Update 0](https://hackmd.io/@hangleang/epf-week-0)             | [Update 1](https://hackmd.io/@hangleang/epf5-week1)             | [Update 2](https://hackmd.io/@hangleang/epf5-week2)             |
 | [Hopinheimer](https://github.com/hopinheimer)                | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0) | [Update 1](https://hackmd.io/@hopin232/ByzLNe5BR)               |    [Update 2](https://hackmd.io/@hopin232/Hy5zHWVIA)                                                                    |
 | [Jihoon Song](https://github.com/jihoonsong)                 |                                                                 | [Update 1](https://hackmd.io/@jihoonsong/Sy9J452HC)             | [Update 2](https://hackmd.io/@jihoonsong/HksD5sCrR)             |
-| [kira](https://github.com/shyam-patel-kira)                  | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 | [Update 1](https://hackmd.io/@kira50/BJKhLyTH0)                 |                                                                 |
+| [kira](https://github.com/shyam-patel-kira)                  | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 | [Update 1](https://hackmd.io/@kira50/BJKhLyTH0)                 | [Update 2](https://hackmd.io/@kira50/SJ9zumwU0)                 |
 | [Krishang](https://github.com/kamuik16)                      |                                                                 | [Update 1](https://hackmd.io/@kamuik16/epf-week-1)              | [Update 2](https://hackmd.io/@kamuik16/epf-week-2)              |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 | [Update 1](https://hackmd.io/@Ktl-XV/EPF5-W1)                   |                                                                 |
 | [Léa Na](https://github.com/lean-apple)                      |                                                                 | [Update 1](https://hackmd.io/@leanapple/epf-5-week-1)           |                                                                 |
@@ -60,6 +60,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          |                                                                 | [Update 1](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/SkD8TX3SR) | [Update 2](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/H14Zog8U0) |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 | [Update 1](https://hackmd.io/T-YywoxeRaOQ9AwmnUSAHA)            |                                                                 |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 | [Update 1](https://hackmd.io/@zarathustra/S1JfV0bLC)            | [Update 2](https://hackmd.io/@zarathustra/HJsnsyv80)            |
+
 
 ## Phase 2: Deep dive
 
