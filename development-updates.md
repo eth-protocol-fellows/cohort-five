@@ -16,7 +16,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Aditya Gupta](https://github.com/1010adigupta)              |                                                                 | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       | [Update 2](https://hackmd.io/f45sFCcLQ32bxdKGRSCGAw)            |
 | [AkshatGada](https://github.com/AkshatGada)                  | [Update 0](https://shorturl.at/uGf6M)                           | [Update 1](https://shorturl.at/kyukr)                           |                                                                 |
 | [Amin](github.com/amintalebi)                                |                                                                 | [Update 1](https://hackmd.io/@amintalebi/r1_tfDTBR)             | [Update 2](https://hackmd.io/iaAFwrKNQ1-1YX0t5ts2Ow)            |
-| [Another Dev](https://github.com/Another-DevX)               |                                                                 | [Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) |                                                                 |
+|[Another Dev](https://github.com/Another-DevX)                |                                                                 |[Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) |  [Update 2](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/HJtgF9IUC) |
 | [Ashely Yan](https://github.com/AshliaYan)                   |                                                                 | [Update 1](https://hackmd.io/@Ashelyyan/SyRBmmorC)              | [Update 2](https://hackmd.io/@Ashelyyan/BJPffq-IR)              |
 | [Ashen](https://github.com/y1cunhui)                         | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                   |                                                                 |                                                                 |
 | [Bastin](https://github.com/Inspector-Butters)               | [Update 0](https://hackmd.io/@Bastin/HJ6hOLQHC)                 | [Update 1](https://hackmd.io/@Bastin/HyM3AmnrA)                 | [Update 2](https://hackmd.io/@Bastin/H1JgDZLU0)                 |
@@ -87,5 +87,3 @@ The final weeks of the cohort should mark the finalization of your project. Subm
 | Name/GH | Final dev update | Project presentation |
 | ------- | ---------------- | -------------------- |
 |         |                  |                      |
-
-
