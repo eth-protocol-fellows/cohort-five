@@ -19,7 +19,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Another Dev](https://github.com/Another-DevX)               |                                                                 | [Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) |                                                                 |
 | [Ashely Yan](https://github.com/AshliaYan)                   |                                                                 | [Update 1](https://hackmd.io/@Ashelyyan/SyRBmmorC)              | [Update 2](https://hackmd.io/@Ashelyyan/BJPffq-IR)              |
 | [Ashen](https://github.com/y1cunhui)                         | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                   |                                                                 |                                                                 |
-| [Bastin](https://github.com/Inspector-Butters)               | [Update 0](https://hackmd.io/@Bastin/HJ6hOLQHC)                 | [Update 1](https://hackmd.io/@Bastin/HyM3AmnrA)                 |                                                                 |
+| [Bastin](https://github.com/Inspector-Butters)               | [Update 0](https://hackmd.io/@Bastin/HJ6hOLQHC)                 | [Update 1](https://hackmd.io/@Bastin/HyM3AmnrA)                 | [Update 2](https://hackmd.io/@Bastin/H1JgDZLU0)                 |
 | [BobLiu](https://github.com/Akagi201)                        | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)       | [Update 1](https://hackmd.io/@Akagi201/epf-cohort5-week1)       |                                                                 |
 | [Boma Naps](https://github.com/bomanaps)                     |                                                                 | [Update 1](https://hackmd.io/@u1hkHdIvSFKF7TfMsZSBow/SJQorxsrR) |                                                                 |
 | [Caleb](https://github.com/Tomi-3-0)                         |                                                                 | [Update 1](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/BkoLPPdr0) | [Update 2](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/HJ9fyTVLC) |
@@ -62,7 +62,6 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 | [Update 1](https://hackmd.io/T-YywoxeRaOQ9AwmnUSAHA)            |                                                                 |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 | [Update 1](https://hackmd.io/@zarathustra/S1JfV0bLC)            | [Update 2](https://hackmd.io/@zarathustra/HJsnsyv80)            |
 
-
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)
@@ -87,3 +86,5 @@ The final weeks of the cohort should mark the finalization of your project. Subm
 | Name/GH | Final dev update | Project presentation |
 | ------- | ---------------- | -------------------- |
 |         |                  |                      |
+
+
