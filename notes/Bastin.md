@@ -17,3 +17,4 @@ Here you can see my weekly updates as well in the [`development-updates.md`](htt
 
 - [Week 0](https://hackmd.io/@Bastin/HJ6hOLQHC)
 - [Week 1](https://hackmd.io/@Bastin/HyM3AmnrA)
+- [Week 2](https://hackmd.io/@Bastin/H1JgDZLU0)
