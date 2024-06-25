@@ -60,8 +60,9 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Scar Face](https://github.com/scarfacedotcom)               | [Update 0](https://hackmd.io/@0xScarFace/week0)                 | [Update 1](https://hackmd.io/@0xScarFace/week_1)                | [Update 2](https://hackmd.io/@0xScarFace/week2)                 |
 | [ShyamPatel](github.com/shyam-patel-kira)                    | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |                                                                 |                                                                 |
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          |                                                                 | [Update 1](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/SkD8TX3SR) | [Update 2](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/H14Zog8U0) |
-| [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 | [Update 1](https://hackmd.io/T-YywoxeRaOQ9AwmnUSAHA)            |                                                                 |
+| [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 | [Update 1](https://hackmd.io/T-YywoxeRaOQ9AwmnUSAHA)            |  [Update 2](https://hackmd.io/me9QShXET_SjGLHMbeahjw)           |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 | [Update 1](https://hackmd.io/@zarathustra/S1JfV0bLC)            | [Update 2](https://hackmd.io/@zarathustra/HJsnsyv80)            |
+
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)
