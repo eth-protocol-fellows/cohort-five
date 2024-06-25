@@ -13,7 +13,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                 | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        |                                                                 |
 | [0xSulpiride](https://github.com/0xSulpiride)                |                                                                 | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            | [Update 2](https://hackmd.io/@sulpiride/BJLYckU80)              |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) |                                                                 |
-| [Aditya Gupta](https://github.com/1010adigupta)              |                                                                 | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       | [Update 2](https://hackmd.io/f45sFCcLQ32bxdKGRSCGAw)    |
+| [Aditya Gupta](https://github.com/1010adigupta)              |                                                                 | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       | [Update 2](https://hackmd.io/f45sFCcLQ32bxdKGRSCGAw)            |
 | [AkshatGada](https://github.com/AkshatGada)                  | [Update 0](https://shorturl.at/uGf6M)                           | [Update 1](https://shorturl.at/kyukr)                           |                                                                 |
 | [Amin](github.com/amintalebi)                                |                                                                 | [Update 1](https://hackmd.io/@amintalebi/r1_tfDTBR)             |                                                                 |
 | [Another Dev](https://github.com/Another-DevX)               |                                                                 | [Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) |                                                                 |
@@ -44,7 +44,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Léa Na](https://github.com/lean-apple)                      |                                                                 | [Update 1](https://hackmd.io/@leanapple/epf-5-week-1)           |                                                                 |
 | [MaxDav](https://github.com/MaximeDavin)                     |                                                                 | [Update 1](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/r1KDDcaSR) |                                                                 |
 | [MeldSun](https://github.com/meldsun0)                       | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) |                                                                 |                                                                 |
-| [mrk1tty](https://github.com/garv-aga)                       |                                                                 | [Update 1](https://hackmd.io/@mrk1tty/B1rZCb9HA)                |                                                                 |
+| [mrk1tty](https://github.com/garv-aga)                       |                                                                 | [Update 1](https://hackmd.io/@mrk1tty/B1rZCb9HA)                | [Update 2](https://hackmd.io/@mrk1tty/B1T_N1OUA)                |
 | [Rahul](https://github.com/guha-rahul)                       |                                                                 | [Update 1](https://hackmd.io/6B54Ei-iTf6jtZ1lYEH24g)            |                                                                 |
 | [raxhvl](https://github.com/raxhvl)                          |                                                                 | [Update 1](https://epf.raxhvl.com/week/1)                       |                                                                 |
 | [Nilav](https://github.com/gerceboss)                        |                                                                 | [Update 1](https://hackmd.io/@gerceboss/rkEjSyiBA)              | [Update 2](https://hackmd.io/@gerceboss/r1ObxCUUC)              |
@@ -66,7 +66,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)
 
 | Name/GH | Week 3 | Week 4 | Week 5 | Project proposal |
-|---------|--------|--------|--------|------------------|
+| ------- | ------ | ------ | ------ | ---------------- |
 |         |        |        |        |                  |
 
 ## Phase 3: Execution
@@ -74,7 +74,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
 
 | Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
-|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
+| ------- | ------ | ------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
@@ -83,5 +83,5 @@ The actual project development is the main part of the program. Post your regula
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
 | Name/GH | Final dev update | Project presentation |
-|---------|------------------|----------------------|
+| ------- | ---------------- | -------------------- |
 |         |                  |                      |
