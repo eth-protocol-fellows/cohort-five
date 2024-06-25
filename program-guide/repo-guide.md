@@ -1,4 +1,4 @@
-# Contributing to The Protocol Repository
+# Participate in the program
 
 As a participant in the program, you should be using this repository. The goal of this repo is to be:
 
@@ -9,7 +9,7 @@ As a participant in the program, you should be using this repository. The goal o
 
 Please, be open with anything you wish to improve about these processes. Feel free to be bold and simply open a pull request with the changes and we can discuss them there.
 
-## Publishing development updates
+## Development updates
 
 One of the core goals of this program is to improve your technical writing and communication skills. One key way to do this is to get comfortable telling people about what you are working on. One of the expectations for program participants is a regularly cadenced development update. For the duration of the program, all participants should publish a development update at least once every two weeks.
 
@@ -35,7 +35,7 @@ You should:
 
 ### Using git for collaboration
 
-This cohort is designed to give you an experience of real-world collaboration in open-source software (FOSS) development using [Git](https://git-scm.com/video/what-is-version-control). Git tracks changes to code, making collaboration on projects seamless, especially in FOSS where public repositories are the norm. Consider using the Git command line interface (CLI) over using GitHub's web interface. It's an important skill you can learn during the cohort that will serve you well throughout your career. Check out the resources on [using git in the epf.wiki](https://epf.wiki/#/wiki/dev/cs-resources?id=terminals-shell-scripting-and-version-control).
+The cohort coordination using a public repository is also meant to give you an experience of real-world collaboration in free open-source software (FOSS) development using [Git](https://git-scm.com/video/what-is-version-control). Git tracks changes to code, making collaboration on projects seamless, especially in FOSS where public repositories are the norm. Consider using the Git command line interface (CLI) over using GitHub's web interface. It's an important skill you can learn during the cohort that will serve you well throughout your career. Check out the resources on [using git in the epf.wiki](https://epf.wiki/#/wiki/dev/cs-resources?id=terminals-shell-scripting-and-version-control).
 
 #### 1. Setting up your local repository
 
@@ -51,7 +51,7 @@ git remote add epf5 https://github.com/eth-protocol-fellows/cohort-five.git
 ```
 This completes your one time setup of the repository.
 
-#### 2. Keeping your local repository in up to date
+#### 2. Keeping your local repository up to date
 
 With the upstream added, you can keep your local repo updated by directly pulling from epf5 upstream. If you already added your own commits on top of it, rebase it before opening a PR:
 ```
