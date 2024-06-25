@@ -13,3 +13,4 @@ Looking forward to collaborating and learning with all of you!
 
 # Weekly Updates
 - [Week 1](https://hackmd.io/@zarathustra/S1JfV0bLC)
+- [Week 2](https://hackmd.io/@zarathustra/HJsnsyv80)
