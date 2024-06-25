@@ -23,7 +23,6 @@ Here is an overview of core developers and researchers who are aware of EPF and 
 | Axic                     | Ipsilon                    | EVM, EOF, Solidity compiler                                   |
 | Fredrik                  | EF Security Research       | General Security                                              |
 | Sina                     | Geth                       | Execution Layer, EVM                                          |
-| Hsiao-Wei Wang           | EF Consensus Research      | Consensus Layer                                               |
 | Alex Stokes              | EF Consensus Research      | Consensus layer, MEV, (consensus layer) light clients         |
 | Barnabé Monnot           | EF Robust Incentives Group | Cryptoeconomics, economic modeling, data science              |
 | Ignacio                  | Stateless team             | Verkle Trees                                                  |
