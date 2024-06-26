@@ -64,11 +64,60 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 
 ## Phase 2: Deep dive
 
-With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md)
+With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
 
-| Name/GH | Week 3 | Week 4 | Week 5 | Project proposal |
-| ------- | ------ | ------ | ------ | ---------------- |
-|         |        |        |        |                  |
+| Name/GH                                                      | Week 3 | Week 4 | Week 5 | Project proposal |
+| ------------------------------------------------------------ | ------ | ------ | ------ | ---------------- |
+| [0xSulpiride](https://github.com/0xSulpiride)                |        |        |        |                  |
+| [Abhimanyu](https://github.com/ABresting)                    |        |        |        |                  |
+| [Aditya Gupta](https://github.com/1010adigupta)              |        |        |        |                  |
+| [AkshatGada](https://github.com/AkshatGada)                  |        |        |        |                  |
+| [Amin](github.com/amintalebi)                                |        |        |        |                  |
+| [Another Dev](https://github.com/Another-DevX)               |        |        |        |                  |
+| [Ashely Yan](https://github.com/AshliaYan)                   |        |        |        |                  |
+| [Ashen](https://github.com/y1cunhui)                         |        |        |        |                  |
+| [Bastin](https://github.com/Inspector-Butters)               |        |        |        |                  |
+| [BobLiu](https://github.com/Akagi201)                        |        |        |        |                  |
+| [Boma Naps](https://github.com/bomanaps)                     |        |        |        |                  |
+| [Caleb](https://github.com/Tomi-3-0)                         |        |        |        |                  |
+| [Chirag](https://github.com/chirag-parmar)                   |        |        |        |                  |
+| [ChloeZhu](https://github.com/Chloezhu010)                   |        |        |        |                  |
+| [Cloud](https://github.com/0xClouds/)                        |        |        |        |                  |
+| [DanGoron](https://github.com/gorondan)                      |        |        |        |                  |
+| [Dirk Jäckel](https://github.com/biafra23)                   |        |        |        |                  |
+| [Dsorken](https://github.com/Dsorken)                        |        |        |        |                  |
+| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |        |        |        |                  |
+| [georgesheth](https://github.com/georgesheth)                |        |        |        |                  |
+| [ghili](https://github.com/ghiliweld)                        |        |        |        |                  |
+| [Glory Agatevure](https://github.com/gconnect)               |        |        |        |                  |
+| [jsvisa](https://github.com/jsvisa)                          |        |        |        |                  |
+| [Hamid Bateni](https://github.com/irnb)                      |        |        |        |                  |
+| [Hangleang](https://github.com/hangleang)                    |        |        |        |                  |
+| [Hopinheimer](https://github.com/hopinheimer)                |        |        |        |                  |
+| [Jihoon Song](https://github.com/jihoonsong)                 |        |        |        |                  |
+| [kira](https://github.com/shyam-patel-kira)                  |        |        |        |                  |
+| [Krishang](https://github.com/kamuik16)                      |        |        |        |                  |
+| [Ktl_XV](https://github.com/ktl-xv)                          |        |        |        |                  |
+| [Léa Na](https://github.com/lean-apple)                      |        |        |        |                  |
+| [MaxDav](https://github.com/MaximeDavin)                     |        |        |        |                  |
+| [MeldSun](https://github.com/meldsun0)                       |        |        |        |                  |
+| [Nikhil](https://github.com/nikhilkumar1612)                 |        |        |        |                  |
+| [mrk1tty](https://github.com/garv-aga)                       |        |        |        |                  |
+| [Rahul](https://github.com/guha-rahul)                       |        |        |        |                  |
+| [raxhvl](https://github.com/raxhvl)                          |        |        |        |                  |
+| [Nilav](https://github.com/gerceboss)                        |        |        |        |                  |
+| [Richa](https://github.com/Richa-iitr)                       |        |        |        |                  |
+| [Rodrigo Herrera](https://github.com/)                       |        |        |        |                  |
+| [RoryArredondo](https://github.com/arredr2)                  |        |        |        |                  |
+| [Rose Jethani](https://github.com/rose2221)                  |        |        |        |                  |
+| [Rupam Dey](https://github.com/rupam-04)                     |        |        |        |                  |
+| [Saeid](github.com/xm0onh)                                   |        |        |        |                  |
+| [Sayan](https://github.com/threehrsleep)                     |        |        |        |                  |
+| [Scar Face](https://github.com/scarfacedotcom)               |        |        |        |                  |
+| [ShyamPatel](github.com/shyam-patel-kira)                    |        |        |        |                  |
+| [Siddharth Vaderaa](https://github.com/SiddharthV1)          |        |        |        |                  |
+| [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |        |        |        |                  |
+| [Zarathustra](https://github.com/Karrenbelt)                 |        |        |        |                  |
 
 ## Phase 3: Execution
 
