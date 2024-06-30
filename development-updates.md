@@ -110,7 +110,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Rodrigo Herrera](https://github.com/)                       |        |        |        |                  |
 | [RoryArredondo](https://github.com/arredr2)                  |        |        |        |                  |
 | [Rose Jethani](https://github.com/rose2221)                  |        |        |        |                  |
-| [Rupam Dey](https://github.com/rupam-04)                     |        |        |        |                  |
+| [Rupam Dey](https://github.com/rupam-04)                     | [Update 3](https://hackmd.io/@rupam-04/Week3)       |        |        |                  |
 | [Saeid](github.com/xm0onh)                                   |        |        |        |                  |
 | [Sayan](https://github.com/threehrsleep)                     |        |        |        |                  |
 | [Scar Face](https://github.com/scarfacedotcom)               |        |        |        |                  |
