@@ -89,7 +89,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |        |        |        |                  |
 | [georgesheth](https://github.com/georgesheth)                |        |        |        |                  |
 | [ghili](https://github.com/ghiliweld)                        |        |        |        |                  |
-| [Glory Agatevure](https://github.com/gconnect)               |        |        |        |                  |
+| [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)       |        |        |                  |
 | [jsvisa](https://github.com/jsvisa)                          |        |        |        |                  |
 | [Hamid Bateni](https://github.com/irnb)                      |        |        |        |                  |
 | [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3) |        |        |                  |
