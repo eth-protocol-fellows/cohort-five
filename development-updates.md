@@ -92,7 +92,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Glory Agatevure](https://github.com/gconnect)               |        |        |        |                  |
 | [jsvisa](https://github.com/jsvisa)                          |        |        |        |                  |
 | [Hamid Bateni](https://github.com/irnb)                      |        |        |        |                  |
-| [Hangleang](https://github.com/hangleang)                    |        |        |        |                  |
+| [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3) |        |        |                  |
 | [Hopinheimer](https://github.com/hopinheimer)                |        |        |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 |        |        |        |                  |
 | [kira](https://github.com/shyam-patel-kira)                  |        |        |        |                  |
