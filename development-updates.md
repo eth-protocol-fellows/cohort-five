@@ -94,7 +94,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Hamid Bateni](https://github.com/irnb)                      |        |        |        |                  |
 | [Hangleang](https://github.com/hangleang)                    |        |        |        |                  |
 | [Hopinheimer](https://github.com/hopinheimer)                |        |        |        |                  |
-| [Jihoon Song](https://github.com/jihoonsong)                 |        |        |        |                  |
+| [Jihoon Song](https://github.com/jihoonsong)                 |        |        |        | [Prototyping ePBS](/projects/prototyping-epbs.md) |
 | [kira](https://github.com/shyam-patel-kira)                  |        |        |        |                  |
 | [Krishang](https://github.com/kamuik16)                      |        |        |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |        |        |        |                  |
