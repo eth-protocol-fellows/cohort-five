@@ -22,7 +22,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Bastin](https://github.com/Inspector-Butters)               | [Update 0](https://hackmd.io/@Bastin/HJ6hOLQHC)                 | [Update 1](https://hackmd.io/@Bastin/HyM3AmnrA)                 | [Update 2](https://hackmd.io/@Bastin/H1JgDZLU0)                 |
 | [BobLiu](https://github.com/Akagi201)                        | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)       | [Update 1](https://hackmd.io/@Akagi201/epf-cohort5-week1)       |                                                                 |
 | [Boma Naps](https://github.com/bomanaps)                     |                                                                 | [Update 1](https://hackmd.io/@u1hkHdIvSFKF7TfMsZSBow/SJQorxsrR) | [Update 2](https://hackmd.io/@bomanaps/SkzpTHEIA)               | 
-| [Caleb](https://github.com/Tomi-3-0)                         |                                                                 | [Update 1](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/BkoLPPdr0) | [Update 2](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/HJ9fyTVLC) |
+| [Caleb](https://github.com/Tomi-3-0)                         |                                                                 | [Update 1](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/BkoLPPdr0) | [Update 2](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/HJ9fyTVLC) | 
 | [Chirag](https://github.com/chirag-parmar)                   | [Update 0](https://hackmd.io/@chirag-parmar/S13p6uVBR)          | [Update 1](https://hackmd.io/@chirag-parmar/r1kTC_ar0)          | [Update 2](https://hackmd.io/@chirag-parmar/rycHC9ULA)          |
 | [ChloeZhu](https://github.com/Chloezhu010)                   | [Update 0](https://hackmd.io/@chloezhu/HJpABlzBR)               |                                                                 |                                                                 |
 | [Cloud](https://github.com/0xClouds/)                        | [Update 0](https://hackmd.io/@RkzKp199Qb2WyCcgr-HMNA/rkCLfmpSR) | [Update 1](https://hackmd.io/@RkzKp199Qb2WyCcgr-HMNA/rJVVKd8IR) |                                                                 |
@@ -79,7 +79,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Bastin](https://github.com/Inspector-Butters)               |        |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        |        |        |        |                  |
 | [Boma Naps](https://github.com/bomanaps)                     |        |        |        |                  |
-| [Caleb](https://github.com/Tomi-3-0)                         |        |        |        |                  |
+| [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA)       |        |        |                  |
 | [Chirag](https://github.com/chirag-parmar)                   |        |        |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |        |        |        |                  |
 | [Cloud](https://github.com/0xClouds/)                        |        |        |        |                  |
