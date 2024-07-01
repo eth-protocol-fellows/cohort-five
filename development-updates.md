@@ -85,7 +85,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Cloud](https://github.com/0xClouds/)                        |        |        |        |                  |
 | [DanGoron](https://github.com/gorondan)                      |        |        |        |                  |
 | [Dirk Jäckel](https://github.com/biafra23)                   |        |        |        |                  |
-| [Dsorken](https://github.com/Dsorken)                        |        |        |        |                  |
+| [Dsorken](https://github.com/Dsorken)                        |[Update 3](https://hackmd.io/@VgS_FqIfRay_4wp6pMBEgw/HJ9rQ0kD0)|        |        |                  |
 | [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |        |        |        |                  |
 | [georgesheth](https://github.com/georgesheth)                |        |        |        |                  |
 | [ghili](https://github.com/ghiliweld)                        |        |        |        |                  |
