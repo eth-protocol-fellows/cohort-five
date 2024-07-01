@@ -79,7 +79,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 |        |        |                  |
 | [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)                |        |        |                  |
 | [raxhvl](https://github.com/raxhvl)                          |                                                                 |        |        |                  |
-| [Nilav](https://github.com/gerceboss)                        |                                                                 |        |        |                  |
+| [Nilav](https://github.com/gerceboss)                        |        [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)                                                         |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
 | [Rodrigo Herrera](https://github.com/)                       |                                                                 |        |        |                  |
 | [RoryArredondo](https://github.com/arredr2)                  | [Update 3](https://hackmd.io/@arredr2/Bkehft2IR)                |        |        |                  |
