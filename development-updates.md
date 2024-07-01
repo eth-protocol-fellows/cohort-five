@@ -84,6 +84,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [ChloeZhu](https://github.com/Chloezhu010)                   |        |        |        |                  |
 | [Cloud](https://github.com/0xClouds/)                        |        |        |        |                  |
 | [DanGoron](https://github.com/gorondan)                      |        |        |        |                  |
+| [Daniel Knopik](https://github.com/dknopik)                  | [Update 3](https://hackmd.io/@dknopik/epf-week3) |        |        |                  |
 | [Dirk Jäckel](https://github.com/biafra23)                   |        |        |        |                  |
 | [Dsorken](https://github.com/Dsorken)                        |        |        |        |                  |
 | [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |        |        |        |                  |
