@@ -86,7 +86,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [DanGoron](https://github.com/gorondan)                      |        |        |        |                  |
 | [Dirk Jäckel](https://github.com/biafra23)                   |        |        |        |                  |
 | [Dsorken](https://github.com/Dsorken)                        |        |        |        |                  |
-| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |        |        |        |                  |
+| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) | [Update 3](https://hackmd.io/@katya-blockchain-dev/epf5-week-3)       |        |        |                  |
 | [georgesheth](https://github.com/georgesheth)                |        |        |        |                  |
 | [ghili](https://github.com/ghiliweld)                        |        |        |        |                  |
 | [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)       |        |        |                  |
