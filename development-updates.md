@@ -78,7 +78,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ashen](https://github.com/y1cunhui)                         |                                                                 |        |        |                  |
 | [Bastin](https://github.com/Inspector-Butters)               |                                                                 |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        |                                                                 |        |        |                  |
-| [Boma Naps](https://github.com/bomanaps)                     |  [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)                                                              |        |        |                  |
+| [Boma Naps](https://github.com/bomanaps)                     |  [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)              |        |        |                  |
 | [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA) |        |        |                  |
 | [Chirag](https://github.com/chirag-parmar)                   |                                                                 |        |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |                                                                 |        |        |                  |
@@ -92,7 +92,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [ghili](https://github.com/ghiliweld)                        |                                                                 |        |        |                  |
 | [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)               |        |        |                  |
 | [jsvisa](https://github.com/jsvisa)                          | [Update 3](https://hackmd.io/@jsvisa/epf5-week3)                |        |        |                  |
-| [Hamid Bateni](https://github.com/irnb)                      |                                                                 |        |        |                  |
+| [Hamid Bateni](https://github.com/irnb)                      | [Update 3](https://hackmd.io/@irnb/epf_week3)                   |        |        |                  |
 | [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3)             |        |        |                  |
 | [Hopinheimer](https://github.com/hopinheimer)                |                                                                 |        |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR)             |        |        |                  |
@@ -106,7 +106,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 |        |        |                  |
 | [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)                |        |        |                  |
 | [raxhvl](https://github.com/raxhvl)                          |                                                                 |        |        |                  |
-| [Nilav](https://github.com/gerceboss)                        |        [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)                                                         |        |        |                  |
+| [Nilav](https://github.com/gerceboss)                        |        [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)       |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
 | [Rodrigo Herrera](https://github.com/)                       |                                                                 |        |        |                  |
 | [RoryArredondo](https://github.com/arredr2)                  | [Update 3](https://hackmd.io/@arredr2/Bkehft2IR)                |        |        |                  |
