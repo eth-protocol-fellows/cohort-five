@@ -79,7 +79,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Bastin](https://github.com/Inspector-Butters)               |        |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        |        |        |        |                  |
 | [Boma Naps](https://github.com/bomanaps)                     |        |        |        |                  |
-| [Caleb](https://github.com/Tomi-3-0)                         |        |        |        |                  |
+| [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA)       |        |        |                  |
 | [Chirag](https://github.com/chirag-parmar)                   |        |        |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |        |        |        |                  |
 | [Cloud](https://github.com/0xClouds/)                        |        |        |        |                  |
