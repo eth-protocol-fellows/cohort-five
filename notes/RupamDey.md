@@ -11,3 +11,5 @@ My primary interest lies within the Consensus Layer, Cryptography and Verkle. I 
 I'll posting my weekly updates on my [hackmd](https://hackmd.io/@rupam-04)
 
 * [Week 0 and Week 1](https://hackmd.io/@rupam-04/week_0_and_week_1)
+* [Week 2](https://hackmd.io/@rupam-04/Week2)
+* [Week 3](https://hackmd.io/@rupam-04/Week3)
