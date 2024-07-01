@@ -94,7 +94,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [jsvisa](https://github.com/jsvisa)                          | [Update 3](https://hackmd.io/@jsvisa/epf5-week3)                |        |        |                  |
 | [Hamid Bateni](https://github.com/irnb)                      | [Update 3](https://hackmd.io/@irnb/epf_week3)                   |        |        |                  |
 | [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3)             |        |        |                  |
-| [Hopinheimer](https://github.com/hopinheimer)                |                                                                 |        |        |                  |
+| [Hopinheimer](https://github.com/hopinheimer)                | [Update 3](https://hackmd.io/@hopin232/HyIxzVgDA)                                           |        |        |                  |
 | [Ifeoluwa Oderinde](https://github.com/owanikin)             | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJAO40qUC) |        |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR)             |        |        |                  |
 | [kira](https://github.com/shyam-patel-kira)                  |                                                                 |        |        |                  |
