@@ -51,7 +51,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ashen](https://github.com/y1cunhui)                         |                                                                 |        |        |                  |
 | [Bastin](https://github.com/Inspector-Butters)               |                                                                 |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        |                                                                 |        |        |                  |
-| [Boma Naps](https://github.com/bomanaps)                     |                                                                 |        |        |                  |
+| [Boma Naps](https://github.com/bomanaps)                     |  [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)                                                              |        |        |                  |
 | [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA) |        |        |                  |
 | [Chirag](https://github.com/chirag-parmar)                   |                                                                 |        |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |                                                                 |        |        |                  |
