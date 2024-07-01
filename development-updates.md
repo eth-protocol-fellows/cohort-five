@@ -115,7 +115,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Sayan](https://github.com/threehrsleep)                     |        |        |        |                  |
 | [Scar Face](https://github.com/scarfacedotcom)               |        |        |        |                  |
 | [ShyamPatel](github.com/shyam-patel-kira)                    |        |        |        |                  |
-| [Siddharth Vaderaa](https://github.com/SiddharthV1)          |        |        |        |                  |
+| [Siddharth Vaderaa](https://github.com/SiddharthV1)          | [Update 3](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/rkGyp1lDR) |        |        |                  |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |        |        |        |                  |
 | [Zarathustra](https://github.com/Karrenbelt)                 |        |        |        |                  |
 
