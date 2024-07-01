@@ -112,7 +112,22 @@ This is a reading guide, start reading from point 0, don't skip reading any poin
 
 ### Gasper [June 17, June 21]
 
-[TODO] Didn't quite take notes but summarizing the learning sometime later would be useful as a refresher
+[TODO] Didn't quite take notes but summarizing the learning sometime later would be useful as a refresher 
+
+### Verkle Trees
+
+[ellitic curves cheatsheet](https://hackmd.io/@timofey/rJ8HP8Yaj#:~:text=Base%20field%20of%20an%20elliptic,%2C%20scalar%20multiplication%2C%20and%20pairing.) - [IPA](https://dankradfeist.de/ethereum/2021/07/27/inner-product-arguments.html) - [peep an eip](https://www.youtube.com/watch?v=RGJOQHzg3UQ) - [verkle tree structure](https://blog.ethereum.org/2021/12/02/verkle-tree-structure) - [eip itself](https://notes.ethereum.org/@vbuterin/verkle_tree_eip)
+
+- Verkle trees don't make ethereum stateless as a whole. it just allows there to be stateless clients by severely relaxing the bandwidth requirements to share state witnesses.
+
+### NATs
+
+[PAT (look at the very last console output)](https://study-ccna.com/port-address-translation-pat-configuration/) - [types of NATs](https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/217599-understand-nat-to-enable-peer-to-peer-co.html) - [infographic on usage of NATs by their types in the real world](https://web.archive.org/web/20200213115759/http://nattest.net.in.tum.de/results.php) - [autoNAT](https://github.com/libp2p/specs/blob/master/autonat/README.md) - [the only unambiguous source of truth](https://en.wikipedia.org/wiki/Network_address_translation)
+
+- NATs have a basic job; convert internal IP to external IP as the packet goes from internal network to the external network. There are different ways to do this, 
+    - every different internal IP gets mapped to unique external IP a.k.a one-to-one mapping
+    - for every internal IP you have the same external IP but different ports a.k.a one-to-many mapping or port address translation or NAT overloading
+    - there are further classifications that overlap at different degrees with the above two. The wikipedia article seems to be the only unambiguous source on the topic.
 
 
 ### Side Quests: Deploying a node over a VPS
