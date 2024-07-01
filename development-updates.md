@@ -74,7 +74,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [AkshatGada](https://github.com/AkshatGada)                  |        |        |        |                  |
 | [Amin](github.com/amintalebi)                                |        |        |        |                  |
 | [Another Dev](https://github.com/Another-DevX)               |        |        |        |                  |
-| [Ashely Yan](https://github.com/AshliaYan)                   |        |        |        |                  |
+| [Ashely Yan](https://github.com/AshliaYan)                   | [Update 3](https://hackmd.io/@Ashelyyan/Sk-DjQJDR)      |        |        |                  |
 | [Ashen](https://github.com/y1cunhui)                         |        |        |        |                  |
 | [Bastin](https://github.com/Inspector-Butters)               |        |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        |        |        |        |                  |
