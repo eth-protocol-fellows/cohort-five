@@ -104,7 +104,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [MeldSun](https://github.com/meldsun0)                       |        |        |        |                  |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |        |        |        |                  |
 | [mrk1tty](https://github.com/garv-aga)                       |        |        |        |                  |
-| [Rahul](https://github.com/guha-rahul)                       |        |        |        |                  |
+| [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)       |        |        |                  |
 | [raxhvl](https://github.com/raxhvl)                          |        |        |        |                  |
 | [Nilav](https://github.com/gerceboss)                        |        |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       |        |        |        |                  |
