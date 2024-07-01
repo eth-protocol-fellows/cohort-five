@@ -112,7 +112,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Rose Jethani](https://github.com/rose2221)                  |        |        |        |                  |
 | [Rupam Dey](https://github.com/rupam-04)                     |        |        |        |                  |
 | [Saeid](github.com/xm0onh)                                   |        |        |        |                  |
-| [Sayan](https://github.com/threehrsleep)                     |        |        |        |                  |
+| [Sayan](https://github.com/threehrsleep)                     | [Update 3](https://hackmd.io/@threehrsleep/epf_week3)       |        |        |                  |
 | [Scar Face](https://github.com/scarfacedotcom)               |        |        |        |                  |
 | [ShyamPatel](github.com/shyam-patel-kira)                    |        |        |        |                  |
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          |        |        |        |                  |
