@@ -41,7 +41,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [kira](https://github.com/shyam-patel-kira)                  | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 | [Update 1](https://hackmd.io/@kira50/BJKhLyTH0)                 | [Update 2](https://hackmd.io/@kira50/SJ9zumwU0)                 |
 | [Krishang](https://github.com/kamuik16)                      |                                                                 | [Update 1](https://hackmd.io/@kamuik16/epf-week-1)              | [Update 2](https://hackmd.io/@kamuik16/epf-week-2)              |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 | [Update 1](https://hackmd.io/@Ktl-XV/EPF5-W1)                   |                                                                 |
-| [Léa Na](https://github.com/lean-apple)                      |                                                                 | [Update 1](https://hackmd.io/@leanapple/epf-5-week-1)           |                                                                 |
+| [Léa Na](https://github.com/lean-apple)                      |                                                                 | [Update 1](https://hackmd.io/@leanapple/epf-5-week-1)           |  [Update 2](https://hackmd.io/@leanapple/epf-5-week-2)             |
 | [MaxDav](https://github.com/MaximeDavin)                     |                                                                 | [Update 1](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/r1KDDcaSR) | [Update 2](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/rJ1c4-w8A) |
 | [MeldSun](https://github.com/meldsun0)                       | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) |                                                                 |                                                                 |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |                                                                 |                                                                 | [Update 2](https://hackmd.io/@zTxe9ZSCTiOhard8DLV68A/rkzSKnULR) |
@@ -99,7 +99,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [kira](https://github.com/shyam-patel-kira)                  |        |        |        |                  |
 | [Krishang](https://github.com/kamuik16)                      |        |        |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |        |        |        |                  |
-| [Léa Na](https://github.com/lean-apple)                      |        |        |        |                  |
+| [Léa Na](https://github.com/lean-apple)                      | [Update 3](https://hackmd.io/@leanapple/epf5-week3) |        |        |                  |
 | [MaxDav](https://github.com/MaximeDavin)                     |        |        |        |                  |
 | [MeldSun](https://github.com/meldsun0)                       |        |        |        |                  |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |        |        |        |                  |
