@@ -28,9 +28,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Hopinheimer](https://github.com/hopinheimer)                | [Update 0](https://hackmd.io/@np8VhkKRRHanpT1vbtRQ4Q/ByAoT58Q0)                                                                                  |                                                                 |        |
 | [Krishang](https://github.com/kamuik16)                      |                                                                                                                                                  | [Update 1](https://hackmd.io/@kamuik16/SyVy4aKrR)               |        |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                                                                                                  | [Update 1](https://hackmd.io/@Ktl-XV/EPF5-W1)                   |        |
-
 | [Md Amaan ](https://github.com/Redidacove) | | [Update 1](https://hackmd.io/@SSF5yRZPR9iw2e_zAYQ_wg/HJ-vfiHB0) | |
-
 | [MeldSun](https://github.com/meldsun0) | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) | | |
 | [Richa](https://github.com/Richa-iitr) | | [Update 1](https://hackmd.io/@iri/HJLnintSR) | |
 | [RoryArredondo](https://github.com/arredr2) | [Update 0](https://hackmd.io/@arredr2/SyT0Tx2XC) | | |
