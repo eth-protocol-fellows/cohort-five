@@ -8,8 +8,11 @@ I'm looking forward to this EPF and I will try my best to produce value.
 
 Here in [this note](https://hackmd.io/@Bastin/r1oxkeNVR) I write down my thoughts and plans in an unorganized manner. this can be considered my thought process through out this program, and these notes are what will later on turn to the development updates.
 
-I have not yet decided on what to work on. at first I was keen on performance optimizations on the execution layer. specifically optimistic parallel execution of the transactions in the validators. but I then realized that it might not be valuable due to the way the protocol works.
-So I am looking around to find a suitable idea to work on. I will update this later on.
+After researching some potential projects, I started with [Light Client Server Support in Prysm](https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/project-ideas.md#prysm-light-client-support).
+
+Light Clients are an important part of decentralization in Ethereum. the allow users to run nodes on very low end devices and keep up with the chain. but of course there are trade offs.
+
+For this project the goal is to implement the needed functions for light clients in Prysm, for them to be able to use Prysm clients as well as Lodestar and Nimbus to connect to. A big part of the work had already been done by a previous contributor. But it is a bit outdated in comparison to the upgraded specs, so we need to check that the code is correct and also implement the remaining logic.
 
 ## Weekly Updates
 
@@ -18,3 +21,4 @@ Here you can see my weekly updates as well in the [`development-updates.md`](htt
 - [Week 0](https://hackmd.io/@Bastin/HJ6hOLQHC)
 - [Week 1](https://hackmd.io/@Bastin/HyM3AmnrA)
 - [Week 2](https://hackmd.io/@Bastin/H1JgDZLU0)
+- [Week 3](https://hackmd.io/@Bastin/By8UVwlPA)

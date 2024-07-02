@@ -9,14 +9,14 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started.
 
 | Name/GH                                                      | Week 0                                                          | Week 1                                                          | Week 2                                                          |
-|--------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+| ------------------------------------------------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                 | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        | [Update 2](https://hackmd.io/@0xpanicError/epf-update_2)        |
 | [0xSulpiride](https://github.com/0xSulpiride)                |                                                                 | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            | [Update 2](https://hackmd.io/@sulpiride/BJLYckU80)              |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) | [Update 2](https://hackmd.io/@ABresting/ryhHqf8LA)              |
 | [Aditya Gupta](https://github.com/1010adigupta)              |                                                                 | [Update 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?view)       | [Update 2](https://hackmd.io/f45sFCcLQ32bxdKGRSCGAw)            |
 | [AkshatGada](https://github.com/AkshatGada)                  | [Update 0](https://shorturl.at/uGf6M)                           | [Update 1](https://shorturl.at/kyukr)                           |                                                                 |
 | [Amin](github.com/amintalebi)                                |                                                                 | [Update 1](https://hackmd.io/@amintalebi/r1_tfDTBR)             | [Update 2](https://hackmd.io/iaAFwrKNQ1-1YX0t5ts2Ow)            |
-| [Another Dev](https://github.com/Another-DevX)               |                                                                 | [Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) | [Update 2](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/HJtgF9IUC) | 
+| [Another Dev](https://github.com/Another-DevX)               |                                                                 | [Update 1](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/BJUyECaSC) | [Update 2](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/HJtgF9IUC) |
 | [Ashely Yan](https://github.com/AshliaYan)                   |                                                                 | [Update 1](https://hackmd.io/@Ashelyyan/SyRBmmorC)              | [Update 2](https://hackmd.io/@Ashelyyan/BJPffq-IR)              |
 | [Ashen](https://github.com/y1cunhui)                         | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                   |                                                                 |                                                                 |
 | [Bastin](https://github.com/Inspector-Butters)               | [Update 0](https://hackmd.io/@Bastin/HJ6hOLQHC)                 | [Update 1](https://hackmd.io/@Bastin/HyM3AmnrA)                 | [Update 2](https://hackmd.io/@Bastin/H1JgDZLU0)                 |
@@ -41,7 +41,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [kira](https://github.com/shyam-patel-kira)                  | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 | [Update 1](https://hackmd.io/@kira50/BJKhLyTH0)                 | [Update 2](https://hackmd.io/@kira50/SJ9zumwU0)                 |
 | [Krishang](https://github.com/kamuik16)                      |                                                                 | [Update 1](https://hackmd.io/@kamuik16/epf-week-1)              | [Update 2](https://hackmd.io/@kamuik16/epf-week-2)              |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 | [Update 1](https://hackmd.io/@Ktl-XV/EPF5-W1)                   |                                                                 |
-| [Léa Na](https://github.com/lean-apple)                      |                                                                 | [Update 1](https://hackmd.io/@leanapple/epf-5-week-1)           |  [Update 2](https://hackmd.io/@leanapple/epf-5-week-2)             |
+| [Léa Na](https://github.com/lean-apple)                      |                                                                 | [Update 1](https://hackmd.io/@leanapple/epf-5-week-1)           | [Update 2](https://hackmd.io/@leanapple/epf-5-week-2)           |
 | [MaxDav](https://github.com/MaximeDavin)                     |                                                                 | [Update 1](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/r1KDDcaSR) | [Update 2](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/rJ1c4-w8A) |
 | [MeldSun](https://github.com/meldsun0)                       | [Update 0](https://hackmd.io/@3juAdBVCRtaXnRB_valWsA/SJb4ugVE0) |                                                                 |                                                                 |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |                                                                 |                                                                 | [Update 2](https://hackmd.io/@zTxe9ZSCTiOhard8DLV68A/rkzSKnULR) |
@@ -76,9 +76,9 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Another Dev](https://github.com/Another-DevX)               | [Update 3](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/Bk9f7MlvA) |        |        |                  |
 | [Ashely Yan](https://github.com/AshliaYan)                   | [Update 3](https://hackmd.io/@Ashelyyan/Sk-DjQJDR)              |        |        |                  |
 | [Ashen](https://github.com/y1cunhui)                         |                                                                 |        |        |                  |
-| [Bastin](https://github.com/Inspector-Butters)               |                                                                 |        |        |                  |
+| [Bastin](https://github.com/Inspector-Butters)               | [Update 3](https://hackmd.io/@Bastin/By8UVwlPA)                 |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        |                                                                 |        |        |                  |
-| [Boma Naps](https://github.com/bomanaps)                     |  [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)              |        |        |                  |
+| [Boma Naps](https://github.com/bomanaps)                     | [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)               |        |        |                  |
 | [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA) |        |        |                  |
 | [Chirag](https://github.com/chirag-parmar)                   | [Update 3](https://hackmd.io/@chirag-parmar/HJyYwEev0)          |        |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |                                                                 |        |        |                  |
@@ -107,7 +107,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 |        |        |                  |
 | [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)                |        |        |                  |
 | [raxhvl](https://github.com/raxhvl)                          |                                                                 |        |        |                  |
-| [Nilav](https://github.com/gerceboss)                        |        [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)       |        |        |                  |
+| [Nilav](https://github.com/gerceboss)                        | [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)              |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
 | [Rodrigo Herrera](https://github.com/)                       | [Update 3](https://hackmd.io/@rodrigoh/update3)                 |        |        |                  |
 | [RoryArredondo](https://github.com/arredr2)                  | [Update 3](https://hackmd.io/@arredr2/Bkehft2IR)                |        |        |                  |
@@ -126,7 +126,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
 
 | Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
-|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
+| ------- | ------ | ------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
@@ -135,5 +135,5 @@ The actual project development is the main part of the program. Post your regula
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
 | Name/GH | Final dev update | Project presentation |
-|---------|------------------|----------------------|
+| ------- | ---------------- | -------------------- |
 |         |                  |                      |
