@@ -109,7 +109,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [raxhvl](https://github.com/raxhvl)                          |                                                                 |        |        |                  |
 | [Nilav](https://github.com/gerceboss)                        |        [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)       |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
-| [Rodrigo Herrera](https://github.com/)                       |                                                                 |        |        |                  |
+| [Rodrigo Herrera](https://github.com/)                       | [Update 3](https://hackmd.io/@rodrigoh/update3)                 |        |        |                  |
 | [RoryArredondo](https://github.com/arredr2)                  | [Update 3](https://hackmd.io/@arredr2/Bkehft2IR)                |        |        |                  |
 | [Rose Jethani](https://github.com/rose2221)                  | [Update 3](https://hackmd.io/@0xrosetteeee/Week3)               |        |        |                  |
 | [Rupam Dey](https://github.com/rupam-04)                     | [Update 3](https://hackmd.io/@rupam-04/Week3)                   |        |        |                  |
@@ -120,6 +120,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          | [Update 3](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/rkGyp1lDR) |        |        |                  |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 |        |        |                  |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 |        |        |                  |
+
 
 ## Phase 3: Execution
 
