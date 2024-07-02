@@ -74,7 +74,7 @@ With a fully functioning prototype, each actor should be able to:
 TBD
 
 ## Resources
-* [ePBS Spec](https://github.com/potuz/consensus-specs/pull/2)
+* [ePBS Spec](https://github.com/ethereum/consensus-specs/pull/3828)
 * [Prysm](https://github.com/prysmaticlabs/prysm/pull/13917)
 * [ePBS specification notes](https://hackmd.io/uWVGcvcKSoqS4P5c5NHG3g)
 * [ePBS Forkchoice annotated spec](https://hackmd.io/@potuz/SJdXM43x0)
