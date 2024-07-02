@@ -57,10 +57,10 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Saeid](github.com/xm0onh)                                   | [Update 0](https://hackmd.io/@xm0on/rJaRNg4HA)                  |                                                                 |                                                                 |
 | [Sayan](https://github.com/threehrsleep)                     |                                                                 | [Update 1](https://hackmd.io/@threehrsleep/epf_week1)           | [Update 2](https://hackmd.io/@threehrsleep/epf_week2)           |
 | [Scar Face](https://github.com/scarfacedotcom)               | [Update 0](https://hackmd.io/@0xScarFace/week0)                 | [Update 1](https://hackmd.io/@0xScarFace/week_1)                | [Update 2](https://hackmd.io/@0xScarFace/week2)                 |
-| [ShyamPatel](github.com/shyam-patel-kira)                    | [Update 0](https://hackmd.io/@kira50/rJkBMnK7C)                 |                                                                 |                                                                 |
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          |                                                                 | [Update 1](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/SkD8TX3SR) | [Update 2](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/H14Zog8U0) |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 | [Update 1](https://hackmd.io/T-YywoxeRaOQ9AwmnUSAHA)            | [Update 2](https://hackmd.io/me9QShXET_SjGLHMbeahjw)            |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 | [Update 1](https://hackmd.io/@zarathustra/S1JfV0bLC)            | [Update 2](https://hackmd.io/@zarathustra/HJsnsyv80)            |
+
 
 ## Phase 2: Deep dive
 
@@ -97,7 +97,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Hopinheimer](https://github.com/hopinheimer)                | [Update 3](https://hackmd.io/@hopin232/HyIxzVgDA)                                           |        |        |                  |
 | [Ifeoluwa Oderinde](https://github.com/owanikin)             | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJAO40qUC) |        |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR)             |        |        |                  |
-| [kira](https://github.com/shyam-patel-kira)                  |                                                                 |        |        |                  |
+| [kira](https://github.com/shyam-patel-kira)                  | [Update 3](https://hackmd.io/@kira50/BkH7kE-P0)                 |        |        |                  |
 | [Krishang](https://github.com/kamuik16)                      |                                                                 |        |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 |        |        |                  |
 | [Léa Na](https://github.com/lean-apple)                      | [Update 3](https://hackmd.io/@leanapple/epf5-week3)             |        |        |                  |
@@ -116,7 +116,6 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Saeid](github.com/xm0onh)                                   |                                                                 |        |        |                  |
 | [Sayan](https://github.com/threehrsleep)                     | [Update 3](https://hackmd.io/@threehrsleep/epf_week3)           |        |        |                  |
 | [Scar Face](https://github.com/scarfacedotcom)               |                                                                 |        |        |                  |
-| [ShyamPatel](github.com/shyam-patel-kira)                    |                                                                 |        |        |                  |
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          | [Update 3](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/rkGyp1lDR) |        |        |                  |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 |        |        |                  |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 |        |        |                  |
