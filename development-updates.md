@@ -47,7 +47,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Nikhil](https://github.com/nikhilkumar1612)                 |                                                                 |                                                                 | [Update 2](https://hackmd.io/@zTxe9ZSCTiOhard8DLV68A/rkzSKnULR) |
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 | [Update 1](https://hackmd.io/@mrk1tty/B1rZCb9HA)                | [Update 2](https://hackmd.io/@mrk1tty/B1T_N1OUA)                |
 | [Rahul](https://github.com/guha-rahul)                       |                                                                 | [Update 1](https://hackmd.io/6B54Ei-iTf6jtZ1lYEH24g)            | [Update 2](https://hackmd.io/@0xrguha/rygcMewLR)                |
-| [raxhvl](https://github.com/raxhvl)                          |                                                                 | [Update 1](https://epf.raxhvl.com/week/1)                       | [Update 1](https://epf.raxhvl.com/week/1)                       |
+| [raxhvl](https://github.com/raxhvl)                          |                                                                 | [Update 1](https://epf.raxhvl.com/week/1)                       | [Update 2](https://epf.raxhvl.com/week/2)                       |
 | [Nilav](https://github.com/gerceboss)                        |                                                                 | [Update 1](https://hackmd.io/@gerceboss/rkEjSyiBA)              | [Update 2](https://hackmd.io/@gerceboss/r1ObxCUUC)              |
 | [Richa](https://github.com/Richa-iitr)                       |                                                                 | [Update 1](https://hackmd.io/@iri/HJLnintSR)                    | [Update 2](https://hackmd.io/@iri/SJf23BbLC)                    |
 | [Rodrigo Herrera](https://github.com/)                       |                                                                 | [Update 1](https://hackmd.io/@rodrigoh/update1)                 |                                                                 |
@@ -70,7 +70,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | ------------------------------------------------------------ | --------------------------------------------------------------- | ------ | ------ | ---------------- |
 | [0xSulpiride](https://github.com/0xSulpiride)                | [Update 3](https://hackmd.io/@sulpiride/rkfLFIw8A)              |        |        |                  |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 |        |        |                  |
-| [Aditya Gupta](https://github.com/1010adigupta)              |        [Update 3](https://hackmd.io/@adigupta/S1_Lq4-wR)                                                         |        |        |                  |
+| [Aditya Gupta](https://github.com/1010adigupta)              | [Update 3](https://hackmd.io/@adigupta/S1_Lq4-wR)               |        |        |                  |
 | [AkshatGada](https://github.com/AkshatGada)                  |                                                                 |        |        |                  |
 | [Amin](github.com/amintalebi)                                |                                                                 |        |        |                  |
 | [Another Dev](https://github.com/Another-DevX)               | [Update 3](https://hackmd.io/@btcZWytfSNOGdxJyufkirQ/Bk9f7MlvA) |        |        |                  |
@@ -94,19 +94,19 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [jsvisa](https://github.com/jsvisa)                          | [Update 3](https://hackmd.io/@jsvisa/epf5-week3)                |        |        |                  |
 | [Hamid Bateni](https://github.com/irnb)                      | [Update 3](https://hackmd.io/@irnb/epf_week3)                   |        |        |                  |
 | [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3)             |        |        |                  |
-| [Hopinheimer](https://github.com/hopinheimer)                | [Update 3](https://hackmd.io/@hopin232/HyIxzVgDA)                                           |        |        |                  |
+| [Hopinheimer](https://github.com/hopinheimer)                | [Update 3](https://hackmd.io/@hopin232/HyIxzVgDA)               |        |        |                  |
 | [Ifeoluwa Oderinde](https://github.com/owanikin)             | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJAO40qUC) |        |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR)             |        |        |                  |
 | [kira](https://github.com/shyam-patel-kira)                  | [Update 3](https://hackmd.io/@kira50/BkH7kE-P0)                 |        |        |                  |
 | [Krishang](https://github.com/kamuik16)                      |                                                                 |        |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 |        |        |                  |
 | [Léa Na](https://github.com/lean-apple)                      | [Update 3](https://hackmd.io/@leanapple/epf5-week3)             |        |        |                  |
-| [MaxDav](https://github.com/MaximeDavin) | [Update 3](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/BJC0tglDR) |        |        |                  |
+| [MaxDav](https://github.com/MaximeDavin)                     | [Update 3](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/BJC0tglDR) |        |        |                  |
 | [MeldSun](https://github.com/meldsun0)                       |                                                                 |        |        |                  |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |                                                                 |        |        |                  |
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 |        |        |                  |
 | [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)                |        |        |                  |
-| [raxhvl](https://github.com/raxhvl)                          |                                                                 |        |        |                  |
+| [raxhvl](https://github.com/raxhvl)                          | [Update 3](https://epf.raxhvl.com/week/3)                       |        |        |                  |
 | [Nilav](https://github.com/gerceboss)                        | [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)              |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
 | [Rodrigo Herrera](https://github.com/)                       | [Update 3](https://hackmd.io/@rodrigoh/update3)                 |        |        |                  |
