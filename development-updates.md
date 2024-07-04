@@ -68,6 +68,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 
 | Name/GH                                                      | Week 3                                                          | Week 4 | Week 5 | Project proposal |
 | ------------------------------------------------------------ | --------------------------------------------------------------- | ------ | ------ | ---------------- |
+| [0xpanicError](https://github.com/0xpanicError)              | [Update 3](https://hackmd.io/@0xpanicError/epf-update_3)     |   |   |   |
 | [0xSulpiride](https://github.com/0xSulpiride)                | [Update 3](https://hackmd.io/@sulpiride/rkfLFIw8A)              |        |        |                  |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 |        |        |                  |
 | [Aditya Gupta](https://github.com/1010adigupta)              | [Update 3](https://hackmd.io/@adigupta/S1_Lq4-wR)               |        |        |                  |
