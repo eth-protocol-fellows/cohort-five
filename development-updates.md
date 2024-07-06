@@ -88,7 +88,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Daniel Knopik](https://github.com/dknopik)                  | [Update 3](https://hackmd.io/@dknopik/epf-week3)                | [Update 4](https://hackmd.io/@dknopik/epf-week4) |  |  |
 | [Dirk Jäckel](https://github.com/biafra23)                   |                                                                 |        |        |                  |
 | [Dsorken](https://github.com/Dsorken)                        | [Update 3](https://hackmd.io/@VgS_FqIfRay_4wp6pMBEgw/HJ9rQ0kD0) |        |        |                  |
-| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) | [Update 3](https://hackmd.io/@katya-blockchain-dev/epf5-week-3) |        |        |                  |
+| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) | [Update 3](https://hackmd.io/@katya-blockchain-dev/epf5-week-3) | [Update 4](https://hackmd.io/@katya-blockchain-dev/epf5-week-4)       |        |                  |
 | [georgesheth](https://github.com/georgesheth)                |                                                                 |        |        |                  |
 | [ghili](https://github.com/ghiliweld)                        |                                                                 |        |        |                  |
 | [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)               |        |        |                  |
