@@ -1,8 +1,10 @@
-# PeerDAS in Grandine
+# PeerDAS improvements in Grandine
 
 PeerDAS specs is still maturing, so there are a lot of changes and improvements that need to be implemented in Grandine.
 
 *Written by Hangleang ([@HangleangS](https://twitter.com/HangleangS))*
+
+*Thanks to [Saulius Grigaitis](https://github.com/sauliusgrigaitis) for feedback and review*
 
 ## Motivation
 
@@ -24,8 +26,8 @@ The proposed solution is to continually improve existing PeerDAS implementation,
 ## Specification
 
 - For core protocol, we would be using [`das-core`](https://github.com/ethereum/consensus-specs/blob/dev/specs/_features/eip7594/das-core.md) specs as our compass, and sync with existing implementation.
-- For p2p networking, ...
-- For kzg commitment cryptography, ...
+- For p2p networking, a fellow is working on backporting latest commits into [eth2_libp2p](https://github.com/grandinetech/eth2_libp2p/tree/eip_7594) compatible types in [grandine](https://github.com/grandinetech/grandine/tree/das), which maintained by Grandine team.
+- For kzg commitment cryptography, we would be using [c-binding KZG lib](https://github.com/ethereum/c-kzg-4844/tree/das) maintained by EF team, which is ready to use in the mean time, then switch to [rust-kzg](https://github.com/grandinetech/rust-kzg) once ready, maintained by Grandine team. a few fellow are also working on porting functionalities to the lib.
 
 ## Roadmap
 
@@ -49,16 +51,14 @@ Beside implementation, battle tests need to be addressed against unexpected scen
 ### Fellows 
 
 - [Hangleang SUN](https://github.com/hangleang)
-- ...
 
 ### Mentors
 
 - [Saulius Grigaitis](https://github.com/sauliusgrigaitis)
-- ...
 
 ## Resources
 
 - [Grandine Repo](https://github.com/grandinetech/grandine/tree/das)
 - [PeerDAS Specs](https://github.com/ethereum/consensus-specs/tree/dev/specs/_features/eip7594)
 - [eth2_libp2p Repo](https://github.com/grandinetech/eth2_libp2p/tree/eip_7594)
-- [C-binding KZG Library](https://github.com/ethereum/c-kzg-4844/tree/das)
+- [c-binding KZG Library](https://github.com/ethereum/c-kzg-4844/tree/das)
