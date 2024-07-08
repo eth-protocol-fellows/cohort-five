@@ -141,7 +141,23 @@ Enter EIP-1559, seperate base fee and priority fee. The effective gas price = ba
 
 ### P2P metrics
 
-* 
+* Strongly Connected (everyone can reach everyone) - Weakly connected (everyone can reach everyone if the graph was undirected) - Strongly connected sugraph - k-vertex connectivity (remain connected even if k - 1 nodes leave the network)
+* Distance(u, v) - shortest path between u and v
+* Eccentricity(u) - maximum distance between u and any other node
+* Radius - minimum eccentricity over all nodes - shortest distance between any two nodes
+* Diameter - mac ecc. over all nodes - max distance between any two nodes
+* Characteristic Length - l - average distance between any two nodes
+* Degree(u) - number of connections or edges of node u
+    * accordingly there also exist max and average degree of all nodes
+    * interesting metric is the degree distribution of the graph - degree vs num of nodes with that degree
+* Betweeness Centrality counts the shortest paths that use a certain node in relation to all shortest paths. Therefore this metric is calculated for  every node. We check all paths from one node to the other and take ratio of how many go through the node in question. General rule of thumb, move away from ratio of 1 for any node
+* Minimum Vertex Cut - a minimum set of nodes that will disconnect a good chunk of the graph
+* Minimum Edge Cut - a minimum set of connections to nodes that will disconnect a good chunk of the graph
+* General rules of thumb - avoid O(n) complexity for state and distance - avoid small cuts - roughly close to average degree for all nodes - minimize state while keeping characteristic length small
+* types of graph construction strategies
+    * random graphs - small world graphs (social networking) - walls strogatz small world graphs - scale-free graphs (weighted peers with social networking) - rich get richer model by barabasi and albert.
+* clusterin coefficient of a node - number of edges in neighbourhood of u divided by all possible edges in neighbourhood of u
+* clustering coefficient of the graph - average it out
 
 
 ### Project Specific
