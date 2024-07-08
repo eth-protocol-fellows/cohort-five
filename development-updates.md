@@ -111,7 +111,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Nilav](https://github.com/gerceboss)                        | [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)              |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
 | [Rodrigo Herrera](https://github.com/)                       | [Update 3](https://hackmd.io/@rodrigoh/update3)                 |        |        |                  |
-| [RoryArredondo](https://github.com/arredr2)                  | [Update 3](https://hackmd.io/@arredr2/Bkehft2IR)                |        |        |                  |
+| [RoryArredondo](https://github.com/arredr2)                  | [Update 3](https://hackmd.io/@arredr2/Bkehft2IR)                |      [Update 4](https://hackmd.io/@arredr2/BJ_GbXzDA)  |        |                  |
 | [Rose Jethani](https://github.com/rose2221)                  | [Update 3](https://hackmd.io/@0xrosetteeee/Week3)               |        |        |                  |
 | [Rupam Dey](https://github.com/rupam-04)                     | [Update 3](https://hackmd.io/@rupam-04/Week3)                   |        |        |                  |
 | [Saeid](github.com/xm0onh)                                   |                                                                 |        |        |                  |
