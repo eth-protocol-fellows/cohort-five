@@ -81,7 +81,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [BobLiu](https://github.com/Akagi201)                        | [Update 3](https://hackmd.io/@Akagi201/epf-cohort5-week3)       |        |        |                  |
 | [Boma Naps](https://github.com/bomanaps)                     | [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)               |        |        |                  |
 | [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA) |        |        |                  |
-| [Chirag](https://github.com/chirag-parmar)                   | [Update 3](https://hackmd.io/@chirag-parmar/HJyYwEev0)          |        |        |                  |
+| [Chirag](https://github.com/chirag-parmar)                   | [Update 3](https://hackmd.io/@chirag-parmar/HJyYwEev0)          | [Update 4](https://hackmd.io/@chirag-parmar/SJOk7wKDA) |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |                                                                 |        |        |                  |
 | [Cloud](https://github.com/0xClouds/)                        |                                                                 |        |        |                  |
 | [DanGoron](https://github.com/gorondan)                      |                                                                 |        |        |                  |
