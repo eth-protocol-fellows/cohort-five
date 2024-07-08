@@ -102,7 +102,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Krishang](https://github.com/kamuik16)                      |                                                                 |        |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 |        |        |                  |
 | [Léa Na](https://github.com/lean-apple)                      | [Update 3](https://hackmd.io/@leanapple/epf5-week3)             |        |        |                  |
-| [MaxDav](https://github.com/MaximeDavin)                     | [Update 3](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/BJC0tglDR) |        |        |                  |
+| [MaxDav](https://github.com/MaximeDavin)                     | [Update 3](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/BJC0tglDR) | [Update 4](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/SyeNEsFPR)       |        |                  |
 | [MeldSun](https://github.com/meldsun0)                       |                                                                 |        |        |                  |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |                                                                 |        |        |                  |
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 |        |        |                  |
