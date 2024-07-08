@@ -1,4 +1,4 @@
-# Development Updates
+f# Development Updates
 
 This document includes all development updates by contributors to EPF cohort 5. [Learn more](/program-guide/repo-guide.md#development-updates) about creating your development updates.
 
@@ -106,7 +106,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [MeldSun](https://github.com/meldsun0)                       |                                                                 |        |        |                  |
 | [Nikhil](https://github.com/nikhilkumar1612)                 |                                                                 |        |        |                  |
 | [mrk1tty](https://github.com/garv-aga)                       |                                                                 |        |        |                  |
-| [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)                |        |        |                  |
+| [Rahul](https://github.com/guha-rahul)                       | [Update 3](https://hackmd.io/@0xrguha/BJIrH-lPA)                | [Update 4](https://hackmd.io/@0xrguha/ry5hgvKw0)        |        |                  |
 | [raxhvl](https://github.com/raxhvl)                          | [Update 3](https://epf.raxhvl.com/week/3)                       |        |        |                  |
 | [Nilav](https://github.com/gerceboss)                        | [Update 3](https://hackmd.io/@gerceboss/SkdMHQgDR)              |        |        |                  |
 | [Richa](https://github.com/Richa-iitr)                       | [Update 3](https://hackmd.io/@iri/rJrPvd08C)                    |        |        |                  |
