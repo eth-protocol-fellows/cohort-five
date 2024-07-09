@@ -1,12 +1,12 @@
 ## Introduction
 
-Hi ! 
+Hi! 
 
 Very excited to join the fifth cohort. 
 
-I am interested in exploring Ethereum's blockspace to enable new and novel use cases. 
+I am interested in exploring single slot finality for Ethereum's consensus and based rollups. 
 
 
 ## Updates
 
-[Update 1](https://hackmd.io/@rodrigoh/update1)
+[Updates](https://hackmd.io/@rodrigoh)
