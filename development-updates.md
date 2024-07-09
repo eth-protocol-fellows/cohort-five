@@ -80,7 +80,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Bastin](https://github.com/Inspector-Butters)               | [Update 3](https://hackmd.io/@Bastin/By8UVwlPA)                 |        |        |                  |
 | [BobLiu](https://github.com/Akagi201)                        | [Update 3](https://hackmd.io/@Akagi201/epf-cohort5-week3)       |        |        |                  |
 | [Boma Naps](https://github.com/bomanaps)                     | [Update 3](https://hackmd.io/@bomanaps/B1-vbGxv0)               |        |        |                  |
-| [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA) |        |        |                  |
+| [Caleb](https://github.com/Tomi-3-0)                         | [Update 3](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/ByPQxR6LA) | [Update 4](https://hackmd.io/@tomi0x/caleb-epf5-week4)       |        |                  |
 | [Chirag](https://github.com/chirag-parmar)                   | [Update 3](https://hackmd.io/@chirag-parmar/HJyYwEev0)          |        |        |                  |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |                                                                 |        |        |                  |
 | [Cloud](https://github.com/0xClouds/)                        |                                                                 |        |        |                  |
