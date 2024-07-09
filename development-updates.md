@@ -91,7 +91,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) | [Update 3](https://hackmd.io/@katya-blockchain-dev/epf5-week-3) | [Update 4](https://hackmd.io/@katya-blockchain-dev/epf5-week-4)       |        |                  |
 | [georgesheth](https://github.com/georgesheth)                |                                                                 |        |        |                  |
 | [ghili](https://github.com/ghiliweld)                        |                                                                 |        |        |                  |
-| [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)               |        |        |                  |
+| [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)               | [Update 4](https://hackmd.io/@gconnect/r1TakB_wA)       |        |                  |
 | [jsvisa](https://github.com/jsvisa)                          | [Update 3](https://hackmd.io/@jsvisa/epf5-week3)                |        |        |                  |
 | [Hamid Bateni](https://github.com/irnb)                      | [Update 3](https://hackmd.io/@irnb/epf_week3)                   |        |        |                  |
 | [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3)             |        |        |                  |
