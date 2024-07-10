@@ -9,7 +9,7 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started.
 
 | Name/GH                                                      | Week 0                                                          | Week 1                                                          | Week 2                                                          |
-| ------------------------------------------------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
+|--------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                 | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        | [Update 2](https://hackmd.io/@0xpanicError/epf-update_2)        |
 | [0xSulpiride](https://github.com/0xSulpiride)                |                                                                 | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            | [Update 2](https://hackmd.io/@sulpiride/BJLYckU80)              |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) | [Update 2](https://hackmd.io/@ABresting/ryhHqf8LA)              |
@@ -99,7 +99,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ifeoluwa Oderinde](https://github.com/owanikin)             | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJAO40qUC) |                                                                 |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR)             |                                                                 |        |                  |
 | [kira](https://github.com/shyam-patel-kira)                  | [Update 3](https://hackmd.io/@kira50/BkH7kE-P0)                 |                                                                 |        |                  |
-| [Krishang](https://github.com/kamuik16)                      |                                                                 |                                                                 |        |                  |
+| [Krishang](https://github.com/kamuik16)                      |                                                                 | [Update 4](https://hackmd.io/@kamuik16/epf-week-4)              |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 |                                                                 |        |                  |
 | [Léa Na](https://github.com/lean-apple)                      | [Update 3](https://hackmd.io/@leanapple/epf5-week3)             | [Update 4](https://hackmd.io/@leanapple/epf5-week4)             |        |                  |
 | [MaxDav](https://github.com/MaximeDavin)                     | [Update 3](https://hackmd.io/@jdpsr0d9T9ivhzYDDyuQBg/BJC0tglDR) |                                                                 |        |                  |
@@ -126,7 +126,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
 
 | Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
-| ------- | ------ | ------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
@@ -135,5 +135,5 @@ The actual project development is the main part of the program. Post your regula
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
 | Name/GH | Final dev update | Project presentation |
-| ------- | ---------------- | -------------------- |
+|---------|------------------|----------------------|
 |         |                  |                      |
