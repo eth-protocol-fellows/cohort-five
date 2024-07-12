@@ -84,3 +84,4 @@ No collaboration with other fellows is planned at this time, however experiments
 [4]: https://github.com/ethpandaops/ethereum-package
 [5]: https://github.com/crytic/attacknet
 [6]: https://github.com/sigp/lighthouse/issues/2989
+[7]: https://github.com/paradigmxyz/reth/issues/6216
