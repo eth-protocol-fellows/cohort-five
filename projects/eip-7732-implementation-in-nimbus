@@ -44,6 +44,9 @@ _Week 15-17_: Research and implement ePBS compatible fork choice logic.
 
 The goal of the project is to have a working and well-tested implementation of ePBS in the Nimbus Consensus client satisfying all security conditions. Ready or close to being merged. The project's impact will also lay the framework for building on advances on ePBS that are still been researched such as [execution tickets](https://ethresear.ch/t/execution-tickets/17944) and laying the groundwork for other advances such as [Danksharding](https://ethereum.org/en/roadmap/danksharding/) beyond the fellowship. Success will be measured by the efficiency and performance of the completed implementation and how it is able to integerate with the existing Nimbus code. 
 
+
+**Project slide:** [presentation slides](https://www.canva.com/design/DAGKu8OLG7k/_dHQ10AJW1lgxlz1T0kA2Q/view?utm_content=DAGKu8OLG7k&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 ## Collaborators
 
 ### Fellows 
