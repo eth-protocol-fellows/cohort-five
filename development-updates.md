@@ -61,7 +61,6 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 | [Update 1](https://hackmd.io/T-YywoxeRaOQ9AwmnUSAHA)            | [Update 2](https://hackmd.io/me9QShXET_SjGLHMbeahjw)            |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 | [Update 1](https://hackmd.io/@zarathustra/S1JfV0bLC)            | [Update 2](https://hackmd.io/@zarathustra/HJsnsyv80)            |
 
-
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
@@ -98,7 +97,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ifeoluwa Oderinde](https://github.com/owanikin)             | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJAO40qUC) |                                                                 |        |                  |
 | [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR)             |                                                                 |        |                  |
 | [jsvisa](https://github.com/jsvisa)                          | [Update 3](https://hackmd.io/@jsvisa/epf5-week3)                | [Update 4](https://hackmd.io/@jsvisa/epf5-week4-update)         |        |                  |
-| [kira](https://github.com/shyam-patel-kira)                  | [Update 3](https://hackmd.io/@kira50/BkH7kE-P0)                 |                                                                 |        |                  |
+| [kira](https://github.com/shyam-patel-kira)                  | [Update 3](https://hackmd.io/@kira50/BkH7kE-P0)                 | [Update 4](https://hackmd.io/@kira50/epf-week-4)                |        |                  |
 | [Krishang](https://github.com/kamuik16)                      |                                                                 | [Update 4](https://hackmd.io/@kamuik16/epf-week-4)              |        |                  |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                 |                                                                 |        |                  |
 | [Léa Na](https://github.com/lean-apple)                      | [Update 3](https://hackmd.io/@leanapple/epf5-week3)             | [Update 4](https://hackmd.io/@leanapple/epf5-week4)             |        |                  |
