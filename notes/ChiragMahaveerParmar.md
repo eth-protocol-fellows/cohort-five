@@ -116,7 +116,7 @@ This is a reading guide, start reading from point 0, don't skip reading any poin
 
 ### Verkle Trees
 
-[ellitic curves cheatsheet](https://hackmd.io/@timofey/rJ8HP8Yaj#:~:text=Base%20field%20of%20an%20elliptic,%2C%20scalar%20multiplication%2C%20and%20pairing.) - [IPA](https://dankradfeist.de/ethereum/2021/07/27/inner-product-arguments.html) - [peep an eip](https://www.youtube.com/watch?v=RGJOQHzg3UQ) - [verkle tree structure](https://blog.ethereum.org/2021/12/02/verkle-tree-structure) - [eip itself](https://notes.ethereum.org/@vbuterin/verkle_tree_eip)
+[elliptic curves cheatsheet](https://hackmd.io/@timofey/rJ8HP8Yaj#:~:text=Base%20field%20of%20an%20elliptic,%2C%20scalar%20multiplication%2C%20and%20pairing.) - [IPA](https://dankradfeist.de/ethereum/2021/07/27/inner-product-arguments.html) - [peep an eip](https://www.youtube.com/watch?v=RGJOQHzg3UQ) - [verkle tree structure](https://blog.ethereum.org/2021/12/02/verkle-tree-structure) - [eip itself](https://notes.ethereum.org/@vbuterin/verkle_tree_eip)
 
 - Verkle trees don't make ethereum stateless as a whole. it just allows there to be stateless clients by severely relaxing the bandwidth requirements to share state witnesses.
 
@@ -129,6 +129,50 @@ This is a reading guide, start reading from point 0, don't skip reading any poin
     - for every internal IP you have the same external IP but different ports a.k.a one-to-many mapping or port address translation or NAT overloading
     - there are further classifications that overlap at different degrees with the above two. The wikipedia article seems to be the only unambiguous source on the topic.
 
+### EIP-1559 
+
+[EIP](https://eips.ethereum.org/EIPS/eip-1559)
+
+* This is the most brilliant EIP ever introduced in my opinion. Before EIP-1559, your transaction contained a single variable storing the gasPrice, a.k.a the amount of ETH you are willing to pay per gas. A normal transaction uses 21000gas as base gee (if you have calldata calling contracts then that adds more gas usage, the entire EVM model is based on this). Among so many users in the network, if I want the miner to include my transaction, then I pay them higher price per gas. Therefore, when the network got congested prior to EIP1559, the gas prices for a transaction to even be included in the block went up. It was worrysome because you could only predict to a certain degree and ended up over paying for the transaction (expecting congestions or spiked in the price). Moreover, and most importantly the voltaility of the fees did not match the social cost. 
+    * The social cost of including one extra transaction at the very least is 21000gas.
+    * but at times (ex. going from 8 million gas to 8.021 million gas) could shoot up the price of gas by 10x
+ 
+Enter EIP-1559, seperate base fee and priority fee. The effective gas price = base fee + priority fee. But then what is the difference you may ask. The base fee is calculated by the network based on the last block's base fee and other things (check `def validate_block` under EIP-1559 draft). And the priority fee is decided by you. Since the base fee is calculated by the network using a set formula, prediction becomes easy = no overpayment. The best part, the base fee is burned, therefore the miners are not incentivizwed to create congestions.
+
+### P2P metrics
+
+* Strongly Connected (everyone can reach everyone) - Weakly connected (everyone can reach everyone if the graph was undirected) - Strongly connected sugraph - k-vertex connectivity (remain connected even if k - 1 nodes leave the network)
+* Distance(u, v) - shortest path between u and v
+* Eccentricity(u) - maximum distance between u and any other node
+* Radius - minimum eccentricity over all nodes - shortest distance between any two nodes
+* Diameter - mac ecc. over all nodes - max distance between any two nodes
+* Characteristic Length - l - average distance between any two nodes
+* Degree(u) - number of connections or edges of node u
+    * accordingly there also exist max and average degree of all nodes
+    * interesting metric is the degree distribution of the graph - degree vs num of nodes with that degree
+* Betweeness Centrality counts the shortest paths that use a certain node in relation to all shortest paths. Therefore this metric is calculated for  every node. We check all paths from one node to the other and take ratio of how many go through the node in question. General rule of thumb, move away from ratio of 1 for any node
+* Minimum Vertex Cut - a minimum set of nodes that will disconnect a good chunk of the graph
+* Minimum Edge Cut - a minimum set of connections to nodes that will disconnect a good chunk of the graph
+* General rules of thumb - avoid O(n) complexity for state and distance - avoid small cuts - roughly close to average degree for all nodes - minimize state while keeping characteristic length small
+* types of graph construction strategies
+    * random graphs - small world graphs (social networking) - walls strogatz small world graphs - scale-free graphs (weighted peers with social networking) - rich get richer model by barabasi and albert.
+* clusterin coefficient of a node - number of edges in neighbourhood of u divided by all possible edges in neighbourhood of u
+* clustering coefficient of the graph - average it out
+
+
+### Project Specific
+
+1. A good issue explaining why compilers are not great for cryptographic implementations. [here](https://github.com/mratsim/constantine/issues/39)
+2. Refresher/Pre-req: [operand scanning and product scanning methods](https://iacr.org/archive/ches2011/69170459/69170459.pdf) - operand scanning is the school book method - school book method requires us to keep every intermediate result until everythingis accumulated - the product scannin method instead prioritizes calculating the partial products which would be needed to directly yield a part of the final result - check the diagrams in the paper
+2. The abstract of the project as expalined in [this](https://github.com/mratsim/constantine/issues/200) is to create code generator in Nim for ARMv7 and ARMv8 architectures. Various papers are referenced in the issue. The key summaries are presented below,
+    * [No Silver Bullet](https://eprint.iacr.org/2021/185.pdf) - Tests against ARM-Cortex-A and Apple A series processors (both ARMv8) - uses multiplication and then modular reduction - uses karatsuba for normal multiplication and karatsuba within the montogomery reduction technique (instead of using karatsuba within the montogomery multiplication + reduction technique) - reports said construction efficient for cortex processor but slower for apple processors - karatsuba replaces on multiplication with three additions/subtractions - apple processors have almost the same cycle count for multiplication and addition - therefore karatsuba increases the clock cycles that just normal school book method - the widely advertized complexity of karatsuba of O(n^1.58) takes into account only multiplications (i guess). Hence is proved wrong in this case - MUL and UMULH are the instructions used to get a full 64 bit multiplication result
+    * [Kyber on ARM64](https://eprint.iacr.org/2021/561.pdf) - Uses SIMD for creating vectorized implementations of Barrett Reduction and Montogomery Reduction. Since the bit width is just 16-bits they do not require multi-precision techniques like karatsuba. Their use of montogomery and barrett reduction techniques in conjunction with NTT is not clear.
+    * [Optimized SIKE Round 2 on ARM64](https://eprint.iacr.org/2019/721.pdf) - MUL and UMULH are the instructions used to get a full 64 bit multiplication result - This paper uses the school book method since it uses less number of addition operations at the expense of higher register usage - "The multiplication is performed in original row-wise multiplication rather than row-wise multiplication with Karatsuba method." - they also don't use a full karatsuba multiplication with the claim that it leads to more operations and memory accesses (probably since the width of the original multiplication divides up into a odd number of limbs) - they use montogomery reduction technque for modular reduction
+    * [Curve448 on 32-bit ARM Cortex-M4](https://eprint.iacr.org/2021/1355.pdf) - UMAAL for multiplication and accumulation - The work seems to have used the term "operand-scanning" incorrectly since it uses the product scanning method with "operand caching" method. This method is particularly useful to save on loads and stores - they use fermat inversion and a custom method for fast reduction of curve448 since the modulus is static (needs more investigation)
+    * [Efficient Multiplication of Somewhat Small Integers using Number-Theoretic Transforms](https://eprint.iacr.org/2022/439.pdf) - They challenge the viability of NTT for smaller width integers - this is against popular conclusions that NTT (scjonhage-strassen) algorithm only ever proves to be useful when considering integer with very large widths (in the order of 1000 or 10000 bits) - this paper shows the crossover point to be 2048 bits - this uses montogomery over NTT just like the kyber paper above - requires more investigation
+     * [SIDH on ARM](https://eprint.iacr.org/2022/439.pdf) - they have a two pronged approach to implementation - they use both ARM and NEON(vector instr.) - they use consecutive operand caching method for ARM and karatsuba with cascade operand scanning method for NEON - their construction is rather complex - for reduction they use montogomery and within it they use other constructions for multiplications - definitely requires careful reading to fully understand the construction - They do however boast low clock cycles than most works of the same kind - [here is a informative presentation of the paper](https://ches.iacr.org/2018/slides/ches2018-session5-talk3-slides.pdf)
+     * [] more coming soon
+4. In other news: https://github.com/mratsim/constantine/blob/7d29cb9/constantine/platforms/isa/macro_assembler_x86.nim this is the code generator that mamy wrote for x86. It uses meta programming to define inline assembly code. Need to get into the details of this as well.
 
 ### Side Quests: Deploying a node over a VPS
 
