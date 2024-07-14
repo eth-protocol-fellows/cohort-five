@@ -1,4 +1,4 @@
-***DRAFT**, 2024-07-12*
+*rev. 1, 2024-07-14*
 
 # Network Simulations with Shadow
 
@@ -28,7 +28,7 @@ Phase 1 will last for roughly three to four weeks. However, the phase may take l
 
 ### Phase 2: Experiments
 
-In the main phase of the project, I run several experiments. These experiments are not fully defined yet, but the rough plan is to test several attack scenarios or network conditions with the current client versions and rerun them with modified clients to test potential ways to improve behavior. All data gathered will be published under an open licence and interesting findings will be discussed with involved client teams and researchers.
+In the main phase of the project, I run several experiments. These experiments are not fully defined yet, but the rough plan is to test several attack scenarios or network conditions with the current client versions and rerun them with modified clients to test potential ways to improve behavior. All data gathered will be published under an open licence and interesting findings will be discussed with involved client teams and researchers. Any findings that could be used to attack a live network will be resposibly disclosed and not published until the vulnerability is fixed.
 
 Issues to investigate include, but are not limited to:
 - [PeerDAS][3]: Figure out if the current specs are resilient enough.
@@ -48,7 +48,7 @@ It is hard to estimate how much effort will be required to get Shadow to work wi
 
 Depending on the experiment, it might be necessary to simulate with a large amount of nodes. For economic reasons, such experiments must be carefully thought out and prepared. Running simulations on that scale might also cause performance and stability issues that need to be fixed.
 
-It remains to be seen whether the Shadow-based approach provides significant advantages over the Kurtosis-based testing approach mentioned above. Advantages might include reduced resource requirements (as Kubernetes is not involved) and the possibility to run simulations faster than real-time (or slower for large simulations). Disadvantages might include lower realism with Shadow (which uses its own TCP stack).
+It remains to be seen whether the Shadow-based approach provides significant advantages over the Kurtosis-based testing approach mentioned above. Advantages might include reduced resource requirements (as Kubernetes is not involved) and the possibility to run simulations faster than real-time (or slower for large simulations). Disadvantages might include lower realism with Shadow (which uses its own TCP stack and compromises on realism for determinism).
 
 ## Goal of the project
 
