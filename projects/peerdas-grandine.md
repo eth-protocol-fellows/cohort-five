@@ -51,6 +51,7 @@ Beside implementation, battle tests need to be addressed against unexpected scen
 ### Fellows 
 
 - [Hangleang SUN](https://github.com/hangleang)
+- [Guha Rahul](https://github.com/guha-rahul)
 
 ### Mentors
 
