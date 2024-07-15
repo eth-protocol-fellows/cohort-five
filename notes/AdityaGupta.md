@@ -10,3 +10,6 @@ These are my twitter and github handles:
 # Weekly Updates
 These are my weekly EPF updates:
 - [Week 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?viewR)
+- [Week 2](https://hackmd.io/f45sFCcLQ32bxdKGRSCGAw?view)
+- [Week 3](https://hackmd.io/@adigupta/S1_Lq4-wR)
+- [Week 4](https://hackmd.io/@adigupta/rJ2y2koDR)

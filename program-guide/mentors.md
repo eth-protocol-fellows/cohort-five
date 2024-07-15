@@ -19,11 +19,10 @@ Make sure to do your own research before you ask a question, e.g. making sure so
 Here is an overview of core developers and researchers who are aware of EPF and willing to help fellows with their contributions. Keep in mind that even if they are listed here, their availability might have changed. And there are also other potential mentors in client teams who will be happy to work with new contributors but are not signed up here. 
 
 | Name                     | Team                       | Area of focus                                                 |
-| ------------------------ | -------------------------- | ------------------------------------------------------------- |
+|--------------------------|----------------------------|---------------------------------------------------------------|
 | Axic                     | Ipsilon                    | EVM, EOF, Solidity compiler                                   |
 | Fredrik                  | EF Security Research       | General Security                                              |
 | Sina                     | Geth                       | Execution Layer, EVM                                          |
-| Hsiao-Wei Wang           | EF Consensus Research      | Consensus Layer                                               |
 | Alex Stokes              | EF Consensus Research      | Consensus layer, MEV, (consensus layer) light clients         |
 | Barnabé Monnot           | EF Robust Incentives Group | Cryptoeconomics, economic modeling, data science              |
 | Ignacio                  | Stateless team             | Verkle Trees                                                  |

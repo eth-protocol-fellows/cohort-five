@@ -27,13 +27,13 @@ Things learned:
 * Once the node is setup and running we can use the RPC to interact with it. Interestingly enough RPC can be made available through the Tor onion network also.
 
 Open Questions:
-1. What happened in the merge?
-3. How to setup RPC over the onion network?
-4. Why does the consensus client require authentication to connect to the execution client? Do they connect over the network? If yes, what about the extra overhead of network communications that can obviously be avoided?
+1. What happened in the merge? Before the merge validators were just validating empty payloads, as an analogy, miners only calculating hashes for a block without transactions or any other block related data. The merge increased difficulty on og ethereum chain and incorporated the blocks from it into the beacon chain.
+3. How to setup RPC over the onion network? still in process
+4. Why does the consensus client require authentication to connect to the execution client? Do they connect over the network? If yes, what about the extra overhead of network communications that can obviously be avoided? [the answer lies within](https://github.com/ethereum/execution-apis/blob/main/src/engine/authentication.md)
 5. How does the ephemery testnet work?
-6. why is syncing from genesis not secure and incompatible with data availability checks?
-7. what exactly are the data availability checks talked about in the previous question?
-8. what is snap sync? importantly what is the range proof? how is the state regenerated? what is state healing?
+6. why is syncing from genesis not secure and incompatible with data availability checks? weak subjectivity
+7. what exactly are the data availability checks talked about in the previous question? if the truth about the canonical chain cannot be established then data availability cannot be guaranteed(gurantees against witholding data by any node or group of nodes or even supermajority of nodes)
+8. what is snap sync? importantly what is the range proof? how is the state regenerated? what is state healing? 
 
 ### Pair the Curves [June 10]
 
@@ -52,7 +52,7 @@ Things learned:
 Open questions:
 1. Is there no simpler way to construct bilinear maps using elliptic curves? How did we land on using divisors? 
 
-### Beacon chain, weak subjectivity and the merge [June 11 - 16]
+### Beacon chain and the merge [June 11 - 16]
 
 [beacon chain explainer](https://ethos.dev/beacon-chain) - [the merge](https://www.youtube.com/watch?v=8N10a1EBhBc) - [why pos?](https://vitalik.eth.limo/general/2020/11/06/pos2020.html) - [part2 of eth2book](https://eth2book.info/capella/part2/)
 
@@ -80,6 +80,10 @@ Things Learned:
 10. The BLS scheme is vulnerable to an attack, called the rogue public key attack. i can publish my public key to be my public key minus your public key. after which when i sign a message i can claim that both of us signed over it (but you didn't). The signature would verify as an aggregated signature, because when your public key is added to rogue public key the resulting aggregate would be my original public key.
 11. the merge essentially is merging the existing execution layer (without proof of work) into the new consensus layer or beacon chain. The contracts for PoS were launched on EL, where validators made deposits but they participated in the consensus game on the beacon chain. 
 12. PoS is subject to lesser economic risks compared to PoW. 
+13. SSZ serializes a data structure into a byte array but is dependent on knowledge of the schema to reconstruct the data structure. in other words, two different data structures can get serialized to the same byte array and without the schema of the data structure we won't know how to differentiate between the two.
+    * in the serialized string, dynamicaly sized datatypes are represented as 32 bit pointers and sotred at the last of the serialized string. Pointers are relative to the start of the containers in which synamically sized datatypes live.
+    * most importantly containers containing variable length types are themselves considered variable length. in other words if container A contains a List then container A is variable length. Interestingly, the list within container A uses pointers, and IFF container A is itself packed into another container B then even container A will use pointer.
+14. hash tree roots run over ssz. first we ssz then we split into 32 byte chunks and create merkle tree. The rules are more nuanced than this but this is the gist. Hash tree roots do something awesome, the take advantge of second preimage attacks on merkle trees, since inclusion proofs of the roots of subtrees guarantee inclusion of the entire body. [summaries and expansions](https://eth2book.info/capella/part2/building_blocks/merkleization/#summaries-and-expansions)
 
 
 questions:
@@ -87,16 +91,101 @@ questions:
 2. how is randao seeded initially? Is there a higher chance of bias?
 3. how much effort do we save for light clients by not choosing fisher yates shuffle?
 
+### Weak Subjectivity [June 18 - 20]
+
+[weak subjectivity period](https://www.symphonious.net/2019/11/27/exploring-ethereum-2-weak-subjectivity-period/) - [Weak subjectivity in Eth2.0](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2) - [https://ethresear.ch/t/weak-subjectivity-under-the-exit-queue-model/5187](https://ethresear.ch/t/weak-subjectivity-under-the-exit-queue-model/5187) - [abstract explanation of weak subjectivity](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity)
+
+This is a reading guide, start reading from point 0, don't skip reading any point. Hopefully this is the fastest knowledge transfer for you on the topic.
+
+0. First read adrian's blog completely
+1. adrian defines the problem from high level view. Once you understand the view, it must be clear that we try to attack a person who is syncing from a past block (let's say C0). The set of validators active at C0 is V0. This person is gonna want to know what is the next finalized checkpoint. For this person any checkpoint block that has signatures of 2/3 of validators in V0 is the next checkpoint. Now, since the entire network is running ahead of this person, validators who have exited after C0 till the current head can choose to act maliciously. Remember that this person doesn't know that these validators have exited becuase he is still at C0. Therefore, such a malicious act will not create slashing because the validators have already exited, just NOT for the person who is syncing from C0 (or before C0). If these "exited" validators form 1/3 of the validator set V0 (at C0 i.e in the past) they can create a conflicting finalized checkpoint.
+2. In adrian's view none of the validators will get slashed because the attack is played out in the past. What if the attacker took control of the current validator set and wants to launch the same attack at the current head. The attacker would have to give up 1/3 of his validators (that he took control of or has control of). This is a classic discouragement attack discussed very often.
+3. aditya and vitalik take the question one level higher. They simply ask, what if the attacker wanted to launch the same attack NOT on the current head(losing 1/3 validators) NEITHER so far back in the past(losing no validators) but somewhere in between. To make it clear this somewhere in between is still in the past, and the number of validators who have exited from this "somewhere in between" till the current head is lesser than 1\3 of the validator set at "somewhere in between". So the attacker can use these exited validators along with current non exited validators and launch the attack. In this case the attacker would lose a little lesser than 1\3 validators. 
+4. In reality, the attacker can also take advantage of activations that happen directly on the conflicting fork. Aditya and Vitalik's post take into account even activations. We should too and we will when we read their blogs but let's understand the gist of the problem we are trying to solve.
+5. Aditya and Vitalik, parameterize "somewhere in between" based on how many validators will get slashed; they put it as (1/3 - D). After parameterizing, they ask where can the attacker place this attack in the past, "at the earliest" (as close to the current head but still in the past). There are two unknown's in the question, D and the location of the attack. With two unknowns you usually get an algebraic equation out and you try to put different values in it and plot a graph or a table.  
+6. Check only the table in aditya's blog. There is an extra unknown, validator set size, this is because the exit rates and activation rates are dependent on the validator size.
+7. Now directly read the "calcuating the weak subjectivity period [complete version]" section in aditya's blog. If some of the mathematical equations don't make sense then maybe the points below help you.
+    * The chain is forkful and the attacker takes advantage of existing forks to finalize a different block.
+    * `|Q1 ∩ Q2|` are the number of validators who voted for both the forks, therefore these are the validators that wanted to create a conflicting checkpoint. Hence they will be slashed. We want the number to be lesser than or equal to `(1/3 - D) * |V1|`.
+    * `|Q1| ≥ 2/3 * |V1|` and `|Q2| ≥ 2/3 * |V2|` is the base conditizon to finalize any checkpoint.
+    * TODO: add more explanations for other mathematical expressions.
+
+### Gasper [June 17, June 21]
+
+[TODO] Didn't quite take notes but summarizing the learning sometime later would be useful as a refresher 
+
+### Verkle Trees
+
+[elliptic curves cheatsheet](https://hackmd.io/@timofey/rJ8HP8Yaj#:~:text=Base%20field%20of%20an%20elliptic,%2C%20scalar%20multiplication%2C%20and%20pairing.) - [IPA](https://dankradfeist.de/ethereum/2021/07/27/inner-product-arguments.html) - [peep an eip](https://www.youtube.com/watch?v=RGJOQHzg3UQ) - [verkle tree structure](https://blog.ethereum.org/2021/12/02/verkle-tree-structure) - [eip itself](https://notes.ethereum.org/@vbuterin/verkle_tree_eip)
+
+- Verkle trees don't make ethereum stateless as a whole. it just allows there to be stateless clients by severely relaxing the bandwidth requirements to share state witnesses.
+
+### NATs
+
+[PAT (look at the very last console output)](https://study-ccna.com/port-address-translation-pat-configuration/) - [types of NATs](https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/217599-understand-nat-to-enable-peer-to-peer-co.html) - [infographic on usage of NATs by their types in the real world](https://web.archive.org/web/20200213115759/http://nattest.net.in.tum.de/results.php) - [autoNAT](https://github.com/libp2p/specs/blob/master/autonat/README.md) - [the only unambiguous source of truth](https://en.wikipedia.org/wiki/Network_address_translation)
+
+- NATs have a basic job; convert internal IP to external IP as the packet goes from internal network to the external network. There are different ways to do this, 
+    - every different internal IP gets mapped to unique external IP a.k.a one-to-one mapping
+    - for every internal IP you have the same external IP but different ports a.k.a one-to-many mapping or port address translation or NAT overloading
+    - there are further classifications that overlap at different degrees with the above two. The wikipedia article seems to be the only unambiguous source on the topic.
+
+### EIP-1559 
+
+[EIP](https://eips.ethereum.org/EIPS/eip-1559)
+
+* This is the most brilliant EIP ever introduced in my opinion. Before EIP-1559, your transaction contained a single variable storing the gasPrice, a.k.a the amount of ETH you are willing to pay per gas. A normal transaction uses 21000gas as base gee (if you have calldata calling contracts then that adds more gas usage, the entire EVM model is based on this). Among so many users in the network, if I want the miner to include my transaction, then I pay them higher price per gas. Therefore, when the network got congested prior to EIP1559, the gas prices for a transaction to even be included in the block went up. It was worrysome because you could only predict to a certain degree and ended up over paying for the transaction (expecting congestions or spiked in the price). Moreover, and most importantly the voltaility of the fees did not match the social cost. 
+    * The social cost of including one extra transaction at the very least is 21000gas.
+    * but at times (ex. going from 8 million gas to 8.021 million gas) could shoot up the price of gas by 10x
+ 
+Enter EIP-1559, seperate base fee and priority fee. The effective gas price = base fee + priority fee. But then what is the difference you may ask. The base fee is calculated by the network based on the last block's base fee and other things (check `def validate_block` under EIP-1559 draft). And the priority fee is decided by you. Since the base fee is calculated by the network using a set formula, prediction becomes easy = no overpayment. The best part, the base fee is burned, therefore the miners are not incentivizwed to create congestions.
+
+### P2P metrics
+
+* Strongly Connected (everyone can reach everyone) - Weakly connected (everyone can reach everyone if the graph was undirected) - Strongly connected sugraph - k-vertex connectivity (remain connected even if k - 1 nodes leave the network)
+* Distance(u, v) - shortest path between u and v
+* Eccentricity(u) - maximum distance between u and any other node
+* Radius - minimum eccentricity over all nodes - shortest distance between any two nodes
+* Diameter - mac ecc. over all nodes - max distance between any two nodes
+* Characteristic Length - l - average distance between any two nodes
+* Degree(u) - number of connections or edges of node u
+    * accordingly there also exist max and average degree of all nodes
+    * interesting metric is the degree distribution of the graph - degree vs num of nodes with that degree
+* Betweeness Centrality counts the shortest paths that use a certain node in relation to all shortest paths. Therefore this metric is calculated for  every node. We check all paths from one node to the other and take ratio of how many go through the node in question. General rule of thumb, move away from ratio of 1 for any node
+* Minimum Vertex Cut - a minimum set of nodes that will disconnect a good chunk of the graph
+* Minimum Edge Cut - a minimum set of connections to nodes that will disconnect a good chunk of the graph
+* General rules of thumb - avoid O(n) complexity for state and distance - avoid small cuts - roughly close to average degree for all nodes - minimize state while keeping characteristic length small
+* types of graph construction strategies
+    * random graphs - small world graphs (social networking) - walls strogatz small world graphs - scale-free graphs (weighted peers with social networking) - rich get richer model by barabasi and albert.
+* clusterin coefficient of a node - number of edges in neighbourhood of u divided by all possible edges in neighbourhood of u
+* clustering coefficient of the graph - average it out
+
+
+### Project Specific
+
+1. A good issue explaining why compilers are not great for cryptographic implementations. [here](https://github.com/mratsim/constantine/issues/39)
+2. Refresher/Pre-req: [operand scanning and product scanning methods](https://iacr.org/archive/ches2011/69170459/69170459.pdf) - operand scanning is the school book method - school book method requires us to keep every intermediate result until everythingis accumulated - the product scannin method instead prioritizes calculating the partial products which would be needed to directly yield a part of the final result - check the diagrams in the paper
+2. The abstract of the project as expalined in [this](https://github.com/mratsim/constantine/issues/200) is to create code generator in Nim for ARMv7 and ARMv8 architectures. Various papers are referenced in the issue. The key summaries are presented below,
+    * [No Silver Bullet](https://eprint.iacr.org/2021/185.pdf) - Tests against ARM-Cortex-A and Apple A series processors (both ARMv8) - uses multiplication and then modular reduction - uses karatsuba for normal multiplication and karatsuba within the montogomery reduction technique (instead of using karatsuba within the montogomery multiplication + reduction technique) - reports said construction efficient for cortex processor but slower for apple processors - karatsuba replaces on multiplication with three additions/subtractions - apple processors have almost the same cycle count for multiplication and addition - therefore karatsuba increases the clock cycles that just normal school book method - the widely advertized complexity of karatsuba of O(n^1.58) takes into account only multiplications (i guess). Hence is proved wrong in this case - MUL and UMULH are the instructions used to get a full 64 bit multiplication result
+    * [Kyber on ARM64](https://eprint.iacr.org/2021/561.pdf) - Uses SIMD for creating vectorized implementations of Barrett Reduction and Montogomery Reduction. Since the bit width is just 16-bits they do not require multi-precision techniques like karatsuba. Their use of montogomery and barrett reduction techniques in conjunction with NTT is not clear.
+    * [Optimized SIKE Round 2 on ARM64](https://eprint.iacr.org/2019/721.pdf) - MUL and UMULH are the instructions used to get a full 64 bit multiplication result - This paper uses the school book method since it uses less number of addition operations at the expense of higher register usage - "The multiplication is performed in original row-wise multiplication rather than row-wise multiplication with Karatsuba method." - they also don't use a full karatsuba multiplication with the claim that it leads to more operations and memory accesses (probably since the width of the original multiplication divides up into a odd number of limbs) - they use montogomery reduction technque for modular reduction
+    * [Curve448 on 32-bit ARM Cortex-M4](https://eprint.iacr.org/2021/1355.pdf) - UMAAL for multiplication and accumulation - The work seems to have used the term "operand-scanning" incorrectly since it uses the product scanning method with "operand caching" method. This method is particularly useful to save on loads and stores - they use fermat inversion and a custom method for fast reduction of curve448 since the modulus is static (needs more investigation)
+    * [Efficient Multiplication of Somewhat Small Integers using Number-Theoretic Transforms](https://eprint.iacr.org/2022/439.pdf) - They challenge the viability of NTT for smaller width integers - this is against popular conclusions that NTT (scjonhage-strassen) algorithm only ever proves to be useful when considering integer with very large widths (in the order of 1000 or 10000 bits) - this paper shows the crossover point to be 2048 bits - this uses montogomery over NTT just like the kyber paper above - requires more investigation
+     * [SIDH on ARM](https://eprint.iacr.org/2022/439.pdf) - they have a two pronged approach to implementation - they use both ARM and NEON(vector instr.) - they use consecutive operand caching method for ARM and karatsuba with cascade operand scanning method for NEON - their construction is rather complex - for reduction they use montogomery and within it they use other constructions for multiplications - definitely requires careful reading to fully understand the construction - They do however boast low clock cycles than most works of the same kind - [here is a informative presentation of the paper](https://ches.iacr.org/2018/slides/ches2018-session5-talk3-slides.pdf)
+     * [] more coming soon
+4. In other news: https://github.com/mratsim/constantine/blob/7d29cb9/constantine/platforms/isa/macro_assembler_x86.nim this is the code generator that mamy wrote for x86. It uses meta programming to define inline assembly code. Need to get into the details of this as well.
+
 ### Side Quests: Deploying a node over a VPS
 
-TODO (everything )
-preimages
-pruning
-beacon backfilling
-execution client initially requires consensus client then it starts syncing and doesn't require it anymore. actualy the other way is true, the beacon chain requires the execution client because the head is optimistic. What is this process?
-if i have finality why do i need to download the entire chain
-state download and chain download are independent processes
+1. What are preimages? these are the preimages to the hashes in the state trie. If we store preimages we save computational work in the future. Hence clients also have an option to store or not to store preimages while syncing.
+2. what is pruning? pruning is removing stale data from the state trie. 
+3. state download and chain download are independent processes, why is that? chain download downloads headers verifies them and then downloads receipts and block bodies and verifies them against the headers. state download is downloading the state.
+4. if i have finality why do i need to download the entire chain?
+5. What is beacon backfilling?
+6. execution client initially requires consensus client then it starts syncing and doesn't require it anymore. After which the beacon chain requires the execution client because the head is optimistic. What is this process? beacon chain using checkpoint sync gives a target to execution client that it thinks is the tip of the chain. the execution client then starts from the target till the genesis(or whatever the local chain is from the last sync) to verify the entire chain and report to the beacon chain that the target indeed is correct. once this signal is given the beacon chain then follows the tip.
 
+### Interesting Attacks
+1. https://collective.flashbots.net/t/post-mortem-april-3rd-2023-mev-boost-relay-incident-and-related-timing-issue/1540
+2. https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs
 
 
 
