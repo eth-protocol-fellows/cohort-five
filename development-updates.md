@@ -116,7 +116,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Saeid](github.com/xm0onh)                                   |                                                                 |                                                                 |        |                  |
 | [Sayan](https://github.com/threehrsleep)                     | [Update 3](https://hackmd.io/@threehrsleep/epf_week3)           |                                                                 |        |                  |
 | [Scar Face](https://github.com/scarfacedotcom)               |                                                                 |                                                                 |        |                  |
-| [Siddharth Vaderaa](https://github.com/SiddharthV1)          | [Update 3](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/rkGyp1lDR) |                                                                 |        |                  |
+| [Siddharth Vaderaa](https://github.com/SiddharthV1)          | [Update 3](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/rkGyp1lDR) |                                                                 | [Update 5](https://hackmd.io/@sidvdr/SJtOgPGOR) |                  |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 |                                                                 |        |                  |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 |                                                                 |        |                  |
 
