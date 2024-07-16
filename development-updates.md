@@ -9,7 +9,7 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started.
 
 | Name/GH                                                      | Week 0                                                          | Week 1                                                          | Week 2                                                          |
-|--------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+| ------------------------------------------------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                 | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        | [Update 2](https://hackmd.io/@0xpanicError/epf-update_2)        |
 | [0xSulpiride](https://github.com/0xSulpiride)                |                                                                 | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            | [Update 2](https://hackmd.io/@sulpiride/BJLYckU80)              |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) | [Update 2](https://hackmd.io/@ABresting/ryhHqf8LA)              |
@@ -83,7 +83,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Chirag](https://github.com/chirag-parmar)                   | [Update 3](https://hackmd.io/@chirag-parmar/HJyYwEev0)          | [Update 4](https://hackmd.io/@chirag-parmar/SJOk7wKDA)          | [Update 5](https://hackmd.io/@chirag-parmar/B1m3PjzdA)          |                                                                                    |
 | [ChloeZhu](https://github.com/Chloezhu010)                   |                                                                 |                                                                 |                                                                 |                                                                                    |
 | [Cloud](https://github.com/0xClouds/)                        |                                                                 |                                                                 |                                                                 |                                                                                    |
-| [DanGoron](https://github.com/gorondan)                      |                                                                 | [Update 4](https://hackmd.io/@kboomro/HyeZXZgxO0)               |                                                                 |                                                                                    |
+| [DanGoron](https://github.com/gorondan)                      |                                                                 | [Update 4](https://hackmd.io/@kboomro/HyeZXZgxO0)               | [Update 5](https://hackmd.io/@kboomro/HkfNC7edR)                |                                                                                    |
 | [Daniel Knopik](https://github.com/dknopik)                  | [Update 3](https://hackmd.io/@dknopik/epf-week3)                | [Update 4](https://hackmd.io/@dknopik/epf-week4)                | [Update 5](https://hackmd.io/@dknopik/epf-week5)                | [Network Simulations with Shadow](projects/network-simulations-with-shadow.md)     |
 | [Dirk Jäckel](https://github.com/biafra23)                   |                                                                 |                                                                 |                                                                 |                                                                                    |
 | [Dsorken](https://github.com/Dsorken)                        | [Update 3](https://hackmd.io/@VgS_FqIfRay_4wp6pMBEgw/HJ9rQ0kD0) | [Update 4](https://hackmd.io/@VgS_FqIfRay_4wp6pMBEgw/r1VWP5_wA) |                                                                 |                                                                                    |
@@ -125,7 +125,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
 
 | Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
-|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
+| ------- | ------ | ------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 |         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
@@ -134,5 +134,6 @@ The actual project development is the main part of the program. Post your regula
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
 | Name/GH | Final dev update | Project presentation |
-|---------|------------------|----------------------|
+| ------- | ---------------- | -------------------- |
 |         |                  |                      |
+
