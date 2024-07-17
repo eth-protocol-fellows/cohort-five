@@ -1,10 +1,10 @@
-# Project Template
-
-`eip-7732: enshrined Proposer Builder Separation` implementation in the Nimbus Consensus Client
+# `eip-7732: enshrined Proposer Builder Separation` implementation in the Nimbus Consensus Client
 
 ## Motivation
 
-Implementing proposer-builder separation (PBS) directly into the Nimbus consensus client helps prevent transaction censorship at the protocol level. This enshrines PBS on the protocol, which currently occurs as a sidecar in the protocol, creating a trustless system between proposers and builders. Additionally, it supports scaling Ethereum by enabling future upgrades like Danksharding and Inclusion lists. Working on this project will further solidify my understanding of the core Ethereum protocol, advancing my knowledge from intermediate to advanced.
+Transitioning from MEV-Boost to enshrined PBS (ePBS) eliminates reliance on third-party software, broadens block construction responsibilities, and ensures block construction adheres to the network's security rules. This integration fosters a transparent and competitive marketplace for block space.
+
+Currently, the system's dependence on a few relays introduces centralization risks and security vulnerabilities, as these relays operate outside Ethereum’s consensus rules. Enshrining PBS within the protocol seeks to mitigate these risks by establishing a secure proposer-builder relationship, encourage direct protocol engagement and create a transparent, equitable MEV market. By reducing reliance on external systems, ePBS enhances decentralization, improves censorship resistance, and supports long-term goals like MEV redistribution mechanisms (e.g., MEV-burn).
 
 ## Project description
 
@@ -37,7 +37,7 @@ _Week 15-17_: Research and implement ePBS compatible fork choice logic.
 - Navigating a language I'm new to but love due to it's performance and minimal runtime overhead
 - Finding a solution for a suitable fork choice logic compatible with ePBS
 - Implementing a suitable solution for withdrawals and payments. As withdrawals from the beacon chain are complex in nature, involving removing funds from one layer and crediting them on another.
-- Ensuring Compatibility with existing Nimbus componenents
+- Ensuring Compatibility with existing Nimbus Ethereum infrastructure and be flexible for future updates like sharding or new layer-2 solutions.
 
 
 ## Goal of the project
