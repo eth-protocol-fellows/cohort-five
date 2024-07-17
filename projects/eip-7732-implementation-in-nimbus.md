@@ -1,4 +1,4 @@
-# `eip-7732: enshrined Proposer Builder Separation` implementation in the Nimbus Consensus Client
+# `eip-7732: enshrined Proposer-Builder Separation` implementation in the Nimbus Consensus Client
 
 ## Motivation
 
@@ -13,39 +13,29 @@ This project aims to integrate proposer-builder interaction, where block propose
 ## Specification
 
 This specification involves decoupling the execution from consensus and the notion of splitting the slot into 2 parts
-All major changes will be happening in the Consesnus client. 
-- Beacon changes specs: Add new staked consensus participants called Staked Builders and new honest validators duties called payload timeliness attestations.
-- Fork choice specs: Modification of the fork choice for ePBS upgrade
-- P2P specs: Modification of Consensus layer network specifications for p2p
-- Honest Validator guide specs: changes and additions to the Honest validator guide included in the ePBS fork
-- Honest Builder spec guide: actions of a "builder" participating in the Ethereum proof-of-stake protocol
-- Fork logic: Implement fork choice logic such that the following features are guaranteed: unconditional payment to the proposer, Builder reveal safety, Builder withhold safety.
+All major changes will be happening in the Consesnus client as specified in this [eip](https://eips.ethereum.org/EIPS/eip-7732). 
 
 ## Roadmap
 This below schedule might not hold strictly and the proposed two-weeks-per-component schedule might prove difficult, and I suspect it might prove necessary to interleave things more and difficult to try to plan too tightly. However, the main challenges are listed in this roadmap:
-_Week 5-6_: Understand the current Nimbus-eth2 architecture with the [`storeBlock`](https://github.com/status-im/nimbus-eth2/blob/unstable/beacon_chain/gossip_processing/block_processor.nim `storeBlock`) procedure as a good entry point while getting familiar with the Nim language<br>
-_Week 7-8_: Implement beacon change specs and write tests <br>
-_Week 9-10_: Implement the fork-choice specs and write tests <br>
-_Week 11-12_: Implement the p2p specification changes for ePBS and write tests <br>
-_Week 13-14_: Implement the honest validator and builder specs with accompanying tests <br>
-_Week 15-17_: Research and implement ePBS compatible fork choice logic.
--Week 18-19: Going through already implemented work and considering performance optimisation and improving efficiency
--Week 20: Prepare final updates and presentations on work done.
+
+- _Week 5-6_: Understand the current Nimbus-eth2 architecture with the [`storeBlock`](https://github.com/status-im/nimbus-eth2/blob/unstable/beacon_chain/gossip_processing/block_processor.nim `storeBlock`) procedure as a good entry point while getting familiar with the Nim language<br>
+- _Week 7-8_: Implement beacon change specs and write tests <br>
+- _Week 9-10_: Implement the fork-choice specs and write tests <br>
+- _Week 11-12_: Implement the p2p specification changes for ePBS and write tests <br>
+- _Week 13-14_: Implement the honest validator and builder specs with accompanying tests <br>
+- _Week 15-17_: Research and implement ePBS compatible fork choice logic.
+- _Week 18-19_: Going through already implemented work and considering performance optimisation and improving efficiency
+- _Week 20_: Prepare final updates and presentations on work done.
 
 ## Possible challenges
 
-- Navigating a language I'm new to but love due to it's performance and minimal runtime overhead
-- Finding a solution for a suitable fork choice logic compatible with ePBS
-- Implementing a suitable solution for withdrawals and payments. As withdrawals from the beacon chain are complex in nature, involving removing funds from one layer and crediting them on another.
+- Navigating a new language
 - Ensuring Compatibility and interoperability with existing Nimbus Ethereum infrastructure and be flexible for future updates like sharding or new layer-2 solutions.
-- The extent to which there are test vectors this. In theory there might need to be at least one other project to compare with.
+- The extent to which there are test vectors. In theory there might need to be at least one other project to compare with.
 
 ## Goal of the project
 
-The goal of the project is to have a working and well-tested implementation of ePBS in the Nimbus Consensus client satisfying security conditions. Even if it doesn't end up being production-ready, just having proofs of existence of this. Success will be measured by the efficiency and performance of the completed implementation and how it is able to integerate with the existing Nimbus code. 
-
-
-**Project slide:** [presentation slides](https://www.canva.com/design/DAGKu8OLG7k/_dHQ10AJW1lgxlz1T0kA2Q/view?utm_content=DAGKu8OLG7k&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+The goal of the project is to have a working and well-tested implementation of ePBS in the Nimbus Consensus client satisfying security conditions. Even if it doesn't end up being production-ready, just having proofs of existence of this. Success will be measured by the efficiency and performance of the completed implementation and how it is able to integerate with the existing Nimbus codebase. 
 
 ## Collaborators
 
@@ -54,7 +44,9 @@ The goal of the project is to have a working and well-tested implementation of e
 
 ### Mentors
 
-@[tersec](https://github.com/tersec)
+- @[tersec](https://github.com/tersec)
+- @[Potuz](https://github.com/potuz/)
+- @[Terrence](https://github.com/terencechain/)
 
 ## Resources
 * [eip-7732](https://eips.ethereum.org/EIPS/eip-7732#abstract)
