@@ -14,11 +14,11 @@ PeerDAS Metrics focuses on identifying the most crucial metrics, integrating the
 
 The project is executed through these specific steps:
 
-- Monitor and visualize the initial set of metrics using Kurtosis, Prometheus and Grafana.
+- Monitor and visualize the initial set of metrics using Kurtosis and Grafana.
 
 - Review the initial metrics, identify additional ones that could be beneficial.
 - Integrate these metrics into Teku and potentially into Grandine.
-- Discuss and potentially develop Beacon APIs based on the metrics.
+- Discuss and potentially develop APIs based on the metrics.
 - Visualize these APIs using Dora.
 - Discuss the results of the metrics with mentors and teams to gather feedback and insights.
 
