@@ -3,7 +3,10 @@ Sure, here's the restructured presentation content in Markdown format:
 
 # Fork-Choice Enforced Inclusion Lists (FOCIL) Proof of Concept in Geth and Prysm
 
-Enhancing Decentralization and Censorship Resistance in Block Production
+Enhancing Decentralization and Censorship Resistance in Block Production.
+
+The aim of this project is to develop a Proof of Concept (PoC) to assess the feasibility of the research. Creating an Ethereum Improvement Proposal (EIP) and deploying it to the Ethereum mainnet or testnet are beyond the scope of this project.
+
 
 ## Motivation
 
@@ -17,7 +20,7 @@ Enhancing Decentralization and Censorship Resistance in Block Production
 
 ## Project Description
 
-A randomly selected set of validators forms an inclusion list ($IL$) committee to create and broadcast local inclusion lists. The block producer aggregates these lists into a canonical aggregate ($IL_{agg}$), which is included in the block and validated by attesters to ensure block validity.
+A randomly selected set of validators forms an inclusion list ($IL$) committee to create and broadcast local inclusion lists. The block producer aggregates these lists into a canonical aggregate ($IL_{agg}$), which is included in the block and validated by attesters to ensure block validity. More information can be found [here]([FOCIL](https://ethresear.ch/t/fork-choice-enforced-inclusion-lists-focil-a-simple-committee-based-inclusion-list-proposal/19870)).
 
 ## Specification
 
@@ -29,7 +32,10 @@ A randomly selected set of validators forms an inclusion list ($IL$) committee t
   
 - **EvaluateInclusionList function:**
 
-   [![\\ $$ \\ \text{Eval}(IL_{\text{agg}}^{\text{attester}}, IL_{\text{agg}}^{\text{proposer}}, \Delta) =  \\ \begin{cases}  \\ \text{True} & \text{if } \frac{|IL_{\text{agg}}^{\text{attester}} \cap IL_{\text{agg}}^{\text{proposer}}|}{|IL_{\text{agg}}^{\text{attester}}|} \geq \Delta \\  \\ \text{False} & \text{otherwise}  \\ \end{cases} \\ ](https://latex.codecogs.com/svg.latex?%5C%5C%20%24%24%20%5C%5C%20%5Ctext%7BEval%7D(IL_%7B%5Ctext%7Bagg%7D%7D%5E%7B%5Ctext%7Battester%7D%7D%2C%20IL_%7B%5Ctext%7Bagg%7D%7D%5E%7B%5Ctext%7Bproposer%7D%7D%2C%20%5CDelta)%20%3D%20%20%5C%5C%20%5Cbegin%7Bcases%7D%20%20%5C%5C%20%5Ctext%7BTrue%7D%20%26%20%5Ctext%7Bif%20%7D%20%5Cfrac%7B%7CIL_%7B%5Ctext%7Bagg%7D%7D%5E%7B%5Ctext%7Battester%7D%7D%20%5Ccap%20IL_%7B%5Ctext%7Bagg%7D%7D%5E%7B%5Ctext%7Bproposer%7D%7D%7C%7D%7B%7CIL_%7B%5Ctext%7Bagg%7D%7D%5E%7B%5Ctext%7Battester%7D%7D%7C%7D%20%5Cgeq%20%5CDelta%20%5C%5C%20%20%5C%5C%20%5Ctext%7BFalse%7D%20%26%20%5Ctext%7Botherwise%7D%20%20%5C%5C%20%5Cend%7Bcases%7D%20%5C%5C%20)](#_)
+Eval(IL_agg^attester, IL_agg^proposer, Δ) =
+  True  if |IL_agg^attester ∩ IL_agg^proposer| / |IL_agg^attester| ≥ Δ
+  False otherwise
+
 
 **Execution Layer:**
 
