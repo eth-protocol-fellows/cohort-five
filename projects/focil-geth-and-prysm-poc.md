@@ -1,6 +1,3 @@
-Sure, here's the restructured presentation content in Markdown format:
-
-
 # Fork-Choice Enforced Inclusion Lists (FOCIL) Proof of Concept in Geth and Prysm
 
 Enhancing Decentralization and Censorship Resistance in Block Production
