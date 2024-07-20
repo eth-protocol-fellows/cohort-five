@@ -16,9 +16,12 @@ At the start of the cohort, I explored various privacy-related ideas, including 
 This realization led me to pivot towards working on censorship resistance at the protocol level. During my research, I discovered that block builders might also censor transactions for a few blocks to extract more money from these transactions through MEV-related actions. This further convinced me to focus on this topic.
 
 
-<img src="https://raw.githubusercontent.com/irnb/board/main/img/newplot.png" alt="Censorship Statistics" width="500"/>
-
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/irnb/board/main/img/newplot.png" alt="censorship status" width="500"/>
+  <p><em>https://censorship.pics</em></p>
+</div>
 <br>
+
 
 Statistics from [censorship.pics](https://censorship.pics/) indicate the urgent need for an active protocol-level solution to combat censorship resistance (CR) in Ethereum. 
 
@@ -59,6 +62,11 @@ The proposer for slot n+1 is responsible for aggregating the attestations from m
 
 Slot attestation committees check whether the proposer for slot n+1 has created the correct list. If the list is correct, they attest to its validity.
 
+<div style="text-align: center;">
+  <img src="https://ethresear.ch/uploads/default/original/3X/d/e/deedccb04e5bb133ccacdbe2c2c17d1e5abdc3ce.png" alt="Inclusion List Construction" width="500"/>
+  <p><em><a href="https://ethresear.ch/t/one-bit-per-attester-inclusion-lists/19797" target="_blank">https://ethresear.ch/t/one-bit-per-attester-inclusion-lists/19797</a></em></p>
+</div>
+
 ### 2. Transaction Inclusion
 
 The proposer for block n+2 must include the transactions from the IL list in the execution payload. There are several considerations:
@@ -91,7 +99,7 @@ i'll share the PR links here in coming weeks.
 #### July 22 - Mid August 2024
 - **Complete Specifications and GFI Tasks:**
   - Finalize the full specification in the `consensus-spec` repo.
-  - Address related Good First Issues (`GFI`) in `Lighthouse` and `Reth` to build confidence before starting the implementation.
+- Address related [Good First Issues (`GFI`)](https://gfi.bordel.wtf/) in `Lighthouse` and `Reth` to build confidence before starting the implementation.
 
 #### Mid August - End of August
 - **Implement Reed-Solomon Encoding and Decoding:**
