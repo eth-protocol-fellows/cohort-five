@@ -4,12 +4,6 @@ This solution tackles censorship issues caused by block builders in PBS and futu
 
 ## Motivation
 
-Sure, here is the motivation section refined to maintain your tone and technical terms:
-
----
-
-## Motivation
-
 At the start of the cohort, I explored various privacy-related ideas to implement them as my project, including my own EIP (EIP-7503). However, after several iterations, I realized that having a censorship-resistant protocol is a prerequisite for most privacy approaches. Without this, block builders could censor all transactions related to these privacy measures, claiming non-compliance.
 
 This realization led me to pivot towards working on censorship resistance at the protocol level. During my research, I discovered that block builders might also censor transactions for a few blocks to extract more money from these transactions through MEV-related actions. This further convinced me to focus on this topic.
