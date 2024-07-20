@@ -1,16 +1,15 @@
-# Inclusion List with Plausible Deniability
+# Inclusion List with Plausible Deniability 
 
 
 This solution tackles censorship issues caused by block builders in PBS and future ePBS. By employing **Reed-Solomon** erasure codes, it introduces a design that offers **plausible deniability** for Inclusion List Committee members, safeguarding them from accountability and legal constraints.
 
-### Project Repositories
+### Project Repositories 📂
 
 [![reth](https://img.shields.io/badge/irnb/reth-green.svg)](https://github.com/irnb/reth)
 [![lighthouse](https://img.shields.io/badge/irnb/lighthouse-blue.svg)](https://github.com/irnb/lighthouse)
 [![consensus-specs](https://img.shields.io/badge/irnb/consensus--specs-orange.svg)](https://github.com/irnb/consensus-specs)
 
-## Motivation
-
+## Motivation 🌟 
 
 At the start of the cohort, I explored various privacy-related ideas, including my own [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503), to implement one of them as my cohort project. However, after several iterations, I realized that having a **censorship-resistant** protocol is a prerequisite for most privacy approaches. Without this, block builders could censor all transactions related to these privacy measures, claiming non-compliance.
 
@@ -40,7 +39,7 @@ However, the one-bit-per attester approach also presented challenges since it wa
 the inclusion list is a cross-layer change, affecting the execution layer, consensus layer, and also the Engine API.
 
 
-## Project description
+## Project description 🛠️
 
 ### Overview
 
@@ -80,13 +79,13 @@ Attesters for slot n+2 check whether the transactions in the inclusion list were
 
 
 
-## Specification
+## Specification 📋
 
 i working on specs in the `consensus-specs` repo, and i plan to add the `fork choice rule` and new method in the `Engine API` to support the inclusion list.
 
 i'll share the PR links here in coming weeks.
 
-## Roadmap
+## Roadmap 🗓️
 
 
 #### July 22 - Mid August 2024
@@ -116,29 +115,33 @@ i'll share the PR links here in coming weeks.
   - Make the final presentation and publish the results.
 
 
-## Possible challenges
+## Possible challenges 🚧
 
 the one-bit-per attester committee size should be large number and it's create the number of attestation object to be large too, and this may cause some issues in the gossip protocol, and also the fork choice rule changes is a big change and it's need to be carefully implemented.
 
-## Goal of the Project
+## Goal of the Project 🎯
 
 In mid-January 2024, I had a conversation with one of the authors of EIP-7547. During this discussion, I realized that the inclusion list was dropped from the next hardfork due to conflicts with the ePBS. This situation opened the door for me to work on experimental ideas like the one-bit-per-attester inclusion list. I hope that when the next hardfork is planned, my implementation will assist different teams and serve as an example.
 
 Regarding what success looks like for this project, I can say: Implementing a fully functional inclusion list with plausible deniability using `Lighthouse` as the consensus client and `Reth` as the execution client, and being able to run a small devnet.
 
-## Collaborators
+## Collaborators 🤝
 
 ### Fellows 
 
-- Hamid Bateni (https://github.com/irnb)
+- Hamid (https://github.com/irnb)
 
 > please reach out to me if you are interested in working on this project.
 
 ### Mentors
 
-I'm gonna need mentor from lighthouse team during the implementation phase. 
+-  ?
+  
 
-and since my project have some similarity with the FOCIL i'll join to their working group to get some feedback and help.
+I'm gonna need a mentor from `lighthouse` team during the implementation phase. 
+
+
+and since my project have some similarity with the FOCIL i'll join to their working group to get/give some feedback and help.
 
 ## Resources
 
