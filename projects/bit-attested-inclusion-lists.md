@@ -1,4 +1,4 @@
-## An Inclusion List Protocol Based on the One-Bit-Per-Attester Idea
+## Inclusion List with Plausible Deniability
 
 This solution tackles censorship issues caused by block builders in PBS and future ePBS. By employing **Reed-Solomon** erasure codes, it introduces a design that offers **plausible deniability** for Inclusion List Committee members, safeguarding them from accountability and legal constraints.
 
@@ -19,7 +19,7 @@ While projects and ideas that increase solo staking can help CR passively, a bet
 
 After a deeper dive into both approaches, I chose to implement the one-bit-per attester method instead of anon-ILs because the anon-ILs require a somewhat central element. However, the one-bit-per attester approach also presented challenges since it was just an idea, not a fully specified and ready-to-implement solution. I saw this as an opportunity to train myself in creating full specifications, writing tests in the consensus-spec repo, and experiencing the full process of creating cross-layer specifications for an idea in the Ethereum ecosystem.
 
-As mentioned earlier, the inclusion list is a cross-layer change, affecting the execution layer, consensus layer, and also the Engine API.
+the inclusion list is a cross-layer change, affecting the execution layer, consensus layer, and also the Engine API.
 
 
 ## Project description
