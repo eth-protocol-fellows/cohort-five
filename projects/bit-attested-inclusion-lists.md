@@ -4,7 +4,8 @@ This solution tackles censorship issues caused by block builders in PBS and futu
 
 ## Motivation
 
-At the start of the cohort, I explored various privacy-related ideas to implement them as my project, including my own EIP (EIP-7503). However, after several iterations, I realized that having a censorship-resistant protocol is a prerequisite for most privacy approaches. Without this, block builders could censor all transactions related to these privacy measures, claiming non-compliance.
+
+At the start of the cohort, I explored various privacy-related ideas, including my own [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503), to implement one of them as my cohort project. However, after several iterations, I realized that having a **censorship-resistant** protocol is a prerequisite for most privacy approaches. Without this, block builders could censor all transactions related to these privacy measures, claiming non-compliance.
 
 This realization led me to pivot towards working on censorship resistance at the protocol level. During my research, I discovered that block builders might also censor transactions for a few blocks to extract more money from these transactions through MEV-related actions. This further convinced me to focus on this topic.
 
@@ -13,11 +14,21 @@ This realization led me to pivot towards working on censorship resistance at the
 
 <br>
 
-Statistics from [censorship.pics](https://censorship.pics/) indicate the urgent need for an active protocol-level solution to combat censorship resistance (CR) in Ethereum. We need to address this before the majority of relayers and builders turn into censoring builders for various reasons.
+Statistics from [censorship.pics](https://censorship.pics/) indicate the urgent need for an active protocol-level solution to combat censorship resistance (CR) in Ethereum. 
 
-While projects and ideas that increase solo staking can help CR passively, a better option actively targeting the censorship issue is the inclusion list. There is a vast design space for implementing inclusion lists, but among these designs, the anon-ILs and One-bit-per-attester inclusion lists caught my attention. These designs consider the potential restrictions for different validators and the fear of being part of the IL, which could hinder the adoption of inclusion lists. These ideas work to add a layer of anonymity or plausible deniability for validators participating in the inclusion list flow.
+We need to address this before the majority of relayers and builders turn into censoring builders for various reasons, or at least create an approach that can enforce the inclusion of some censored transactions to maintain network censorship resistance.
 
-After a deeper dive into both approaches, I chose to implement the one-bit-per attester method instead of anon-ILs because the anon-ILs require a somewhat central element. However, the one-bit-per attester approach also presented challenges since it was just an idea, not a fully specified and ready-to-implement solution. I saw this as an opportunity to train myself in creating full specifications, writing tests in the consensus-spec repo, and experiencing the full process of creating cross-layer specifications for an idea in the Ethereum ecosystem.
+While projects and ideas that increase number of independent staker can help CR passively, a better option actively targeting the censorship issue is the **inclusion list**. 
+
+There is a really big design space for implementing inclusion lists, but among these designs, these two ideas caught my attention:
+* anon-ILs 
+* One-bit-per-attester inclusion lists 
+
+These designs consider the potential restrictions for different validators and the fear of being part of the IL, which could make difficult the adoption of inclusion lists. These ideas work to add a layer of **anonymity** or **plausible deniability** for validators participating in the flow of constructing inclusion list.
+
+After a deeper dive into both approaches, I chose to implement the **one-bit-per attester** method instead of anon-ILs because the anon-ILs require a somewhat central element. 
+
+However, the one-bit-per attester approach also presented challenges since it was **just an idea**, not a fully specified and ready-to-implement solution. I saw this as an **opportunity to train myself** in design and creating full specifications, writing tests in the consensus-spec repo, and experiencing the full process of creating cross-layer specifications for an idea in the Ethereum ecosystem.
 
 the inclusion list is a cross-layer change, affecting the execution layer, consensus layer, and also the Engine API.
 
