@@ -1,4 +1,4 @@
-## Design and Implementation of an Inclusion List Protocol Based on the One-Bit-Per-Attester Idea
+## An Inclusion List Protocol Based on the One-Bit-Per-Attester Idea
 
 This solution tackles censorship issues caused by block builders in PBS and future ePBS. By employing **Reed-Solomon** erasure codes, it introduces a design that offers **plausible deniability** for Inclusion List Committee members, safeguarding them from accountability and legal constraints.
 
