@@ -9,7 +9,9 @@ At the start of the cohort, I explored various privacy-related ideas to implemen
 This realization led me to pivot towards working on censorship resistance at the protocol level. During my research, I discovered that block builders might also censor transactions for a few blocks to extract more money from these transactions through MEV-related actions. This further convinced me to focus on this topic.
 
 
-![Censorship Statistics](https://raw.githubusercontent.com/irnb/board/main/img/newplot.png)
+<img src="https://raw.githubusercontent.com/irnb/board/main/img/newplot.png" alt="Censorship Statistics" width="500"/>
+
+<br>
 
 Statistics from [censorship.pics](https://censorship.pics/) indicate the urgent need for an active protocol-level solution to combat censorship resistance (CR) in Ethereum. We need to address this before the majority of relayers and builders turn into censoring builders for various reasons.
 
