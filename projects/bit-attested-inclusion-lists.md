@@ -1,4 +1,4 @@
-## Inclusion List with Plausible Deniability
+# Inclusion List with Plausible Deniability
 
 
 This solution tackles censorship issues caused by block builders in PBS and future ePBS. By employing **Reed-Solomon** erasure codes, it introduces a design that offers **plausible deniability** for Inclusion List Committee members, safeguarding them from accountability and legal constraints.
