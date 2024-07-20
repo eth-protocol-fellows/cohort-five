@@ -1,6 +1,4 @@
-# Project Template
-
-Tagline 
+# Attestation-Based Inclusion Lists 
 
 ## Motivation
 
