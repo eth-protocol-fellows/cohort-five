@@ -70,11 +70,6 @@ Are there any fellows working with you on this project?
 
 Which mentors are helping you with the project? 
 
-## More
-### Pull Requests
-
-### Considerations
-
 ## Resources
 
 Provide links to repositories, PRs and other resources which constitute the project.
