@@ -89,7 +89,7 @@ i'll share the PR links here in coming weeks.
 ## Roadmap
 
 
-#### July 22 - Mid August
+#### July 22 - Mid August 2024
 - **Complete Specifications and GFI Tasks:**
   - Finalize the full specification in the `consensus-spec` repo.
   - Address related Good First Issues (`GFI`) in `Lighthouse` and `Reth` to build confidence before starting the implementation.
@@ -99,7 +99,7 @@ i'll share the PR links here in coming weeks.
   - Implement the Reed-Solomon one-bit encoding and decoding in the Consensus Layer (`CL`).
   - Develop the committee formation process using `RANDAO`.
 
-#### September
+#### September 2024
 - **Mid September:**
   - Implement the fork choice rule changes in the Execution Layer (`EL`) and `Engine API`. This is a crucial part of the project.
   - Implement the `GetInclusionList` function in the execution client (`Reth`).
@@ -108,7 +108,7 @@ i'll share the PR links here in coming weeks.
   - Modify the `getExecutePayload` API to incorporate the inclusion list changes.
   - Begin the testing and debugging phase to identify and resolve issues.
 
-#### October
+#### October 2024
 - **Testing, Debugging, and Optimization:**
   - Testing and debugging to ensure everything works smoothly.
   - Optimize the code for better efficiency and performance.
@@ -118,22 +118,38 @@ i'll share the PR links here in coming weeks.
 
 ## Possible challenges
 
-What are the limitations and issues you may need to overcome?
+the one-bit-per attester committee size should be large number and it's create the number of attestation object to be large too, and this may cause some issues in the gossip protocol, and also the fork choice rule changes is a big change and it's need to be carefully implemented.
 
-## Goal of the project
+## Goal of the Project
 
-What does success look like? Describe the end goal of the project, scope, state and impact for the project to be considered finished and successful.
+In mid-January 2024, I had a conversation with one of the authors of EIP-7547. During this discussion, I realized that the inclusion list was dropped from the next hardfork due to conflicts with the ePBS. This situation opened the door for me to work on experimental ideas like the one-bit-per-attester inclusion list. I hope that when the next hardfork is planned, my implementation will assist different teams and serve as an example.
+
+Regarding what success looks like for this project, I can say: Implementing a fully functional inclusion list with plausible deniability using `Lighthouse` as the consensus client and `Reth` as the execution client, and being able to run a small devnet.
 
 ## Collaborators
 
 ### Fellows 
 
-Are there any fellows working with you on this project? 
+- Hamid Bateni (https://github.com/irnb)
+
+> please reach out to me if you are interested in working on this project.
 
 ### Mentors
 
-Which mentors are helping you with the project? 
+I'm gonna need mentor from lighthouse team during the implementation phase. 
+
+and since my project have some similarity with the FOCIL i'll join to their working group to get some feedback and help.
 
 ## Resources
 
-Provide links to repositories, PRs and other resources which constitute the project.
+- https://eips.ethereum.org/EIPS/eip-7547
+- https://ethresear.ch/t/anonymous-inclusion-lists-anon-ils/19627
+- https://ethresear.ch/t/one-bit-per-attester-inclusion-lists/19797
+- https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction
+- https://en.wikipedia.org/wiki/Binary_Reed%E2%80%93Solomon_encoding
+- https://notes.ethereum.org/@fradamt/forward-inclusion-lists
+- https://notes.ethereum.org/@fradamt/H1TsYRfJc
+- https://ethresear.ch/t/no-free-lunch-a-new-inclusion-list-design/16389
+- https://ethresear.ch/t/cumulative-non-expiring-inclusion-lists/16520
+
+> PRs and additional resources will be added as the project progresses.
