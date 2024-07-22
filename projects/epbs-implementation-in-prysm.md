@@ -6,11 +6,11 @@ Implementation of a working Proof-of-Concept for [EIP-7732 or ePBS](https://gith
 
 Currently in the Ethereum, the Proposer-Builder Separation or PBS is handled by third-party software like mev-boost and an out-of-protocol relay network. The [Proposer-Builder Separation (PBS)](https://ethereum.org/en/roadmap/pbs) was introduced to segregate block proposing from block building. PBS democratizes access to MEV by enabling block proposers to sell their rights to construct a block, thereby creating a market for block builders. [mev-boost](https://github.com/flashbots/mev-boost), an out-of-protocol implementation of PBS built by [Flashbots](https://www.flashbots.net), has been dominantly adopted, accounting for approximately [90% of Ethereum blocks being produced](https://mevboost.pics).
 
-Proposers want their promised transaction bundles to be delivered and get paid safely, while builders want their bundles to avoid front-running. Relays sit between proposers and builders, acting as mutually trusted auctioneers. Due to a lack of sufficient incentives to run relays, we are witnessing another centralizing force. Over the past two weeks, only five relays has produced around [~94% of total block](https://mevboost.pics) that were proposed.
+Ideally, Proposers want their promised transaction bundles to be delivered and get paid safely, while builders want their bundles to avoid front-running. Relays sit between proposers and builders, acting as mutually trusted auctioneers. Due to a lack of sufficient incentives to run relays, we are witnessing another centralizing force. Over the past two weeks, only five relays has produced around [~94% of total blocks](https://mevboost.pics) that were proposed.
 
 ### Why ePBS
 
-Referring to this [doc](https://hackmd.io/ZNPG7xPFRnmMOf0j95Hl3w?view#3-Enshrining-PBS) by potuz, The primary problem in the current implementation of PBS in Ethereum are as followed:
+Referring to this [doc](https://hackmd.io/ZNPG7xPFRnmMOf0j95Hl3w?view#3-Enshrining-PBS) by potuz, The primary problem in the current implementation of PBS in Ethereum is as followed:
 
 1. A proposer that wants to sell his right to build a payload **must** trust an intermediary.
 2. A builder that wants to buy the rights to build a payload **must** trust an intermediary.
