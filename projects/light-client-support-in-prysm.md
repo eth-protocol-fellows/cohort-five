@@ -1,5 +1,6 @@
 # Light Client Server Support in Prysm
 
+HackMD link: https://hackmd.io/@Bastin/BkdVcRQvA
 This project aims to add light client server support to the Prysm consensus client.
 
 ## Motivation
