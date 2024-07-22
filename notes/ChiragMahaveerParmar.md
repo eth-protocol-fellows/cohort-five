@@ -155,9 +155,61 @@ Enter EIP-1559, seperate base fee and priority fee. The effective gas price = ba
 * Minimum Edge Cut - a minimum set of connections to nodes that will disconnect a good chunk of the graph
 * General rules of thumb - avoid O(n) complexity for state and distance - avoid small cuts - roughly close to average degree for all nodes - minimize state while keeping characteristic length small
 * types of graph construction strategies
-    * random graphs - small world graphs (social networking) - walls strogatz small world graphs - scale-free graphs (weighted peers with social networking) - rich get richer model by barabasi and albert.
+    * random graphs - small world graphs (social networking) - waltz strogatz small world graphs - scale-free graphs (weighted peers with social networking) - rich get richer model by barabasi and albert.
 * clusterin coefficient of a node - number of edges in neighbourhood of u divided by all possible edges in neighbourhood of u
 * clustering coefficient of the graph - average it out
+
+### Kademlia
+
+[original paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) - [discv5 node table](https://github.com/ethereum/devp2p/blob/master/discv5/discv5-theory.md#node-table) - [concept explainer](https://www.youtube.com/watch?v=1QdKhNpsj8M)
+
+1. The XOR metrix fulfills all the properties of a good distance metric, d(a,a) = 0, d(a,b) = d(b,a), d(a,b) + d(b,c) > d(a,c)
+2. The routing table is constructed using k-buckets or lists of size of k. For every bit of the node ID one list is stored. This is a very ambiguous phrase. let's break it down.
+    * so first of all, all node IDs are 160 bit digests. All keys of the data stored are also 160 bit digests. Both are mapped in the same space i.e. If i need to find a key with a certain value I look for a node with it's ID close to the key.
+    * "For each 0 ≤ i < 160, every node keeps a list of <IP address, UDP port, Node ID> triples for nodes of distance between 2^i and 2^(i+1) from itself." To undertstand this here is an example. assume four node IDs 1101(13), 1001(9), 1111(15) and 1100(12). 13 and 9 differ in one bit (d = 1) but at the 2nd bit, 13 and 15 also differ in one bit but at the 3rd bit, 13 and 12 also differ in one bit but at the 4th position. The number of bits different is always one but the bit position changes. Every node maintains a list of k items for every bit position.
+        * let's check the formula once assuming node id 13, i = 0 => all node ids with  d greater than 2^0 and lesser than 2^1 => 1100(12).
+        * i = 1 => all node ids with d greater than 2^1 and lesser than 2^2 => 1111(15)
+        * and so on...
+    * What about 1010 => 1010 XOR 1101 => 0111(7) => this comes in between 2^2 and 2^3 so i = 3 => at position 2 there is indeed a change in the bit but there is also a change in bit position 1 and bit position 0.
+    * There is no number that is in between 2^2 and 2^3 that differs more than first three bits. And MOST IMPORTANTLY there is no number in that range that does not differ in the 2nd bit.
+    * So to speak, A list created for some 0 ≤ i < 160, there is only a difference in bits LOWER THAN the ith bit and THERE IS DEFINITELY A difference in the ith bit.
+    * Inference: list of i + 1 is on average twice far away than that of list i.
+3. From the explanation above it is clear that lists for the first few  values of i are most probably empty because the difference between node ids should only be a few bits
+4. Nodes are added to list as encountered on the network(when a message is received from them). If the list has space the new node is added to the top of the list. If it is full, the node at the bottom of the list is contacted to check if alive, if not alive the new node is added to the top of the list. If the node at the bottom of the list responds, it is brought to the top of the list and the new node is evicted. If a node already exists on the list it is brought to the top of the list when encountered.
+5. "By keeping the oldest live contacts around, k-buckets maximize the probability that the nodes they contain will remain online." This was an inference drawn from gnutella where the probability of a node staying alive for an extra hour is higher if the node has already been up for a long time. [This needs investigation, because "the more time a node is up the more wear it has gone through" is also a parallel theory.]
+6. K buckets also provide a DOS resistance since new nodes are added only when old nodes are dead. So no node can flood the system without taking down old nodes.
+7. NODE LOOKUP: I as a node get an ID to be looked up, first thing I do is XOR that id with my own id => `d`. Then I pick the appropriate k-bucket for `d`. Take `alpha` number of nodes from the `k` nodes and contact them. I send a FIND_NODE(ID) RPC request to those `alpha` nodes simultaneously. These nodes reply with `k` number of nodes each which are closest to the ID in their perspective. I refresh the `k` nodes with the closer nodes found in the replies (this refresh does not occur in the bucket itself but a copy of the bucket) I need not wait for all the `alpha` nodes to reply from before. I contact `alpha` number of nodes from this new list of `k` nodes. And the process repeats.
+    * Termination Condition: The first reply gives me `k` nodes closest, the next one gives `k` more. I stop when I have `k` nodes in my list that are not farther than the `k` nodes in newer replies. https://github.com/libp2p/go-libp2p-kad-dht/issues/290. Will this even terminate? 
+    * Edge Case: "If a round of FIND NODEs fails to return a node any closer than the closest already seen, the initiator resends the FIND NODE to all of the `k` closest nodes it has not already queried"
+    * Different Perspective: Chord uses `alpha` = 1. Because a node contacts only one peer who it thinks is closest to the lookup ID. takes a hop if the contacted peer knows an ID closer to the lookup ID. Therefore, the terminating condition is when there are no more new hops to traverse.
+8. maintenance and caching: refer paper.
+
+Ethereum uses a kademlia DHT in its DISCv5 protocol, however, it makes modifications to it. First it does not use the XOR metric but the logarithm of the XOR metric (approximated to the next integer a.k.a ceil). The logarithm distance directly gives the length of suffix in bits. On top of this it does not use the DHT to store key value pairs. Instead it just uses the routing part (lookup and discovery) and every node's routing table consists of ENR records instead of <ip, port, id> triples.
+
+There are more modifications, but the coolest one is the modification on the lookup. lookups in ethereum execute in multiple different paths. heh?? So in kademlia you pick up alpha nodes and send a FIND_NODE query, get replies and use the information within them to contact better nodes (closer). This is a single path. Ethereum executes multiple paths making sure NOT to use information from one path into another. More resiliency against 
+
+
+### libp2p
+
+[libp2p launchpad](https://pl-launchpad.io/curriculum/libp2p/connections/) - [ultimate pubsub explainer](https://docs.libp2p.io/concepts/pubsub/overview/#grafting-and-pruning) 
+
+* Sits over the existing transport layer in the OSI layers. Is modular stack - but most of its usage is in the blockchain industry.
+* it has the concept of negotiating protocols - where first you negotiate a meta protocol called multistream-select protocol - this is a protocol that define protocol negotiation
+* once a multistream-select protocol has been agreed on - you select a security protocol - a multiplexer protocol - and a range of application protocols. 
+* so the process is handshake - multistream-select - security - multiplexer - application. 
+* a multiplexer allows supporting multiple application protocols over a single connection - imagine two protocols that are logically disjoint in their working and their use cases - if a particular peer has the choice of using both they would use a multiplexer - it is just a logical multiplexer, don't sweat it - the multiplexer switches between "streams" - each stream is one application protocol.
+* to do the handshake you need to first know the peer address and port of the peer - for this libp2p exposes two interfaces(in the sense of object oriented programmin) - an advertiser and a discoverer interface - the discover interface has two default implementations - mDNS and Kademlia
+* In ETH2 discv5 is implemented as a discoverer.
+* The best part about the specification/project is their pubsub interface - it defines a publisher subscriber abastraction as an overlay of p2p network. pubsub is an application protocol interface (i guess) - and the protocol definitions of the interface are floodsub, randomsub and gossipsub - but i guess the three were sub protocol definitions - and now gossipsub is the default protocol definition
+* Personal Note - Don't focus too much on what is derived from what because the gossipsub protocol is the default definition flattening everything.
+* consensus client use the gossipsub protocol v1.1
+    * the aim of gossip sub is to create a balanced trade-off between network bandwidth and robustness/resiliency of the pub/sub protocol.
+    * it does this by employing two two strategies, first - it limits the networking degree of a peer (no. of connections) - this is controlled by a system wide parameter
+    * Second it allows a peer to decide how many of its connection are full message connections and how many are metadata only connections
+    * metadata connections are aptly represented by the dialogues "I have seen a particular message", "I want that particular message". The actual message is not included in these.
+    * and the actual message is only transferred through a full message connection
+    * While the gossip(metadata) flooding is controlled by the peering degree the heavy messages are controlled by the grafting and pruning strategy. The two strategies provide different controls.
+    * there is an additonal control - fan out - publishing messages to topics you are not subscribed to - unidriectional connections to peers who are subscribed to that topic - these fanout peers are remembered on top of the existing peering degree.
 
 
 ### Project Specific
