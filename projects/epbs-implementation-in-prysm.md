@@ -99,7 +99,7 @@ The goal for this project is to achieve a fully functional and working PoC for e
 #### Mentors
 
 - [Potuz](https://github.com/potuz)
-- [Terrence](https://github.com/terencechain)
+- [Terence](https://github.com/terencechain)
 
 ## Resources
 
