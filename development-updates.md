@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # Development Updates
 
 This document includes all development updates by contributors to EPF cohort 5. [Learn more](/program-guide/repo-guide.md#development-updates) about creating your development updates.

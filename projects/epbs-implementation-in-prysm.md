@@ -10,7 +10,8 @@ Proposers want their promised transaction bundles to be delivered and get paid s
 
 ### Why ePBS
 
-Referring to this [doc](https://hackmd.io/ZNPG7xPFRnmMOf0j95Hl3w?view#3-Enshrining-PBS) by potuz, The primary problem in the current implementation of PBS in Ethereum are as followed: 
+Referring to this [doc](https://hackmd.io/ZNPG7xPFRnmMOf0j95Hl3w?view#3-Enshrining-PBS) by potuz, The primary problem in the current implementation of PBS in Ethereum are as followed:
+
 1. A proposer that wants to sell his right to build a payload **must** trust an intermediary.
 2. A builder that wants to buy the rights to build a payload **must** trust an intermediary.
 
@@ -34,15 +35,16 @@ This change allows for faster network propagation by removing the execution payl
 
 <figcaption>
 
-*ePBS slot from potuz's presentation*
+_ePBS slot from potuz's presentation_
+
 </figcaption>
 </figure>
 
 ## Specification
 
-The implementation would follow the spec mentioned in [EIP-7732](https://eips.ethereum.org/EIPS/eip-7732). 
+The implementation would follow the spec mentioned in [EIP-7732](https://eips.ethereum.org/EIPS/eip-7732).
 
-The spec introduces a new staked Participant called _Builders_ and new honest validators duties called _payload timeliness attestations_. 
+The spec introduces a new staked Participant called _Builders_ and new honest validators duties called _payload timeliness attestations_.
 
 The slot in the Ethereum protocol is divided into four intervals:
 
@@ -80,6 +82,7 @@ Note: the timeline is tentative and might change based on the work done. Additio
 ## Goal of the Project
 
 The goal for this project is to achieve a fully functional and working PoC for ePBS before devcon, this would include for a single validator:
+
 - A proposer can request bids for payload from the builder.
 - A builder can perform various duties like providing `signedExecutionPayloadHeader`, or a message indicating withhelding payload etc.
 - For me personally, experience the development process and learn a ton under the mentorship of core devs and observe the lifecycle for an EIP implementation.
@@ -100,11 +103,11 @@ The goal for this project is to achieve a fully functional and working PoC for e
 
 ## Resources
 
-* [EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
-* [ePBS Spec](https://github.com/ethereum/consensus-specs/pull/3828)
-* [ePBS design constraints]([/ZNPG7xPFRnmMOf0j95Hl3w](https://ethresear.ch/t/epbs-design-constraints/18728))
-* [WIP ePBS PR in the Prysm repo](https://github.com/prysmaticlabs/prysm/pull/13917)
-* [ePBS specification notes](https://hackmd.io/uWVGcvcKSoqS4P5c5NHG3g)
-* [ePBS Forkchoice annotated spec](https://hackmd.io/@potuz/SJdXM43x0)
-* [ePBS Annotated Validator Spec](https://hackmd.io/@ttsao/epbs-annotated-validator)
-* [Payload boosts in ePBS](https://ethresear.ch/t/payload-boosts-in-epbs/18769/1)
+- [EIP-7732](https://eips.ethereum.org/EIPS/eip-7732)
+- [ePBS Spec](https://github.com/ethereum/consensus-specs/pull/3828)
+- [ePBS design constraints](<[/ZNPG7xPFRnmMOf0j95Hl3w](https://ethresear.ch/t/epbs-design-constraints/18728)>)
+- [WIP ePBS PR in the Prysm repo](https://github.com/prysmaticlabs/prysm/pull/13917)
+- [ePBS specification notes](https://hackmd.io/uWVGcvcKSoqS4P5c5NHG3g)
+- [ePBS Forkchoice annotated spec](https://hackmd.io/@potuz/SJdXM43x0)
+- [ePBS Annotated Validator Spec](https://hackmd.io/@ttsao/epbs-annotated-validator)
+- [Payload boosts in ePBS](https://ethresear.ch/t/payload-boosts-in-epbs/18769/1)
