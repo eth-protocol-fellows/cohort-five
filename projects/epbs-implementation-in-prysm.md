@@ -59,7 +59,7 @@ At any given slot, the blockchain’s head status can be:
 - An empty block for the current slot if the proposer submitted a block but the builder did not reveal the payload on time.
 - A full block for the current slot if both the proposer and the builder revealed on time.
 
-There are various pacakages, that would require significant changes including but not limited to sync, core, beacon-apis for builder, forkchoice, engine api and blockchain etc. Additionally, there are numerous helper functions and once a working PoC is implemented we would be moving onto Networking packages for the actual p2p auction and bids' gossiping.
+There are various packages, that would require significant changes including but not limited to sync, core, beacon-apis for builder, forkchoice, engine api and blockchain etc. Additionally, there are numerous helper functions and once a working PoC is implemented we would be moving onto Networking packages for the actual p2p auction and bids' gossiping.
 
 ## Roadmap
 
