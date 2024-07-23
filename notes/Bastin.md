@@ -18,7 +18,11 @@ For this project the goal is to implement the needed functions for light clients
 
 Here you can see my weekly updates as well in the [`development-updates.md`](https://github.com/eth-protocol-fellows/cohort-five/blob/main/development-updates.md):
 
+- [Project Proposal](https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/light-client-support-in-prysm.md)
+- 
 - [Week 0](https://hackmd.io/@Bastin/HJ6hOLQHC)
 - [Week 1](https://hackmd.io/@Bastin/HyM3AmnrA)
 - [Week 2](https://hackmd.io/@Bastin/H1JgDZLU0)
 - [Week 3](https://hackmd.io/@Bastin/By8UVwlPA)
+- [Week 5](https://hackmd.io/@Bastin/HyqHfO9OR) 
+- [Week 6](https://hackmd.io/@Bastin/Hke55_9dR)
