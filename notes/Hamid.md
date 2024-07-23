@@ -11,25 +11,11 @@
 
 🚀 Privacy and Censorship resistance are my interest area
 
-### 💡 Brainstorming Table
+## EPF Project
 
-| 📌 Title | 📝 Short Description | 🔗 Related Link |
-<<<<<<< HEAD
-|----------|----------------------|-----------------|
-|          |                      |                 |
+- [ Project Proposal: Inclusion List with Plausible Deniability ](../projects/attestation-based-inclusion-list.md)
 
-### 📚 Interesting Resource Table
+- [ Presentation Slides](https://github.com/irnb/board/blob/main/content/Inclusion%20List%20with%20Plausible%20Deniability%20(1).pdf)
 
-| 📌 Title | 📝 Short Description | 🔗 Link |
-|----------|----------------------|---------|
-|          |                      |         |
-=======
-| ------- | ------------------- | -------------- |
-|         |                     |                |
-
-### 📚 Interesting Resource Table
-
-| 📌 Title      | 📝 Short Description                                                 | 🔗 Link                |
-|---------------|----------------------------------------------------------------------|------------------------|
-| The Eth2 Book | A technical handbook on Ethereum’s move to proof of stake and beyond | https://eth2book.info/ |
->>>>>>> 9d6e90201dad156eb5b52aed2ec9bb4eafc642a4
+## Insightful Links: 
+https://eth2book.info/ 
