@@ -209,8 +209,43 @@ There are more modifications, but the coolest one is the modification on the loo
     * metadata connections are aptly represented by the dialogues "I have seen a particular message", "I want that particular message". The actual message is not included in these.
     * and the actual message is only transferred through a full message connection
     * While the gossip(metadata) flooding is controlled by the peering degree the heavy messages are controlled by the grafting and pruning strategy. The two strategies provide different controls.
-    * there is an additonal control - fan out - publishing messages to topics you are not subscribed to - unidriectional connections to peers who are subscribed to that topic - these fanout peers are remembered on top of the existing peering degree.
+    * there is an additonal control - fan out - publishing messages to topics you are not subscribed to - unidriectional connections to peers who are subscribed to that topic - these fanout peers are remembered on top of the existing peering degree. 
 
+### peerDAS and other DAS DHT protocols
+
+[peerDAS](https://ethresear.ch/t/peerdas-a-simpler-das-approach-using-battle-tested-p2p-components/16541) - 
+
+* peerDAS Summary: proposes deterministic selection of samples to be custodied (pseudo random function of node_id, epoch, custody_size) - custody_size = CUSTODY_REQUIREMENT - presents various other parameters for the system just like CUSTODY_REQ.. - NUMBER_OF_PEERS as minimum peering degree of DAS overlay - deterministic selection allows other nodes to be certain which peers have which sample, if they don't have the samples they must they are negatively scored - while selecting sample it is node's responsibility to select a good mix of "honest custody nodes", "super nodes", "high capacity nodes" - sampling is done through DO_YOU_HAVE messages on the gossipsub domain - hence even the samples are provided on the gossipsub domain - how? - after using the deterministic selection the node subscribes to the appropriate gossip channels 
+
+### General P2P related stuff
+
+* [this](https://github.com/libp2p/js-libp2p/blob/main/doc/PEER_DISCOVERY.md#discovery-mechanisms) link specifies two methods of peer discovery. Active and Ambient peer discovery. I guess they are trying to differentiate between "Actively" looking for other peers offering the same service and "passively" discovering them. I guess when an overlay network triggers the underlying DHT lookup for protocol negotiation they are "actively" discovering. Whereas when the underlying DHT events happen without a trigger and the overlay network just happens to "piggyback"(not payload piggybacking)i.e. using the untriggered conection to negotiate protocol then it is "passively" discovering.
+* 
+
+### Data Availability
+
+[Why do you require data availability checks](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html) - [legendary paper](https://eprint.iacr.org/2023/1079.pdf)
+
+1. The first article is easy to read and explains what fraud proofs are, how they improve security assumptions for light nodes and why data availability checks are needed for the fraud proofs to actually deliver value to the light nodes - note: the fraud proof in the article is constructed only using state roots and transaction however in actuality you would require some amount of state data too. especially the data that the particular malformed transaction touches.
+2. The probabilities within the first article surpass my knowledge - but I think 2^(-100) comes from random picking event "with replacement"
+3. The second paper is "perfetto". It is an unambiguous source of info on the topic. The below points summarize the paper
+4. a DAS scheme must satisfy three protperties - completeness, soundness and consistency
+    * retrospective note: section 3.1 describes these three really well for the context of DAS
+    * completeness - verifiers holding a commitment `com` and probing/sampling an encoding `C` must be able to conclude that the data is fully available.
+    * soundness - enough successful samples should allow for recovering some data bit string
+    * consistency - for a fixed but possibly malformed commitment `com`, one can recover AT MOST one unique data bit string.
+    * usually, completeness is a proof that the said scheme works and soundness is the statement that the scheme is "sound", as in secure and achieves what we are trying to do. for example, for a encryption scheme proving Decrypt(k, Encrypt(k, m)) = m is proving it is complete, and proving that the encrypted message cannot be decrypted is the soundness.
+    * here is what chatgpt has to say about consistency If `com` is malformed, it should not map to multiple different datasets. Ideally, it should be clear that `com` is invalid or only map to a single possible dataset if recovery is attempted.
+5. sampling encoding of data for verifying its availability have existed before DAS - Proofs of Retrievability
+    * But PoRs assume honest encoder which DAS does not
+    * PoR construction do not provide strong consistency (apparently, I haven't checked this myself because it is a detour not worth taking)
+    * PoR constructions usually have to perform a computation over the entire dataset to respond to queries from the verifier  (even though the verifier is only querying samples of the data). This stops PoRs from being distributed in nature.
+    * There are other differences but the point is that they are different
+6. Verifiable Information Disperesal is another related work of the sorts.
+    * compared to scheme DAS doesn't require all servers holding a part of the data to interact with each other to ascertain that the encoding is right or the data is available. DAS schemes aspire to achieve this "completeness" non - interactively
+    * In a DAS scheme adversaries can be adaptive, that is they can adapt and respond based on the queries made and the metadata within them (worse if they can link queries from past as well). VID inherently considers non-adaptive adversary.
+7. There are other works similar but not going to bother with them XD
+8. 
 
 ### Project Specific
 
