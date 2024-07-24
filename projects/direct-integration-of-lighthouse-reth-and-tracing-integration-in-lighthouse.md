@@ -1,13 +1,7 @@
 # Direct(non-http) integration of Lighthouse-Reth & Tracing integration in Lighthouse
 ## Motivation
-
-Stealing this part from [Eitan's project proposal](https://github.com/eth-protocol-fellows/cohort-four/blob/master/projects/lighthouse-slasher-and-beacon-node-backend.md#motivation) from cohort-four to set the groundwork.
-
-*"Now as an EPF participant I am tasked with working on a "large" project. However, based on what I've experienced so far, client developers dont just work on individual features. They frequently work on multiple tasks at the same time. Furthermore, client developers provide technical suppport to users and spend time investigating/fixing bugs."*
-
-Inspired by this I'll be taking on two projects to work on parallelly
-- Direct integration of Lighthouse-Reth (primary project)
-- Tracing integration in Lighthouse (side quest)
+- Direct integration of Lighthouse-Reth : Through this we're aiming to get improved performance by eliminating JSON serialisation/deserialisation.Our goal would be to have Lighthouse still work with any EL client, while Lighthouse-Reth is just a convenient (and performant) option.
+- Tracing integration in Lighthouse : Tracing is good at providing additional context to logs,especially in multi threaded async software like Lighthouse. It makes interpreting logs much easier and will help devs identify and fix bugs faster. 
 ## Project description
 - Direct(non-HTTP) integration of lighthouse-reth: We'll be creating a single repo with Reth & Lighthouse imported in it,and to connect Lighthouse to Reth ,instead of using HTTP RPC ,we'll be using regular function calls.
 - Tracing integration in lighthouse: Currently lighthouse mostly uses `slog` for logging (although in some parts it uses`tracing` in network stack).My project will be to migrate it all to `tracing`
