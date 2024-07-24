@@ -97,11 +97,10 @@ Future Light & Heavy, Validator provided, protocol services:
 - Add state Delegator index & balances
 - Mapping in-protocol Principal-Agent relationship by explicitating a way for Delegators to transfer ETH to Validators and introducing Validator *"liabilities"* towards Delegators
 - Allow for delegator triggered `0x01` withdrawals.
-- Define actions set/ attributes for delegators
 
 ### Specification overview
 
-A sketch of the proposed specification changes to the **execution layer** is included below:
+A sketch of the proposed **execution layer** changes is included below:
 
 #### Staking-deposit-cli
 Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. During [deposit](###Deposit), a forked staking-deposit-cli will allow depositors to set a boolean `is_delegator` field to `True` or `False`, alongside the address of a smart contract (delegation contract) that, when called, outputs the target validator's pubkey and withdrawal credentials. The structure denoting the deposit operation on EL will also gain the two new fields, accordingly.
@@ -109,7 +108,7 @@ Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. 
 #### Deposit contract 
 The deposit contract will gain the following arguments: `is_delegator`, and `delegation_contract`. The `DepositData` container will be extended accordingly.
 
-A sketch of the proposed specification changes to the **consensus layer** is included below:
+A sketch of the proposed **consensus layer** changes is included below:
 
 The eODS specification is to be built upon existing specifications of Ethereum components, i.e. [Electra consensus-specs.](../../electra/beacon_chain.md) 
 
@@ -129,14 +128,14 @@ The eODS specification is to be built upon existing specifications of Ethereum c
 - Enable Delegator triggerable exits (0x01 credentials).
 
 :::warning
-During the implementation of the project some of these changes might  be partially extended, get altered or be removed.
+During the implementation of the project some of these changes might be partially extended, get altered or be removed.
 :::
 
 ## Part 2 - Research Delegator role selection & incentivization
 
-Part 1 of the project opens the possibility to enshrine Delegators and allow them to be opiniated in their Validator selection.
+Part 1 of the project opens the possibility to enshrine Delegations and allow them to be opiniated in their Validator selection.
 
-Part 2 of this project will focus on researching and developing a conceptual design on what consensus role can delegators have, and how can the Protocol incentivise that role selection.
+Part 2 of this project will focus on defining actions set, or attributes for delegators. It will be researching and developing a conceptual design on what consensus role can delegators have, and how can the Protocol incentivise that role selection.
 
 Interwining IL and ePBS with the PoS mechanism is not trivial (or even ideal), so abstracting the "discrepancies surfacing" type of protocol services in the Delegator's actions set, could ease some of the design around e.g. CR gadgets
 
@@ -194,7 +193,7 @@ What are the limitations and issues you may need to overcome?
 
 * Integrating eODS with ongoing R&D on e.g. ePBS, ILs will most likely not be a trivial task
 
-* Defining actions set/ attributes for delegators will have to take into account aspects like existing protocol incentives and maintaining PoS safety constrains
+* Defining attributes for delegators will have to take into account aspects like existing protocol incentives and maintaining PoS safety assumptions
 
 ## Goal of the project
 
