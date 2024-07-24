@@ -104,11 +104,10 @@ Future Light & Heavy, Validator provided, protocol services:
 A sketch of the proposed specification changes to the **execution layer** is included below:
 
 #### Staking-deposit-cli
-Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. During [deposit](###Deposit), a forked staking-deposit-cli will allow depositors to set a boolean `is_delegator` field to `True` or `False`, alongside the target validator's pubkey and withdrawal_credentials.
+Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. During [deposit](###Deposit), a forked staking-deposit-cli will allow depositors to set a boolean `is_delegator` field to `True` or `False`, alongside the address of a smart contract (delegation contract) that, when called, outputs the target validator's pubkey and withdrawal credentials. The structure denoting the deposit operation on EL will also gain the two new fields, accordingly.
+
 #### Deposit contract 
-The deposit contract will have to gain the following arguments: `is_delegator`, `target_pubkey` and `target_withdrawal_credentials`
-#### Deposit operation
-- Add new fields `is_delegator`, `target_pubkey` and `target_withdrawal_credentials` to the structure denoting the deposit operation on EL 
+The deposit contract will gain the following arguments: `is_delegator`, and `delegation_contract`. The `DepositData` container will be extended accordingly.
 
 A sketch of the proposed specification changes to the **consensus layer** is included below:
 
