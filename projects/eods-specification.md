@@ -133,22 +133,32 @@ During the implementation of the project some of these changes might be partiall
 
 ## Part 2 - Research Delegator role selection & incentivization
 
-Part 1 of the project opens the possibility to enshrine Delegations and allow them to be opiniated in their Validator selection.
+Part 1 of the project opens the possibility to enshrine Delegations and allow Principal-providing delegators to be opiniated in their Agent (Validator) selection.
 
-Part 2 of this project will focus on defining actions set, or attributes for delegators. It will be researching and developing a conceptual design on what consensus role can delegators have, and how can the Protocol incentivise that role selection.
+Part 2 of this project will focus on defining actions set, or attributes for delegators. 
 
-Interwining IL and ePBS with the PoS mechanism is not trivial (or even ideal), so abstracting the "discrepancies surfacing" type of protocol services in the Delegator's actions set, could ease some of the design around e.g. CR gadgets
+### What are the minimum set of requirements for Part 2 of the Project?
+
+- a conceptual design on what consensus role can delegators have, and how can the Protocol can incentivise that role selection.
+
+An eventual EIP resulting from my project will most likely have to be based on an ePBS fork. Interwining eODS with eg. IL and ePBS ontop of the PoS mechanism is not trivial (maybe not even ideal), so abstracting the "discrepancies surfacing" type of protocol services in the Delegator's actions set, could ease some of the design around e.g. CR gadgets.
 
 Possible compatible role selection for Delegators:
-- whistleblower
-- sync committee
+
+- Whistleblower
+  
+- Sync committee
+  
 - PTC 
+  
 - Validator scoring on light CL clients, operated by Delegators 
-- Lght services validator duties, e.g.:
-    *  co-signing block proposals, attestations
+  
+- Co-signing block proposals, attestations
+  
     The staking public key for a Validator for a slot would be set to `validator_pubkey` $+$ `delegator_pubkey`. 
     Slashing would be adapted in this case to account for `delegator_pubkey` (two slashable messages could have different delegator keys, but they would have the same validator key)
-    *  signing in for censorship-resistance gadgets, e.g. Inclusion Lists $Δ$ evaluation, multiplicity gadgets
+
+- Signing in for censorship-resistance gadgets, e.g. Inclusion Lists $Δ$ evaluation, multiplicity gadgets
 
 :::success
 ### DELIVERABLES
