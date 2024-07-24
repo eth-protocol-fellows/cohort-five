@@ -164,7 +164,10 @@ Possible compatible role selection for Delegators:
 ### DELIVERABLES
 Specification notes for the eODS feature can be found [here](hackmd.io/gorondan/).
 
-The beacon-chain specification of the enshrined operator delegator separation feature can be found here:
+The EL specification of the enshrined operator delegator separation feature can be found here:
+- [deposit-contract](consensus-specs/specs/_features/eODS/deposit-contract.md)
+
+The CL specification of the enshrined operator delegator separation feature can be found here:
 - [beacon-chain](consensus-specs/specs/_features/eODS/beacon-chain.md)
 - [validator](consensus-specs/specs/_features/eODS/validator.md)
 - [fork-choice](consensus-specs/specs/_features/eODS/fork-choice.md)
