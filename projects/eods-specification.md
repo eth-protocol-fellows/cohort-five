@@ -9,9 +9,9 @@
 
 Today, ETH delegators allocate their principal to node operators off-protocol, via staking pools. 
 
-The pain is that off-protocol ETH delegation is easily captured by exogenous influences, as seen today in liquid staking, leading to the centralization of staking pools, in the detriment of protocol safety. Delegators are given no real voting power, and no meaningful role in protocol.
+The pain is that off-protocol ETH delegation is easily captured by exogenous influences, as seen today in liquid staking, leading to the centralization of staking pools, in the detriment of protocol safety. Delegators are given no real voting power, and no meaningful role in the Protocol.
 
-The project addresses inefficiencies associated with the limits of what the Ethereum Protocol can detect and how it defends itself, in the context of delegated proof of stake. It also proposes a shift in validator economics *design philosophy* for the scope of leaping towards SSF(Single Slot Finality) implementation, with overall improved protocol resilience:
+The project addresses inefficiencies associated with the limits of what the Ethereum Protocol can detect and how it defends itself, in the context of delegated proof of stake. It also proposes a shift in validator economics *design philosophy* for the scope of leaping towards SSF (Single Slot Finality) implementation, with overall improved protocol resilience:
 
 - The Protocol cannot see ETH delegations, so its reach and ability to control Validators is limited in that aspect. The project addresses this issue, helping the Protocol disambiguate the Validator role and "see" the staking scene actors.
 
@@ -21,13 +21,13 @@ The project addresses inefficiencies associated with the limits of what the Ethe
     
     Delegator role, under Operator-Delegator separation:
     * The curation of operator set: Opinionated delegators may decide to choose between different operators based on e.g., fees or reliability. These criteria could be part of a Validator rating system developed either on CL clients side or in-protocol.
-    * The provision of non-FFG services: The delegators may be called upon to provide non-slashable, yet critical services, like:
+    * The provision of non-FFG services: The delegators may be called upon to provide non-slashable yet critical services, like:
         * input their view into censorship-resistance gadgets such as inclusion lists or multiplicity gadgets.
         * co-sign block proposals, attestations together with the bonded Gasper operators.
  
     This is important, so we can move away from the unincentivized delegate selection practiced today in delegated proof of stake, which is basically [a flawed type of voting](https://notes.ethereum.org/@vbuterin/staking_2023_10#Expanding-delegate-selection-powers).
   
-- Building towards the inevitable implementation of SSF, requires taking the best possible trade-offs.
+- Building towards the inevitable implementation of SSF requires taking the best possible trade-offs.
 Identifying, disambiguating, or solving these trade-offs is not trivial, as they depend on a wide range of challenges and limitations:
     - physical network limitations (e.g. computing power) 
     - technical limitations (e.g. per slot BLS signatures aggregation)
@@ -37,16 +37,13 @@ Identifying, disambiguating, or solving these trade-offs is not trivial, as they
  
 - A daunting aspect about building towards SSF is the need to drastically reduce the validator set size (measured in *individual message signers*, not in *stake weight*), while encouraging an ever increasing validators count, for the scope of overall increased resilience. 
 These seemingly conflictual goals can be resolved by the realization that we need to move away from the concept that every participant signs in every slot.
-In the SSF context, we can assume a limit of 1.8 million$ BLS signatures that could be processed every slot. 
-The second dimension of eODS (vertical separation) proposes the reduction of the Validators-as-Finality-participants count (Heavy services providers), to ~10,000, reducing the number of BLS signatures that need to be processed every slot, even assuming the two-round consensus protocol SSF would inevitably use, thus significantly reducing consensus node overhead. The Light layer participants would be encouraged to participate in as many numbers as possible, and rotated in random selections.
-The number of heavy tier participants is constrained by the efficiency of cryptographic constructions (aggregating signatures), but as cryptographic methods or simply hardware progress, the number of "seats" may increase. 
+In the SSF context, we can assume a limit of $1.8 million$ BLS signatures that could be processed every slot. 
+Frameworks, like Rainbow staking[ [1]](#resources), or Orbit SSF [[9] ](#resources) propose either splitting staking in two tiers based on a balance threshold, or sampling the Validator set by balance, reducing the number of BLS signatures that need to be processed every slot in the Finality gadged. The Light layer/ periphery participants would be encouraged to participate in as many numbers as possible, and rotated in random selections.
+The number of FFG participants is constrained by the efficiency of cryptographic constructions (aggregating signatures), but as cryptographic methods or simply hardware progress, the number of "seats" may increase. 
 
     This is important for hardening protocol resilience(a wider array of proposers, attesters, whistle-blowers and censorship-resistance agents), even in the perspective of exogenous (or even self imposed, endogenous) limitations.
 
-- Liquid staking centralization is a well known issue in the space and exploring solutions to it is one important topic of the protocol's [roadmap](https://epf.wiki/#/wiki/research/roadmap). The project proposes a mix between Approach 1 and 2 presented in the [Sticking to 8192 signatures per slot post SSF](https://ethresear.ch/t/sticking-to-8192-signatures-per-slot-post-ssf-how-and-why/17989) research post:
-  * A heavy layer, liquefied as it is today, all in on decentralized staking pools with help from enshrined protocol gadgets (e.g., LSM-type enshrined gadgets);
-  * A solo-staker-friendly light layer as the second-tier, with its own Light LSTs. And since ETH staked as provision of Light services is non-slashable, the LLSTs (LightLSTs) would be mostly risk-free and could be used as pristine collateral type in the app layer, e.g. a version of the governance-minimized, ungoverned RAI stablecoin that accepts staked ETH.
-
+- Liquid staking centralization is a well known issue in the space and exploring solutions to it is one important topic of the protocol's [roadmap](https://epf.wiki/#/wiki/research/roadmap). The project proposes a solution to the long-term key question of "what’s the intended Etherean way for the large ETH holders that want return for their participation in protocol”. Finding a solution to this untrivial question will, most likely, mitigate liquid staking centralization.
 
 **What area of the protocol will be affected?**
 
@@ -61,29 +58,34 @@ My proposed solution is an implementation of eODS, implying a **separation** of 
 This project proposes a way to enshrine the delegation process.
 The purpose is to map in-protocol Principal-Agent relationship, in the context of ETH staking.
 
-The current proposal aims to solve the above inefficiencies by providing delegators, with a mechanism to deposit / consolidate and then delegate their principal. Capital providers can then delegate stake to another (possibly new) targeted validator (node operator), thus allowing for delegators to be opinionated in their operators of choice. This all in-protocol, in particular not involving the deposit contract in a different way than a regular deposit is. 
+The current proposal aims to solve the above inefficiencies by providing delegators, with an explicit mechanism to deposit / compound and delegate their principal. Capital providers will be able to delegate stake to another (possibly new) targeted validator (node operator), thus allowing them to be opinionated in their operators of choice. This all in-protocol, in particular not involving the deposit contract in a different way than a regular deposit is. 
 
-### Non-FFG/light protocol services, as Delegators role selection
+### Actively Validated Service” (AVS), as Delegator role selection
 
-The second part of the project consists of the conceptual design of a plug-and-play interface for future integration of protocol services and an MVP specification of the interface.
+The second part of the project consists of the conceptual design of a plug-and-play interface for future integration of protocol services and an MVP specification of the interface, as minimal expected deliverables. 
 
-The vertical separation unlocks the introduction of two distinct types of future protocol services, each tier inducing within itself a market structure of delegators and operators:
-  * Heavy Services
-  * Light Services
+Post ePBS, eODS unlocks the introduction of two distinct types of protocol services:
 
-Future Light & Heavy, Validator provided, protocol services: 
-![Future Validator services](https://hackmd.io/_uploads/SylCaqvX0.png)
+  * Consensus (Finality) services - FFG type
+  
+  * Censorship Resistant services - AVS type
+  
+    Delegators could re-stake the Operator's *liability*, into CR services e.g. inclusion lists, committing to the provision of an “actively validated service” (AVS) and receiving rewards for good service provision. 
 
-#### Conceptual design of the plug-n-play interface for adding protocol (heavy / light) services:
+Possible separation of protocol services post ePBS:
+
+![Protocol Services](https://hackmd.io/_uploads/rJpoIhJKR.png)
+
+#### Conceptual design of an interface for adding protocol light services:
 * General design principle
-    * Design constrains
+    * Design constraints
     * Identify light & heavy operators and other stakeholders
     * Identify services
-        * heavy: Finality gadget 
-        * light: Censorship-resistance gadgets (e.g. Inclusion lists, Multiplicity gadgets)
-    * Economics of heavy layer
-    * Economics of light layer 
-    * MVI for heavy layer (deduct from issuance curve to derive MVI  for light layer)
+        * Finality gadget 
+        * Censorship-resistance gadgets (e.g. Inclusion lists, Multiplicity gadgets)
+    * Economics of consensus services
+    * Economics of AVS 
+    * MVI of the different protocol services
 * Specification notes referencing:
     * An adaptation of the slashing mechanism to account for partially slashable light services
     * Liveness
@@ -133,17 +135,19 @@ During the implementation of the project some of these changes might be partiall
 
 ## Part 2 - Research Delegator role selection & incentivization
 
-Part 1 of the project opens the possibility to enshrine Delegations and allow Principal-providing delegators to be opiniated in their Agent (Validator) selection.
+Part 1 of the project opens the possibility to enshrine Delegations and allow Principal to be opinionated in the Agent (Validator) selection.
 
 Part 2 of this project will focus on defining actions set, or attributes for delegators. 
 
 ### What are the minimum set of requirements for Part 2 of the Project?
 
-- a conceptual design on what consensus role can delegators have, and how can the Protocol can incentivise that role selection.
+- A conceptual design on what consensus role can delegators have, and how can the Protocol incentivise that role selection
+  
+- The specification of this feature
 
 An eventual EIP resulting from my project will most likely have to be based on an ePBS fork. Interwining eODS with eg. IL and ePBS ontop of the PoS mechanism is not trivial (maybe not even ideal), so abstracting the "discrepancies surfacing" type of protocol services in the Delegator's actions set, could ease some of the design around e.g. CR gadgets.
 
-Possible compatible role selection for Delegators:
+*Possible* compatible role selection for Delegators as AVS providers:
 
 - Whistleblower
   
@@ -180,7 +184,7 @@ The proposed timeline for the project is **6 months**, split in 2 work-packages 
 
 *Outline parts of the project and insight on how much time it will take to execute them.*
 
-### I. Part 1 - eODS Specification
+### I. Part 1 - feature: eODS Specification
 
 1. Write the fully-fleshed specs of eODS in 8 weeks (**Week 6 - Week 13**) including getting feedback from mentors.
 
@@ -188,20 +192,21 @@ The proposed timeline for the project is **6 months**, split in 2 work-packages 
 
 ### II. Part 2 - Research Delegator role selection & incentivization
 
-1. I've done some of the work related to this phase in the weeks preceding EPF, especially during EPS, I plan to have the conceptual design for future integration of light protocol services done in in 4 weeks (**Week 17 - Week 21**) including getting feedback from mentors.
-2. I plan to write the as much of the afferent specs, including getting feedback from mentors and case study tests, and continue past the EPF program time spam for as long as it needs to finish up this subfeature. I estimate I will fit in an additional 4-8 weeks (**Week 21+**).
+1. I've done some of the work related to this phase in the weeks preceding EPF, especially during EPS, I plan to have the conceptual design for the integration of Delegators-provided protocol services done in in 4 weeks (**Week 17 - Week 21**) including getting feedback from mentors.
+2. I plan to write the as much of the afferent specs, including getting feedback from mentors and case study tests, and continue past the EPF program time span for as long as it needs to finish up this subfeature. I estimate I will fit in an additional 4-8 weeks (**Week 21+**).
 
 ## Possible challenges
 
 What are the limitations and issues you may need to overcome?
 
-* Electra fork specs in active development
+* Electra fork specs are in active development
 
 * Data complexity
     :::warning
-    Memory cost of adding extra beacon chain state elements
+    Memory cost of adding extra beacon-chain state elements
     :::
     Consuming computations to consider: 
+
     * signature verification 
 
 * Integrating eODS with ongoing R&D on e.g. ePBS, ILs will most likely not be a trivial task
@@ -218,7 +223,7 @@ Expected impact/followup:
 - eODS EIP
     - Part 1 can be functional on its own
     - Part 2 can be added later
-- I would conssider a success if my project would stand as a starting base for a future POC and client implementation for
+- I would consider a success if my project would stand as a starting base for a future POC and client implementation for
     - full node
     - light client
 
@@ -255,5 +260,7 @@ At this moment, there are no other fellows working with me on this project.
 [[7] Electra fork consensus specs](https://github.com/ethereum/consensus-specs/tree/dev/specs/electra)
 
 [[8] EPF.wiki eODS page](https://epf.wiki/#/wiki/research/eODS)
+
+[[9] Orbit SSF](https://ethresear.ch/t/orbit-ssf-solo-staking-friendly-validator-set-management-for-ssf/19928/1)
 
 Copyright and related rights waived via [CC0](../LICENSE.md).
