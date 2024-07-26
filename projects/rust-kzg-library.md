@@ -1,51 +1,50 @@
 # Project Template
-A KZG Library for Ethereum Data Sharding that supports multiple ECC backend libraries.
-*The implementation of PeerDAS-related cryptography, MultiScalar Multiplications (MSM), and other resource-intensive operations in Rust-KZG, which will be further used to implement Danksharding in the Grandine client.*
+
+DAS-Specific Crytpography in Grandine's Rust-KZG
+
+*The implementation of PeerDAS-related cryptography (eip-7594) in Grandine's rust-kzg library.*
 
 ## Motivation
 
-The project aims to enhance Ethereum's scalability and efficiency by implementing PeerDAS-related cryptography, MSM, and other resource-intensive operations in Rust. This will support scalability efforts in Proto-Danksharding ([EIP-4844](https://github.com/ethereum/consensus-specs/blob/dev/specs/deneb/polynomial-commitments.md), [EIP-7594](https://github.com/ethereum/consensus-specs/blob/dev/specs/_features/eip7594/polynomial-commitments-sampling.md)), enabling nodes to reduce their load using DAS and advancing towards full Danksharding.
+My motivation for this project stems from the intriguing discussions about Ethereum's scalability, sharding, **DAS**, and cryptography.
 
+**DAS**: (Data Availability Sampling) allows nodes to verify block data availability without downloading the entire block, reducing resource usage and increasing throughput. This is crucial for scaling Ethereum as it lessens the data burden on individual nodes.
+
+However, DAS-specific cryptography is not currently implemented in Grandine. I want to address this gap, as it will help me (and hopefully) others develop a better understanding of DAS and its cryptography.
 
 ## Project description
 
-The proposed solution involves porting critical cryptographic functions from [C-KZG](https://github.com/ethereum/c-kzg-4844/tree/das) to the Rust-KZG library for seamless integration into the Grandine client. The library will generate, commit, and verify polynomial commitments using the KZG scheme. It will be lightweight, efficient, user-friendly, compatible with the existing Grandine codebase, and thoroughly tested to meet client requirements. 
+The project involves implementing essential DAS cryptographic functions in the Rust-kzg library for seamless integration into the Grandine client.
+
+With DAS, validators can be confident that the blob data is available and correctly committed. Each validator only needs to randomly sample a few data points and generate a proof, eliminating the need to check the entire blob. If any data is missing, it will be detected quickly, and the blob will be rejected.
 
 ## Specification
 
-**Initial Research and Familiarization:**
-* Study PeerDAS specifications and related cryptographic protocols.
-* Review current implementations in other languages (e.g., C) to understand core functionalities and optimizations.
+The consensus specs, specifically the [EIP-7594 polynomial commitments](https://github.com/ethereum/consensus-specs/blob/dev/specs/_features/eip7594/polynomial-commitments-sampling.md), outline the requirements. These are mainly divided into 3 functions:
 
-**Implementing KZG Cryptography in Rust:**
-* Develop functions for polynomial commitments using the KZG scheme.
-* Ensure compatibility with the existing Rust-KZG library and optimize for performance.
-
-**Optimizing Multi-Scalar Multiplications (MSMs):**
-* Implement efficient algorithms for MSMs, a key operation in many cryptographic proofs.
-* Utilize Rust’s concurrency and parallelism features to enhance performance.
-
-**Integration and Testing:**
-* Integrate the implemented functions into the PeerDAS protocol.
-* Develop comprehensive test suites to validate correctness and performance.
-* Benchmark against existing implementations to ensure improvements.
-
+`compute_cells_and_kzg_proofs`: Which helps compute all the cell proofs for an extended blob.
+`verify_cell_kzg_proof_batch`: Which verify that a set of cells belong to their corresponding commitments.
+`recover_cells_and_kzg_proofs`: Which given atleast 50% of cells for a blob, can recover all the cells and proofs.
 
 ## Roadmap
 
-What is your proposed timeline? Outline parts of the project and insight on how much time it will take to execute them. 
-*In Progress*
+- First, deep-diving into the consensus specs docs on eip7594, extending the polynomial commitments with functions required for DAS.
+- Referencing existing DAS implementations like that done on c-kzg.
+- Implement DAS in rust-kzg
+- Develop and implement testing plan
+- Ensure compatibility with Grandine and other rust implementations of the consensus client network
+
 
 ## Possible challenges
 
-One issue is the knowledge gap, which I am currently addressing. Another is performance optimization; achieving optimal performance while maintaining code readability and simplicity is challenging. Extensive testing and profiling are required to identify and resolve performance bottlenecks.
+The biggest challenge is the knowledge gap, which I am currently bridging. Due to limited resources and documentation, I will rely on the specs as my primary reference. Additionally, thorough testing with clients and extensive debugging will be crucial and a challenge.
 
 ## Goal of the project
 
-Success for this project means seamlessly integrating optimized cryptographic functions into the Rust-KZG library, greatly enhancing PeerDAS operations. By the end of EPF-5, the project aims to:
-- Fully implement and test KZG cryptography functions in Rust.
-- Optimize MSMs, showing improved performance over existing implementations.
-- Provide comprehensive documentation and benchmarks showcasing these enhancements.
+By the end of EPF-5, success for this project will be defined by:
+
+Seamlessly integrating optimized DAS cryptographic functions into the Rust-kzg library, significantly enhancing DAS operations.
+Providing comprehensive documentation and benchmarks to demonstrate these enhancements.
 
 
 ## Collaborators
