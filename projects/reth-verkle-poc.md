@@ -95,7 +95,7 @@ Once the code-base is ready, testing and proper benchmarking of the peformance w
 
 ## Goal of the project
 
-The end goal of this project will be achieved if reth is able to join the latest iteration of Kaustinen devnet(devnet for verkle-tries), passing all MPT-VPT transition tests and EL-spect tests for this change, with proper performance comparable to other client implementations.
+The end goal of this project will be achieved if reth is able to join the latest iteration of Kaustinen devnet(devnet for verkle-tries), passing all MPT-VPT transition tests and EL-spec tests for this change, with proper performance comparable to other client implementations.
 
 ## Collaborators
 
