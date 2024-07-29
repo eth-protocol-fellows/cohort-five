@@ -9,7 +9,7 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started.
 
 | Name/GH                                                      | Week 0                                                          | Week 1                                                          | Week 2                                                          |
-| ------------------------------------------------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
+|--------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                 | [Update 1](https://hackmd.io/@0xpanicError/epf-update_1)        | [Update 2](https://hackmd.io/@0xpanicError/epf-update_2)        |
 | [0xSulpiride](https://github.com/0xSulpiride)                |                                                                 | [Update 1](https://hackmd.io/pIzQiv5AR8qBUApnveQy4A)            | [Update 2](https://hackmd.io/@sulpiride/BJLYckU80)              |
 | [Abhimanyu](https://github.com/ABresting)                    |                                                                 | [Update 1](https://hackmd.io/@ZeQMEmPBRfGec_HhtjR59A/HyjJwWorR) | [Update 2](https://hackmd.io/@ABresting/ryhHqf8LA)              |
@@ -20,7 +20,11 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Ashely Yan](https://github.com/AshliaYan)                   |                                                                 | [Update 1](https://hackmd.io/@Ashelyyan/SyRBmmorC)              | [Update 2](https://hackmd.io/@Ashelyyan/BJPffq-IR)              |
 | [Ashen](https://github.com/y1cunhui)                         | [Update 0](https://hackmd.io/@gr3y/SkjEawHBC)                   |                                                                 |                                                                 |
 | [Bastin](https://github.com/Inspector-Butters)               | [Update 0](https://hackmd.io/@Bastin/HJ6hOLQHC)                 | [Update 1](https://hackmd.io/@Bastin/HyM3AmnrA)                 | [Update 2](https://hackmd.io/@Bastin/H1JgDZLU0)                 |
+<<<<<<< HEAD
 | [BobLiu](https://github.com/Akagi201)                        | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)       | [Update 1](https://hackmd.io/@Akagi201/epf-cohort5-week1)       | [Update 2](https://hackmd.io/@Akagi201/epf-cohort5-week2)       |
+=======
+| [BobLiu](https://github.com/Akagi201)                        | [Update 0](https://hackmd.io/@Akagi201/epf-cohort5-week0)       | [Update 1](https://hackmd.io/@Akagi201/epf-cohort5-week1)       |                                                                 |
+>>>>>>> origin/project-proposal
 | [Boma Naps](https://github.com/bomanaps)                     |                                                                 | [Update 1](https://hackmd.io/@u1hkHdIvSFKF7TfMsZSBow/SJQorxsrR) | [Update 2](https://hackmd.io/@bomanaps/SkzpTHEIA)               |
 | [Caleb](https://github.com/Tomi-3-0)                         |                                                                 | [Update 1](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/BkoLPPdr0) | [Update 2](https://hackmd.io/@tc3rGbpwSe6dJwI2nuYQsw/HJ9fyTVLC) |
 | [Chirag](https://github.com/chirag-parmar)                   | [Update 0](https://hackmd.io/@chirag-parmar/S13p6uVBR)          | [Update 1](https://hackmd.io/@chirag-parmar/r1kTC_ar0)          | [Update 2](https://hackmd.io/@chirag-parmar/rycHC9ULA)          |
@@ -64,6 +68,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
+<<<<<<< HEAD
 | Name/GH                                                      | Week 3                                                          | Week 4                                                          | Week 5                                                          | Project proposal                                                                                                                                                                   |
 | ------------------------------------------------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [0xpanicError](https://github.com/0xpanicError)              | [Update 3](https://hackmd.io/@0xpanicError/epf-update_3)        | [Update 4](https://hackmd.io/@0xpanicError/epf-update_4)        |                                                                 |                                                                                                                                                                                    |
@@ -118,11 +123,68 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          | [Update 3](https://hackmd.io/@Xoznc0kESi6cRDnApMs5rQ/rkGyp1lDR) |                                                                 | [Update 5](https://hackmd.io/@sidvdr/SJtOgPGOR)                 | [Op code implementations, tests, code analysis and statistics for Nethermind's IL-EVM](projects/opcode-implementations-test-coverage-code-analysis-and-stats-il-evm-nethermind.md) |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 |                                                                 |                                                                 |                                                                                                                                                                                    |
 | [Zarathustra](https://github.com/Karrenbelt)                 | [Update 3](https://hackmd.io/@zarathustra/HkqZFJ6OC)            | [Update 4](https://hackmd.io/@zarathustra/rJ6vhJT_0)            | [Update 5](https://hackmd.io/@zarathustra/SkiLqdmFR)            |  
+=======
+
+| Name/GH                                                      | Week 3                                              | Week 4 | Week 5 | Project proposal |
+|--------------------------------------------------------------|-----------------------------------------------------|--------|--------|------------------|
+| [0xSulpiride](https://github.com/0xSulpiride)                |                                                     |        |        |                  |
+| [Abhimanyu](https://github.com/ABresting)                    |                                                     |        |        |                  |
+| [Aditya Gupta](https://github.com/1010adigupta)              |                                                     |        |        |                  |
+| [AkshatGada](https://github.com/AkshatGada)                  |                                                     |        |        |                  |
+| [Amin](github.com/amintalebi)                                |                                                     |        |        |                  |
+| [Another Dev](https://github.com/Another-DevX)               |                                                     |        |        |                  |
+| [Ashely Yan](https://github.com/AshliaYan)                   |                                                     |        |        |                  |
+| [Ashen](https://github.com/y1cunhui)                         |                                                     |        |        |                  |
+| [Bastin](https://github.com/Inspector-Butters)               |                                                     |        |        |                  |
+| [BobLiu](https://github.com/Akagi201)                        |                                                     |        |        |                  |
+| [Boma Naps](https://github.com/bomanaps)                     |                                                     |        |        |                  |
+| [Caleb](https://github.com/Tomi-3-0)                         |                                                     |        |        |                  |
+| [Chirag](https://github.com/chirag-parmar)                   |                                                     |        |        |                  |
+| [ChloeZhu](https://github.com/Chloezhu010)                   |                                                     |        |        |                  |
+| [Cloud](https://github.com/0xClouds/)                        |                                                     |        |        |                  |
+| [DanGoron](https://github.com/gorondan)                      |                                                     |        |        |                  |
+| [Dirk Jäckel](https://github.com/biafra23)                   |                                                     |        |        |                  |
+| [Dsorken](https://github.com/Dsorken)                        |                                                     |        |        |                  |
+| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |                                                     |        |        |                  |
+| [georgesheth](https://github.com/georgesheth)                |                                                     |        |        |                  |
+| [ghili](https://github.com/ghiliweld)                        |                                                     |        |        |                  |
+| [Glory Agatevure](https://github.com/gconnect)               | [Update 3](https://hackmd.io/@gconnect/rJijgCI8C)   |        |        |                  |
+| [jsvisa](https://github.com/jsvisa)                          |                                                     |        |        |                  |
+| [Hamid Bateni](https://github.com/irnb)                      |                                                     |        |        |                  |
+| [Hangleang](https://github.com/hangleang)                    | [Update 3](https://hackmd.io/@hangleang/epf5-week3) |        |        |                  |
+| [Hopinheimer](https://github.com/hopinheimer)                |                                                     |        |        |                  |
+| [Ifeoluwa Oderinde](https://github.com/owanikin)                    | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJAO40qUC) |        |        |                  |
+| [Jihoon Song](https://github.com/jihoonsong)                 | [Update 3](https://hackmd.io/@jihoonsong/SkUIKCLLR) |        |        |                  |
+| [kira](https://github.com/shyam-patel-kira)                  |                                                     |        |        |                  |
+| [Krishang](https://github.com/kamuik16)                      |                                                     |        |        |                  |
+| [Ktl_XV](https://github.com/ktl-xv)                          |                                                     |        |        |                  |
+| [Léa Na](https://github.com/lean-apple)                      |                                                     |        |        |                  |
+| [MaxDav](https://github.com/MaximeDavin)                     |                                                     |        |        |                  |
+| [MeldSun](https://github.com/meldsun0)                       |                                                     |        |        |                  |
+| [Nikhil](https://github.com/nikhilkumar1612)                 |                                                     |        |        |                  |
+| [mrk1tty](https://github.com/garv-aga)                       |                                                     |        |        |                  |
+| [Rahul](https://github.com/guha-rahul)                       |                                                     |        |        |                  |
+| [raxhvl](https://github.com/raxhvl)                          |                                                     |        |        |                  |
+| [Nilav](https://github.com/gerceboss)                        |                                                     |        |        |                  |
+| [Richa](https://github.com/Richa-iitr)                       |                                                     |        |        |                  |
+| [Rodrigo Herrera](https://github.com/)                       |                                                     |        |        |                  |
+| [RoryArredondo](https://github.com/arredr2)                  |                                                     |        |        |                  |
+| [Rose Jethani](https://github.com/rose2221)                  |                                                     |        |        |                  |
+| [Rupam Dey](https://github.com/rupam-04)                     | [Update 3](https://hackmd.io/@rupam-04/Week3)       |        |        |                  |
+| [Saeid](github.com/xm0onh)                                   |                                                     |        |        |                  |
+| [Sayan](https://github.com/threehrsleep)                     |                                                     |        |        |                  |
+| [Scar Face](https://github.com/scarfacedotcom)               |                                                     |        |        |                  |
+| [ShyamPatel](github.com/shyam-patel-kira)                    |                                                     |        |        |                  |
+| [Siddharth Vaderaa](https://github.com/SiddharthV1)          |                                                     |        |        |                  |
+| [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                     |        |        |                  |
+| [Zarathustra](https://github.com/Karrenbelt)                 |                                                     |        |        |                  |
+>>>>>>> origin/project-proposal
 
 ## Phase 3: Execution
 
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
 
+<<<<<<< HEAD
 | Name/GH                                                      | Week 6                                                          | Week 7                                                          | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
 | ------------------------------------------------------------ | --------------------------------------------------------------- | --------------------------------------------------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 | [0xpanicError](https://github.com/0xpanicError)              |                                                                 |                                                                 |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
@@ -178,11 +240,17 @@ The actual project development is the main part of the program. Post your regula
 | [Siddharth Vaderaa](https://github.com/SiddharthV1)          |                                                                 | [Update 7](https://hackmd.io/@sidvdr/Sy744v4YA)                 |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 | [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |                                                                 |                                                                 |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                                 |                                                                 |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+=======
+| Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
+|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
+|         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+|         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+>>>>>>> origin/project-proposal
 
 ## Cohort end
 
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
 | Name/GH | Final dev update | Project presentation |
-| ------- | ---------------- | -------------------- |
+|---------|------------------|----------------------|
 |         |                  |                      |
