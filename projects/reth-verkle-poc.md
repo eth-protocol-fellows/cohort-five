@@ -13,21 +13,73 @@ the main motivation of creating a reth-verkle poc is is to develop more working 
 
 ## Project description
 
-this project aims to integrate [rust-verkle](https://github.com/crate-crypto/rust-verkle) crytographic primitives into [reth](https://github.com/paradigmxyz/reth).
-* a basic TL;DR will be:
-1. obtain pre-state from verkle-block witness.
-2. then execute a block statelessly using this witness, instead of the local chain.
+this project aims to integrate [rust-verkle](https://github.com/crate-crypto/rust-verkle) crytographic primitives into [reth](https://github.com/paradigmxyz/reth), and enable it to act as a stateless client.
+a basic TL;DR will be:
+* allow construction of witness during block-execution.
+* propogation of this witness along with block, for stateless validation by other clients.
+* obtain pre-state from verkle-block witness, when cross-validating statelessly.
+* then execute a block statelessly using this witness, instead of the local chain.
 
 ## Specification
 
 Technical specifications will involve following the defined [specs](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Header-values) and [Verkle serialization format in SSZ](https://notes.ethereum.org/Si5tEWlMTYerkhG3fOIAMQ) for making changes in reth:
-1. A block/execution witness (i.e: the verkle proof required to execute a block statelessly) is an SSZ-encoded serialization of the following ExecutionWitness structure:
-```
-class ExecutionWitness(container):
-    state_diff: StateDiff
-    verkle_proof: VerkleProof
-```
-2. 
+1. A block/execution witness (i.e: the verkle proof required to execute a block statelessly) struct will be created, this is an SSZ-encoded serialization of the following ExecutionWitness structure:
+    ```
+    class ExecutionWitness(container):
+        state_diff: StateDiff
+        verkle_proof: VerkleProof
+    ```
+2. `state_diff` will contain all the pre-state data required to execute the given block, which will then be executed statelessly by other clients(basically verkle trie's, leaf node's key value pair), `StateDiff` defination:
+
+    ```
+    MAX_STEMS = 2**16
+    VERKLE_WIDTH = 256
+
+    class SuffixStateDiff(Container):
+        suffix: Byte
+
+        # Null means not currently present
+        current_value: Union[Null, Bytes32]
+
+        # Null means value not updated
+        new_value: Union[Null, Bytes32]
+
+    class StemStateDiff(Container):
+        stem: Stem
+        # Valid only if list is sorted by suffixes
+        suffix_diffs: List[SuffixStateDiff, VERKLE_WIDTH]
+
+    # Valid only if list is sorted by stems
+    StateDiff = List[StemStateDiff, MAX_STEMS]
+    ```
+3. `verkle_proof` will contain, all the data needed by the verifier to re-construct a partial view of the pre-state trie(using commitments, root-node, and given block values) for the data present in `state_diff`, which will be used to prove that this pre-state data provided is indeed part of the trie whose root-node is the `state_root_node`(trusted), already present with the client, `VerkleProof` defination:
+
+    ```
+    BandersnatchGroupElement = Bytes32
+    BandersnatchFieldElement = Bytes32
+    MAX_COMMITMENTS_PER_STEM = 33 # = 31 for inner nodes + 2 (C1/C2)
+    IPA_PROOF_DEPTH = 8 # = log2(VERKLE_WIDTH)
+
+    class IpaProof(Container):
+        C_L = Vector[BandersnatchGroupElement, IPA_PROOF_DEPTH]
+        C_R = Vector[BandersnatchGroupElement, IPA_PROOF_DEPTH]
+        final_evaluation = BandersnatchFieldElement
+
+    class VerkleProof(Container):
+        // [Group A]
+        other_stems: List[Bytes32, MAX_STEMS]
+        depth_extension_present: List[uint8, MAX_STEMS]
+        commitments_by_path: List[BandersnatchGroupElement, MAX_STEMS * MAX_COMMITMENTS_PER_STEM]
+        // [Group B]
+        D: BandersnatchGroupElement
+        ipa_proof: IpaProof
+    ```
+    here, `other_stems`, `depth_extension_present`, `commitments_by_path` are data used to construct this partial-view of verkle-trie, and `ipa_proof` is the verkle proof which will be used to open the commitment in the path from provided leaf-nodes to the trie-root, which will prove that the provided data is indeed correct
+    for more detail regarding above mentioned changes and terms used refer to this great article by Ignacio: [Anatomy of a verkle proof](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
+
+4. Above changes will require modification in EL-client, to retrive particular state-values to construct block-witness, use this witness and remove local-chain for validation, networking level changes for propagation of witness, removal of MPTs and switch to VPTs, and associated DB-related changes.
+
+
 
 
 ## Roadmap
