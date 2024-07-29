@@ -1,8 +1,15 @@
 **/.DS_Store
 **/.vscode
+<<<<<<< HEAD
 .idea/
 node_modules/
 
 package-lock.json
 package.json
 
+=======
+
+node_modules/
+package-lock.json
+package.json
+>>>>>>> a880e8f (project proposal)
