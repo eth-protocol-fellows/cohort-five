@@ -7,6 +7,8 @@ These are my twitter and github handles:
 - [Twitter](https://x.com/darex_1010)
 - [Github](https://github.com/1010adigupta)
 
+# Project Proposal
+This is my project proposal for the EPF: [reth-verkle-poc](../projects/reth-verkle-poc.md)
 # Weekly Updates
 These are my weekly EPF updates:
 - [Week 1](https://hackmd.io/G3wd3b9YT8mApG_BoH87TQ?viewR)
@@ -14,3 +16,5 @@ These are my weekly EPF updates:
 - [Week 3](https://hackmd.io/@adigupta/S1_Lq4-wR)
 - [Week 4](https://hackmd.io/@adigupta/rJ2y2koDR)
 - [Week 5](https://hackmd.io/@adigupta/rym-4nXdR)
+- [Week 6](https://hackmd.io/@adigupta/H139c34KA)
+- [Week 7](https://hackmd.io/@adigupta/S1m6RhVFC)
