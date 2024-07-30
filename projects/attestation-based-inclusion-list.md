@@ -89,6 +89,8 @@ Attesters for slot n+2 check whether the transactions in the inclusion list were
 
 ## Specification 📋
 
+- https://ethresear.ch/t/one-bit-per-attester-inclusion-lists/19797
+
 i working on specs in the `consensus-specs` repo, and i plan to add the `fork choice rule` and new method in the `Engine API` to support the inclusion list.
 
 i'll share the PR links here in coming weeks.
