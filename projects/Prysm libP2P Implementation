@@ -34,7 +34,7 @@ Major components used in Prysm:
 ## Roadmap
 
 **Month 1: Design and Initial Development** 
-* Deep dive into the p2p-interface.md from the consensus specs. Understand the theoretical aspects thoroughly.
+- Deep dive into the p2p-interface.md from the consensus specs. Understand the theoretical aspects thoroughly.
 * Start examining the existing libp2p components used in the Ethereum beacon chain. Identify which components are utilized by Prysm and which are not necessary.
 - Begin the design of the new libp2p for Prysm based on the specs studied. Outline the architecture and identify all dependencies and external libraries needed.
 - Start implementing the basic framework of the custom libp2p. Focus on integrating core components that are essential for Prysm’s functionality.
