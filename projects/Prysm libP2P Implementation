@@ -1,5 +1,5 @@
 # Custom golang implementation of libp2p in Prysm
-Custom go-libP2P implementation with specific components as used by Prysm.
+An in-house implementation of the necessary parts of the libp2p protocol in the Prysm client
 
 ## Motivation
 The project aims to develop an in-house implementation of p2p communication library and leverage some of the core components from the existing [go-libp2p](https://github.com/libp2p/go-libp2p) libraries. go-libP2P library(and its variants in other languages) are used by almost all consensus clients for p2p network communications among beacon chain nodes. The scope of the project enables the Prysm team to be independent of any third party for the integral components. It also allows for elimination of redundant components from go-libp2p which are not actively used, while achieving the same performance. Implementing the project also involves incorporating a deep understanding of libP2P and networking layer. 
