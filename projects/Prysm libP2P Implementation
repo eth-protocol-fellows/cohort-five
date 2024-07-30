@@ -1,4 +1,4 @@
-# Prysm libP2P Implementation | Design Doc
+# Custom golang implementation of libp2p in Prysm
 Custom go-libP2P implementation with specific components as used by Prysm.
 
 ## Motivation
