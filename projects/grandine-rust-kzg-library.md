@@ -1,6 +1,4 @@
-# Project Template
-
-DAS-Specific Crytpography in Grandine's Rust-KZG
+# DAS-Specific Crytpography in Grandine's Rust-KZG
 
 *The implementation of PeerDAS-related cryptography (eip-7594) in Grandine's rust-kzg library.*
 
