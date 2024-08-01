@@ -1,22 +1,6 @@
 **/.DS_Store
 **/.vscode
-<<<<<<< HEAD
-<<<<<<< HEAD
 .idea/
-=======
-
->>>>>>> origin/project-proposal
-node_modules/
-
-package-lock.json
-package.json
-
-<<<<<<< HEAD
-=======
-
 node_modules/
 package-lock.json
 package.json
->>>>>>> a880e8f (project proposal)
-=======
->>>>>>> origin/project-proposal
