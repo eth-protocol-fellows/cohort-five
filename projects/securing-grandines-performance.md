@@ -131,13 +131,15 @@ Success for this project will be defined by:
 
 Are there any fellows working with you on this project?
 
-* [Merci Boma Naps Nkari](https://github.com/bomanaps)
+* [Mercy Boma Naps Nkari](https://github.com/bomanaps)
+* [ Chaoyuan Peng](https://github.com/ret2happy)
 
 ### Mentors
 
 Which mentors are helping you with the project?
 
 * [Saulius Grigaitis](https://github.com/sauliusgrigaitis)
+* [David Theodore](https://github.com/infosecual/)
 
 
 ## Resources
