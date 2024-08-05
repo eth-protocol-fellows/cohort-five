@@ -27,7 +27,7 @@ My goal for this project is to do research around novel consensus mechanism to a
 
 The goal of the project would be to come up with a novel design and possibly publish it as an academic research paper. To achieve this, I must first continue going through existing literature and familiarise with research already done in this feild. After gaining a deep understanding of consensus protocols, I will begin drawing out new designs that can provide finality with economic security within a single slot while also preserving dynamic availability. 
 
-There has been little research on dynmically available protocols so there must also be work done in that direction that can complipent a novel protocol. Mostly the work done during the fellowship will comprise of reading academic research on all related topics and trying to come with new architectures. Ocasional discussions and brainstorming sessions with subject experts can be very helpful.
+There has been relatively little research on dynamically available protocols so there must also be work done in that direction that can complement a novel protocol. Mostly the work done during the fellowship will comprise of reading academic research on all related topics and trying to come with new architectures. Occasional discussions and brainstorming sessions with subject experts can be very helpful.
 
 ## Roadmap
 
