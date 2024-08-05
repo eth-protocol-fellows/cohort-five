@@ -36,7 +36,7 @@ The project would comprise of three primary stages:
 - Brainstorming novel mechanisms
 - Discussions and peer review for insights
 
-The first stage woul dinvolve reading academic papers and resources along with discussions with the mentors to gain a comprehensive understanding of the landscape. The following concepts would require high attention: 
+The first stage would involve reading academic papers and resources along with discussions with the mentors to gain a comprehensive understanding of the landscape. The following concepts would require high attention: 
 - LMD-GHOST and Gasper
 - Dynamic Availability
 - Other families of protocols
