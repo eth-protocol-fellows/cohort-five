@@ -8,7 +8,7 @@ Ethereum currently uses the Gasper protocol as its consensus mechanism. It is a 
 
 BFT mechanisms like Tendermint already provide single slot finality but using such protocols is an issue because they can halt if a supermajority of nodes are not online. Ethereum prioritises dynamic availabilty at all costs which makes existing designs like Tendermint infeasible for Ethereum. 
 
-There has been research into this feild and the development of a simple Single Slot Finality protocol by Francesco D’Amato and Luca Zanolini. The core idea behind there approach is to add another voting phase in the slot for fast finality. The main problem behind this design is the practical limitations of signature aggregation for millions of validators. 
+There has been research into this feild and the development of a simple Single Slot Finality protocol by Francesco D’Amato and Luca Zanolini. The core idea behind their approach is to add another voting phase in the slot for fast finality. The main problem behind this design is the practical limitations of signature aggregation for millions of validators. 
 
 Ethereum would not prefer an increase in the 32ETH staking requirement or the hardware requirements for running validators nodes. As a result, there has been more research on committee based design to address the issues of the SSF protocol. There have been some alternate designs like 3SF and Orbit SSF as well to evaluate exactly how a new consensus protocol for Ethereum should be implemented. 
 
