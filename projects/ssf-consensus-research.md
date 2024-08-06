@@ -1,6 +1,6 @@
-# Project Proposal
+# SSF Research
 
-A novel consensus mechanism to acheive single slot finality with dynamic availability
+A novel consensus mechanism to achieve single slot finality with dynamic availability
 
 ## Motivation
 
@@ -8,7 +8,7 @@ Ethereum currently uses the Gasper protocol as its consensus mechanism. It is a 
 
 BFT mechanisms like Tendermint already provide single slot finality but using such protocols is an issue because they can halt if a supermajority of nodes are not online. Ethereum prioritises dynamic availabilty at all costs which makes existing designs like Tendermint infeasible for Ethereum. 
 
-There has been research into this feild and the development of a simple Single Slot Finality protocol by Francesco D’Amato and Luca Zanolini. The core idea behind their approach is to add another voting phase in the slot for fast finality. The main problem behind this design is the practical limitations of signature aggregation for millions of validators. 
+There has been research into this field and the development of a simple Single Slot Finality protocol by Francesco D’Amato and Luca Zanolini. The core idea behind their approach is to add another voting phase in the slot for fast finality. The main problem behind this design is the practical limitations of signature aggregation for millions of validators. 
 
 Ethereum would not prefer an increase in the 32ETH staking requirement or the hardware requirements for running validators nodes. As a result, there has been more research on committee based design to address the issues of the SSF protocol. There have been some alternate designs like 3SF and Orbit SSF as well to evaluate exactly how a new consensus protocol for Ethereum should be implemented. 
 
@@ -25,7 +25,7 @@ My goal for this project is to do research around novel consensus mechanism to a
 
 ## Specification
 
-The goal of the project would be to come up with a novel design and possibly publish it as an academic research paper. To achieve this, I must first continue going through existing literature and familiarise with research already done in this feild. After gaining a deep understanding of consensus protocols, I will begin drawing out new designs that can provide finality with economic security within a single slot while also preserving dynamic availability. 
+The goal of the project would be to come up with a novel design and possibly publish it as an academic research paper. To achieve this, I must first continue going through existing literature and familiarize with research already done in this field. After gaining a deep understanding of consensus protocols, I will begin drawing out new designs that can provide finality with economic security within a single slot while also preserving dynamic availability. 
 
 There has been relatively little research on dynamically available protocols so there must also be work done in that direction that can complement a novel protocol. Mostly the work done during the fellowship will comprise of reading academic research on all related topics and trying to come with new architectures. Occasional discussions and brainstorming sessions with subject experts can be very helpful.
 
