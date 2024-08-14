@@ -53,12 +53,22 @@ My proposed solution is an implementation of eODS, implying a **separation** of 
 
 ### Unbundling the Validator role between Operator and Delegator. 
 
-This project proposes a way to enshrine the delegation process.
-The purpose is to map in-protocol Principal-Agent relationship, in the context of ETH staking.
+This project proposes a way to enshrine the delegation process, in order to map in-protocol Principal-Agent relationship, in the context of ETH staking.
 
-It aims to solve the above inefficiencies by providing delegators, with an explicit mechanism to deposit / compound and delegate their principal. Capital providers will be able to delegate stake to another (possibly new) targeted validator (node operator), thus allowing them to be opinionated in their operators of choice. This all in-protocol, in particular not involving the deposit contract in a different way than a regular deposit is. 
+It aims to solve the above inefficiencies by providing delegators, with an explicit mechanism to deposit / compound and delegate their principal. Capital providers will be able to delegate stake to another (possibly new) targeted validator (node operator), thus allowing them to be opinionated in their operators of choice. This all in-protocol, in particular not involving the deposit contract in a different way than a regular deposit is.
 
-### Actively Validated Service (AVS), as Delegator role selection
+The **Validator role** will be unbundled in two separate protocol entities:
+* Delegator - an optional protocol role for ETH holders that want to participate in a way that is lighter than a full staking operation, but still meaningfull.
+  
+* Operator - a protocol role equivalent to today's node operators, running consensus validators and executing the Protocol. Operators are accountable to Delegators in the context of delagated proof-of-stake.
+
+With eODS we will have two types of validators:
+* heavy Validators (or Validators - for simplicity and correspondence with the current PoS) participating in protocol Finality
+* light Validators participating in non-Finality (light)Protocol services providing. 
+    
+    The actions set of Validators would be reduced by transfering the Censorship Resistance protocol services e.g. IL, and other non-FFG attributes to the light Validator's actions set.
+
+#### Actively Validated Service (AVS), as Delegator role selection
 
 The second part of the project consists of the conceptual design of a plug-and-play interface for future integration of light protocol services and an MVP specification of the interface, as minimal expected deliverables. 
 
@@ -72,7 +82,7 @@ The distinction between different types of protocol services, under eODS:
 
 Possible separation of protocol services(modeled upon ePBS):
 
-![Protocol Services](https://hackmd.io/_uploads/rJpoIhJKR.png)
+![Protocol Services](https://hackmd.io/_uploads/rkzjBG95A.png)
 
 #### Conceptual design of an interface for adding light protocol services:
 * General design principle
