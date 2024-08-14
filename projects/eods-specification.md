@@ -161,8 +161,6 @@ An eventual EIP resulting from my project will most likely have to be based on a
   
 - Sync committee
   
-- PTC 
-  
 - Validator scoring on light CL clients, operated by Delegators 
   
 - Co-signing block proposals, attestations
