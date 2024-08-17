@@ -9,39 +9,23 @@ Today, ETH delegators allocate their principal to node operators off-protocol, v
 
 The pain is that off-protocol ETH delegation is easily captured by exogenous influences, as seen today in liquid staking, leading to the centralization of staking pools, in the detriment of protocol safety. Delegators are given no real voting power, and no meaningful role in the Protocol.
 
-The project addresses inefficiencies associated with the limits of what the Ethereum Protocol can detect and how it defends itself, in the context of delegated proof of stake. It also proposes a shift in validator economics *design philosophy* for the scope of leaping towards SSF (Single Slot Finality) implementation, with overall improved protocol resilience:
+The project addresses inefficiencies associated with the limits of what the Ethereum Protocol can detect and how it defends itself, in the context of delegated proof of stake:
 
 - The Protocol cannot see ETH delegations, so its reach and ability to control Validators is limited in that aspect. The project addresses this issue, helping the Protocol disambiguate the Validator role and "see" the staking scene actors.
 
   Ethereum Protocol's credibility comes from the control over the Validators that execute the protocol. But it can only control what it can see, so it's important to extend these limits, in order to allow for the Protocol to have the capacity to react with automated defense systems.
 
-- Currently, ETH delegators do not play a [meaningful role](https://epf.wiki/#/wiki/research/eODS?id=the-role-of-delegators) in the protocol, as they don't actively participate in Consensus. We can improve this by allowing the Protocol to identify delegated stake and incentivize that role selection. Delegators under eODS model do not contribute to the economic security of FFG, i.e. Delegators do not partake in Finality (non-slashable stake), but they are able to surface discrepancies in the gadget’s functioning. Their services can be compensated by re-allocated aggregated issuance.
+- Currently, ETH delegators do not play a [meaningful role](https://epf.wiki/#/wiki/research/eODS?id=the-role-of-delegators) in the protocol, as they don't actively participate in Consensus. We can improve this by allowing the Protocol to identify delegated stake and incentivize the Delegator role selection. Delegators under eODS model do not contribute to the economic security of FFG, i.e. delegators do not partake in Finality, but they are able to surface discrepancies in the gadget’s functioning. Their services can be compensated by re-allocated aggregated issuance.
     
     Delegator role, under Operator-Delegator separation:
     * The curation of operator set: Opinionated delegators may decide to choose between different operators based on e.g., fees or reliability. These criteria could be part of a Validator rating system developed either on CL clients side or in-protocol.
-    * The provision of non-FFG services: The delegators may be called upon to provide non-slashable yet critical services, like:
-        * input their view into censorship-resistance gadgets such as inclusion lists or multiplicity gadgets.
-        * co-sign block proposals, attestations together with the bonded Gasper operators.
+    * The provision of non-FFG services: The delegators may be called upon to provide non-slashable yet critical services, like inputing their view into censorship-resistance gadgets such as inclusion lists or multiplicity gadgets.
  
-    This is important, so we can move away from the unincentivized delegate selection practiced today in delegated proof of stake, which is basically [a flawed type of voting](https://notes.ethereum.org/@vbuterin/staking_2023_10#Expanding-delegate-selection-powers).
+    Allowing in-protocol delegations and having a meaningful role for delegators is a health indicator of any staking system. The current role principal providers play in delegated proof-of-stake is limited to voting within pools, which ultimately is just [a flawed type of voting](https://notes.ethereum.org/@vbuterin/staking_2023_10#Expanding-delegate-selection-powers).
   
-- Building towards the inevitable implementation of SSF requires taking the best possible trade-offs.
-Identifying, disambiguating, or solving these trade-offs is not trivial, as they depend on a wide range of challenges and limitations:
-    - physical network limitations (e.g. computing power) 
-    - technical limitations (e.g. per slot BLS signatures aggregation)
-    - not-just-technical fundamentals (e.g. community goals and values vs. out-of-protocol market forces)
+- Liquid staking centralization is a well known issue in the space and exploring solutions to it is one important topic of the protocol's [roadmap](https://epf.wiki/#/wiki/research/roadmap). 
 
-  This is important in our journey to build Ethereum as the envisioned global-scale network, because in that scenario, single-slot finality is not only desirable but most likely mandatory, and I feel that if we're building towards the right goals, we better be building towards SSF. Regardless what the goals set by the Ethereum community turn out to be, enshrining ODS would help the community impose those goals, by exercising better control over the validators that execute the protocol, while addressing the challenges mentioned above.
- 
-- A daunting aspect about building towards SSF is the need to drastically reduce the validator set size (measured in *individual message signers*, not in *stake weight*), while encouraging an ever increasing validators count, for the scope of overall increased resilience. 
-These seemingly conflictual goals can be resolved by the realization that we need to move away from the concept that every participant signs in every slot.
-In the SSF context, we can assume a limit of $1.8 million$ BLS signatures that could be processed every slot. 
-Frameworks, like Rainbow staking[ [1]](#resources), or Orbit SSF [[9] ](#resources) propose either splitting staking in two tiers based on a balance threshold, or sampling the Validator set by balance, reducing the number of BLS signatures that need to be processed every slot in the Finality gadged. The Light layer/ periphery participants would be encouraged to participate in as many numbers as possible, and rotated in random selections.
-The number of FFG participants is constrained by the efficiency of cryptographic constructions (aggregating signatures), but as cryptographic methods or simply hardware progress, the number of "seats" may increase. 
-
-    This is important for hardening protocol resilience(a wider array of proposers, attesters, whistle-blowers and censorship-resistance agents), even in the perspective of exogenous (or even self imposed, endogenous) limitations.
-
-- Liquid staking centralization is a well known issue in the space and exploring solutions to it is one important topic of the protocol's [roadmap](https://epf.wiki/#/wiki/research/roadmap). The project proposes a solution to the long-term key question of "what’s the intended Etherean way for the large ETH holders that want return for their participation in protocol”. Finding a solution to this untrivial question will, most likely, mitigate liquid staking centralization.
+The project proposes a solution to the long-term key question of "what’s the intended Etherean way for the large ETH holders that want return for their participation in protocol”. In a functional enshrined delegation mechanism, ETH holders will have a direct relation with their delegates, the validators (operators) executing the Protocol, possibly mitigating the "grip" liquid staking has over staking.
 
 **What area of the protocol will be affected?**
 
@@ -113,7 +97,7 @@ Possible separation of protocol services(modeled upon ePBS):
 A sketch of the proposed **execution layer** changes is included below:
 
 #### Staking-deposit-cli
-Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. During [deposit](###Deposit), a forked staking-deposit-cli will allow depositors to set a boolean `is_delegator` field to `True` or `False`, alongside the address of a smart contract (delegation contract) that, when called, outputs the target validator's pubkey and withdrawal credentials. The structure denoting the deposit operation on EL will also gain the two new fields, accordingly.
+Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. During [deposit](###Deposit), a forked staking-deposit-cli will allow depositors to set a boolean `is_delegator` field to `True` or `False`, alongside the address of a smart contract (delegation contract) that, when called, outputs the target validator's index and pubkey. The structure denoting the deposit operation on EL will also gain the two new fields, accordingly.
 
 #### Deposit contract 
 The deposit contract will gain the following arguments: `is_delegator`, and `delegation_contract`. The `DepositData` container will be extended accordingly.
