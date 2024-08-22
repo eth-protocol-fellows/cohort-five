@@ -10,7 +10,7 @@ MaxEB, Withdrawal, Deposit, Staking, BeaconStake, Electra, Consensus, Economics
 
 ## Project description
 
-1.  **[Staking withdrawals](https://ethereum.org/en/staking/withdrawals/)** refer to transfers of ETH from a validator account on Ethereum's consensus layer (the Beacon Chain), to the execution layer where it can be transacted with. Stakers have strong strong demands to withdraw their ETH in validator's account for various purpose. 
+1.  **[Staking withdrawals](https://ethereum.org/en/staking/withdrawals/)** refer to transfers of ETH from a validator account on Ethereum's consensus layer (the Beacon Chain), to the execution layer where it can be transacted with. Stakers need to be able to withdraw their ETH deposited as validator. 
 2.  There are two possible direction to trigger the withdrawals: `Pull-based withdrawals trigger` (e.g. EIP-4788) and `Push-based withdrawals trigger` (e.g. EIP-4895). So far, `Push-Based Withdrawals Trigger` is [more popular]((https://luozhu.mirror.xyz/ojI7HibWU8JcHR2DBUdWZ7WitIYpWXoZDuyEpyRwduk)) and has adopted by multiple EIPs. 
 3.  Before EIP-7251, staking withdrawals looks like:
     1.  Requirement: Providing a withdrawal address is required before *any* funds can be transferred out of a validator account balance.
@@ -24,12 +24,12 @@ MaxEB, Withdrawal, Deposit, Staking, BeaconStake, Electra, Consensus, Economics
         1.  Any balance above 32 ETH earned through rewards does not actually contribute to principal, or increase the weight of this validator on the network, and is thus automatically withdrawn as a reward payment every few days.
         2.  Aside from providing a withdrawal address one time, these rewards do not require any action from the validator operator. This is all initiated on the consensus layer, thus no gas (transaction fee) is required at any step.
 4.  After [EIP-7251](https://eips.ethereum.org/EIPS/eip-7251), MaxEB is increased from `32 ETH` to `2048 ETH`. It means there is a space for custom ceiling between `32 ETH` to `2048 ETH` which is defined by `MIN_ACTIVATION_BALANCE` and `MAX_EFFECTIVE_BALANCE`. 
-    1.  Be more specific, any excess balance beyond the custom ceiling should enjoy the same mechanism as partial withdraw beyond MaxEB. 
+    1.  To be more specific, any excess balance beyond the custom ceiling should enjoy the same mechanism as partial withdraw beyond MaxEB. 
     2.  Custom ceiling is not an issue [EIP-7251]((https://eips.ethereum.org/EIPS/eip-7251)), as both `both MAX_EFFECTIVE_BALANCE` and `MIN_ACTIVATION_BALANCE` equal to `32 ETH`. 
 5.  What is the impact if we do not implement this custom ceiling partial wirthdrawal along/after [EIP-7251]((https://eips.ethereum.org/EIPS/eip-7251)):
     1.  Validators has to exit in order to use the stakes and rewards. 
     2.  It causes more other partial withdrawal queue on Execution Layer, and cost more gas fee to the stakers.  
-6.  What is the benefti if we implement this feature:
+6.  What is the benefit if we implement this feature:
     1.  This feature benefits to solo stakers to improve their stake financial efficiency. 
     2.  This feature benefits to institutional stakers to manage and control their staking strategy and operation.
     3.  This feature benefits to stakers to reblance stake across node operators, to reduce the risk of lock-in by specific providers. 
