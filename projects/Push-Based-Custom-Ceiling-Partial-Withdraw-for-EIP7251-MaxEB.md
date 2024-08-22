@@ -27,7 +27,7 @@ MaxEB, Withdrawal, Deposit, Staking, BeaconStake, Electra, Consensus, Economics
     1.  To be more specific, any excess balance beyond the custom ceiling should enjoy the same mechanism as partial withdraw beyond MaxEB. 
     2.  Custom ceiling is not an issue [EIP-7251]((https://eips.ethereum.org/EIPS/eip-7251)), as both `both MAX_EFFECTIVE_BALANCE` and `MIN_ACTIVATION_BALANCE` equal to `32 ETH`. 
 5.  What is the impact if we do not implement this custom ceiling partial wirthdrawal along/after [EIP-7251]((https://eips.ethereum.org/EIPS/eip-7251)):
-    1.  Validators has to exit in order to use the stakes and rewards. 
+    1.  Validators have to fully exit in order to use the stakes and rewards. 
     2.  It causes more other partial withdrawal queue on Execution Layer, and cost more gas fee to the stakers.  
 6.  What is the benefit if we implement this feature:
     1.  This feature benefits to solo stakers to improve their stake financial efficiency. 
