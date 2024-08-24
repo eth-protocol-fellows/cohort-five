@@ -31,7 +31,6 @@ The project proposes a solution to the long-term key question of "what’s the i
 
 Implementing the project implies changes to the Execution Layer (EL) and the Beacon Chain (CL) specifications.
 
-
 ## Project description
 My proposed solution is an implementation of eODS, implying a **separation** of the **Validator** role, implemented at protocol level:
 
@@ -42,6 +41,7 @@ This project proposes a way to enshrine the delegation process, in order to map 
 It aims to solve the above inefficiencies by providing delegators, with an explicit mechanism to deposit / compound and delegate their principal. Capital providers will be able to delegate stake to another (possibly new) targeted validator (node operator), thus allowing them to be opinionated in their operators of choice. This all in-protocol, in particular not involving the deposit contract in a different way than a regular deposit is.
 
 The **Validator role** will be unbundled in two separate protocol entities:
+
 * Delegator - an optional protocol role for ETH holders that want to participate in a way that is lighter than a full staking operation, but still meaningful.
   
 * Operator - a protocol role equivalent to today's node operators, running consensus validators and executing the Protocol. Operators are accountable to Delegators in the context of delegated proof-of-stake.
@@ -97,6 +97,7 @@ Possible separation of protocol services(modeled upon ePBS):
 A sketch of the proposed **execution layer** changes is included below:
 
 #### Staking-deposit-cli
+
 Stakers deposit ETH in the protocol, provided `amount` >= `MIN_DEPOSIT_AMOUNT`. During [deposit](###Deposit), a forked staking-deposit-cli will allow depositors to set a boolean `is_delegator` field to `True` or `False`, alongside the address of a smart contract (delegation contract) that, when called, outputs the target validator's index and pubkey. The structure denoting the deposit operation on EL will also gain the two new fields, accordingly.
 
 #### Deposit contract 
