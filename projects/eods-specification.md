@@ -19,7 +19,7 @@ The project addresses inefficiencies associated with the limits of what the Ethe
     
     Delegator role, under Operator-Delegator separation:
     * The curation of operator set: Opinionated delegators may decide to choose between different operators based on e.g., fees or reliability. These criteria could be part of a Validator rating system developed either on CL clients side or in-protocol.
-    * The provision of non-FFG services: The delegators may be called upon to provide non-slashable yet critical services, like inputing their view into censorship-resistance gadgets such as inclusion lists or multiplicity gadgets.
+    * The provision of non-FFG services: The delegators may be called upon to provide non-slashable yet critical services, like inputting their view into censorship-resistance gadgets such as inclusion lists or multiplicity gadgets.
  
     Allowing in-protocol delegations and having a meaningful role for delegators is a health indicator of any staking system. The current role principal providers play in delegated proof-of-stake is limited to voting within pools, which ultimately is just [a flawed type of voting](https://notes.ethereum.org/@vbuterin/staking_2023_10#Expanding-delegate-selection-powers).
   
@@ -42,15 +42,15 @@ This project proposes a way to enshrine the delegation process, in order to map 
 It aims to solve the above inefficiencies by providing delegators, with an explicit mechanism to deposit / compound and delegate their principal. Capital providers will be able to delegate stake to another (possibly new) targeted validator (node operator), thus allowing them to be opinionated in their operators of choice. This all in-protocol, in particular not involving the deposit contract in a different way than a regular deposit is.
 
 The **Validator role** will be unbundled in two separate protocol entities:
-* Delegator - an optional protocol role for ETH holders that want to participate in a way that is lighter than a full staking operation, but still meaningfull.
+* Delegator - an optional protocol role for ETH holders that want to participate in a way that is lighter than a full staking operation, but still meaningful.
   
-* Operator - a protocol role equivalent to today's node operators, running consensus validators and executing the Protocol. Operators are accountable to Delegators in the context of delagated proof-of-stake.
+* Operator - a protocol role equivalent to today's node operators, running consensus validators and executing the Protocol. Operators are accountable to Delegators in the context of delegated proof-of-stake.
 
 With eODS we will have two types of validators:
 * heavy Validators (or Validators - for simplicity and correspondence with the current PoS) participating in protocol Finality
 * light Validators participating in non-Finality (light)Protocol services providing. 
     
-    The actions set of Validators would be reduced by transfering the Censorship Resistance protocol services e.g. IL, and other non-FFG attributes to the light Validator's actions set.
+    The actions set of Validators would be reduced by transferring the Censorship Resistance protocol services e.g. IL, and other non-FFG attributes to the light Validator's actions set.
 
 #### Actively Validated Service (AVS), as Delegator role selection
 
@@ -62,7 +62,7 @@ The distinction between different types of protocol services, under eODS:
   
   * Censorship Resistant services - AVS type
   
-    Delegators could use the *liability proof*, received after delegating towards operators participating in FFG, for "backing" operators participanting in light protocol services i.e. CR services, committing to the provision of an “actively validated service” (AVS) and possibly receiving rewards for good service provision. 
+    Delegators could use the *liability proof*, received after delegating towards operators participating in FFG, for "backing" operators participating in light protocol services i.e. CR services, committing to the provision of an “actively validated service” (AVS) and possibly receiving rewards for good service provision. 
 
 Possible separation of protocol services(modeled upon ePBS):
 
@@ -137,7 +137,7 @@ Part 2 of this project will focus on defining actions set, or attributes for del
   
 - The specification of this feature
 
-An eventual EIP resulting from my project will most likely have to be based on an ePBS fork. Interwining eODS with eg. IL and ePBS ontop of the PoS mechanism is not trivial (maybe not even ideal), so abstracting the "discrepancies surfacing" type of protocol services in the Delegator's actions set, could ease some of the design around e.g. CR gadgets.
+An eventual EIP resulting from my project will most likely have to be based on an ePBS fork. Intertwining eODS with eg. IL and ePBS ontop of the PoS mechanism is not trivial (maybe not even ideal), so abstracting the "discrepancies surfacing" type of protocol services in the Delegator's actions set, could ease some of the design around e.g. CR gadgets.
 
 *Possible* compatible role selection for Delegators as AVS providers:
 
