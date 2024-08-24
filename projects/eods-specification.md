@@ -174,16 +174,16 @@ The proposed timeline for the project is **6 months**, split in 2 work-packages 
 
 *Outline parts of the project and insight on how much time it will take to execute them.*
 
-### I. Part 1 - feature: eODS Specification
+### I. Part 1 - eODS Specification notes
 
-1. Write the fully-fleshed specs of eODS in 8 weeks (**Week 6 - Week 13**) including getting feedback from mentors.
+1. Prototyping eODS in 8 weeks (**Week 6 - Week 13**) including getting feedback from mentors.
 
-2. Write case study pyspec tests and error handling, including getting feedback from mentors in 4 weeks (**Week 14 - Week 17**).
+2. Write case studies, and prototype the APIs of eODS defined protocol objects, including getting feedback from mentors in 4 weeks (**Week 14 - Week 17**).
 
-### II. Part 2 - Research Delegator role selection & incentivization
+### II. Part 1 - Research Delegator role selection & incentivization
 
 1. I've done some of the work related to this phase in the weeks preceding EPF, especially during EPS, I plan to have the conceptual design for the integration of Delegators-provided protocol services done in in 4 weeks (**Week 17 - Week 21**) including getting feedback from mentors.
-2. I plan to write the as much of the afferent specs, including getting feedback from mentors and case study tests, and continue past the EPF program time span for as long as it needs to finish up this subfeature. I estimate I will fit in an additional 4-8 weeks (**Week 21+**).
+2. I plan to write the eODS specs, including getting feedback from mentors and case study tests in an additional 4-8 weeks window (**Week 21+**). I will continue past the EPF program time span for as long as it needs to finish up this feature. 
 
 ## Possible challenges
 
