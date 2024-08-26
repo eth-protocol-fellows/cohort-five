@@ -1,5 +1,15 @@
 # Inclusion List with Plausible Deniability 
 
+```
+💡 please check out below document 
+https://hackmd.io/@irnb/epf_week11
+
+I explained the reason why i stopped working on this project and what i'm working on now. 
+but in short, i stopped working on this project because during the implementation of prototype I realized that the one-bit-per attester inclusion list has some issue like network congestion, unsolved open question and attack vectors and because of that i decided to stop working on this project you can check the document for more details.
+
+And now (end of 2024 Aug) I decided to dedicate my time to contributing directly to Lighthouse project through their issues and PRs, and also i'll continue my research on the censorship resistance and privacy in Ethereum.
+
+```
 
 This solution tackles censorship issues caused by block builders in PBS and future ePBS. By employing **Reed-Solomon** erasure codes, it introduces a design that offers **plausible deniability** for Inclusion List Committee members, safeguarding them from accountability and legal constraints.
 
