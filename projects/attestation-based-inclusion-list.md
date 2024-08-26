@@ -10,7 +10,9 @@ I realized that the one-bit-per attester inclusion list has some issue like netw
 unsolved open question and attack vectors and because of that i decided to stop working on this 
 project you can check the document for more details.
 
-And now (end of 2024 Aug) I decided to dedicate my time to contributing directly to Lighthouse project through their issues and PRs, and also i'll continue my research on the censorship resistance and privacy in Ethereum.
+And now (end of 2024 Aug) I decided to dedicate my time to contributing directly to Lighthouse 
+project through their issues and PRs, and also i'll continue my research on the 
+censorship resistance and privacy in Ethereum.
 
 ```
 
