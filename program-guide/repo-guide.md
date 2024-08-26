@@ -37,9 +37,9 @@ You should:
 
 The cohort coordination using a public repository is also meant to give you an experience of real-world collaboration in free open-source software (FOSS) development using [Git](https://git-scm.com/video/what-is-version-control). Git tracks changes to code, making collaboration on projects seamless, especially in FOSS where public repositories are the norm. Consider using the Git command line interface (CLI) over using GitHub's web interface. It's an important skill you can learn during the cohort that will serve you well throughout your career. Check out the resources on [using git in the epf.wiki](https://epf.wiki/#/wiki/dev/cs-resources?id=terminals-shell-scripting-and-version-control).
 
-#### 1. Setting up your local repository
+#### 1. Forking the repository and setting up your local environment 
 
-Install [git](https://git-scm.com/) using a preferred method on your machine and set it up with your github SSH key. You need to [setup ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add the generated key to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) if you haven't done so yet. With your git setup complete, fork the repo to your github account (by clicking the Fork button) and clone the fork locally, for example: 
+Install [git](https://git-scm.com/) using a preferred method on your machine and set it up with your github SSH key. You need to [setup ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add the generated key to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) if you haven't done so yet. With your git setup complete, **fork the repo** to your github account (by clicking the Fork button) and clone the fork locally, for example: 
 
 ```
 git clone git@github.com:taxmeifyoucan/cohort-five.git
