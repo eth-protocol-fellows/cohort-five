@@ -1,6 +1,8 @@
 # Grandine Windows Support
 
-To support building Grandine on Windows.
+To support building Grandine on Windows. 
+
+If there is a suitable environment or hardware support, I also consider to add the support to other unimplemented systems or architectures, such as MacOS, BSD, ARM, RISC-V.
 
 ## Motivation
 
@@ -14,30 +16,33 @@ This project seeks to ensure that Windows users can build, run, and/or contribut
 
 ## Specification
 
-No Ethereum specification for this project.
-
-## Roadmap
-
-Based on my personal experience, I would preliminarily estimate the time to be three weeks. But in fact, this task may be simple or complex, depending on the actual code that needs to be modified and the experience of the person completing it.
-
-1. Initial Assessment (Week 1):
+1. Initial Assessment:
 
     + Analyze the current Grandine codebase and identify the areas that require modifications for Windows compatibility.
 
-2. Development Phase (Week 1):
+2. Development Phase:
 
     + Modify the build system to support Windows. 
 
-2. Testing and Validation (Week 2):
+3. Testing and Validation:
 
     + Ensure all or main (if not all are suitable) tests Grandine can be passed on Windows.
     + Fix or add some tests for Windows platform if necessary.
 
-3. Finalization and Documentation (Week 3):
+4. Finalization and Documentation:
 
     + Set up a Windows-based CI pipeline to automate testing.
     + Add documentation for Windows related building and usage(if needed).
     + Announce and support the Windows-compatible release of Grandine.
+
+## Roadmap
+
+I personally plan to complete all the tasks within two months, but the detailed timeline will be updated when the project idea is progressing.
+
+- Initial Assessment
+- Development Phase
+- Testing and Validation
+- Finalization and Documentation
 
 ## Possible challenges
 
@@ -49,11 +54,15 @@ Based on my personal experience, I would preliminarily estimate the time to be t
 
     Codes, tests and CI pipeline fixing for Windows might involve overcoming challenges related to the understanding with current code base and platform or code specific issues. This step may be complex or simple, depending on the actual code that needs to be modified and the experience of the person doing it.
 
+- Support other unimplemented systems or architectures: 
+   
+   The support to other unimplemented systems or architectures may be hard to add because of barriers to accessing these environments. 
+
 ## Goal of the project
 
 By the end of EPF-5, success for this project will be defined by:
 
-The goal of this project is to successfully build Grandine on Windows and enable a CI pipeline for testing and release building. 
+The goal of this project is to successfully build Grandine on Windows at least and enable a CI pipeline for testing and release building.
 
 ## Collaborators
 
