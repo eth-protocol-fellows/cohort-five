@@ -20,3 +20,8 @@ Lastly, thanks to @ghili. I'm permissionlessly fork your note, cause we have som
 - [peerdas-devnet-1 specs](https://notes.ethereum.org/@ethpandaops/peerdas-devnet-1) by EthPandaOps Team
 - [libp2p-pubsub Peer Discovery with Kademlia DHT](https://medium.com/rahasak/libp2p-pubsub-peer-discovery-with-kademlia-dht-c8b131550ac7)
 - [DAS and Danksharding](https://a16zcrypto.com/posts/article/an-overview-of-danksharding-and-a-proposal-for-improvement-of-das) 
+
+### Tools
+- [ENR Viewer](https://enr-viewer.com/): decoding ENR to inspect `csc` field (custody subnet count), maintained by ChainSafe
+- [PeerDAS Custody](https://jimmygchen.github.io/peerdas-custody/): compute custody subnets and columns from node ID or peer ID, maintained by [jimmygchen](https://github.com/jimmygchen) from Lighthouse
+    - [My fork with config updates](https://hangleang.github.io/peerdas-custody/)
