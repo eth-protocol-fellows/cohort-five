@@ -12,9 +12,9 @@ Currently lighthouse mostly uses [`slog`](https://slog.rs/) for logging (althoug
 
 ## Roadmap
 Here's the estimated timeline for Lighthouse-Reth
-- phase 1 (9 weeks): Migrate all crates which are currently using `slog` & `log` to `tracing`
+- phase 1 (8 weeks): Migrate all crates which are currently using `slog` & `log` to `tracing`
 - phase 2 (3 weeks): Handle SSE logging
-- phase 3 (2 weeks): Replace sloggers
+- phase 3 (3 weeks): Replace sloggers
     
 
 
