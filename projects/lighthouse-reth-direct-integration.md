@@ -1,4 +1,4 @@
-# Direct(non-http) integration of Lighthouse-Reth & Tracing integration in Lighthouse
+# Direct(non-http) integration of Lighthouse-Reth
 ## Motivation
 Through this we're aiming to get improved performance by eliminating JSON serialisation/deserialisation.Our goal would be to have Lighthouse still work with any EL client, while Lighthouse-Reth is just a convenient (and performant) option.
 
