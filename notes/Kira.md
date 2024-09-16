@@ -24,3 +24,7 @@ I'll posting my weekly updates and notes on my [hackmd](https://hackmd.io/@kira5
 * [Week 5](https://hackmd.io/@kira50/epf-week-5)
 * [Week 6](https://hackmd.io/@kira50/epf-week-6)
 * [Week 7](https://hackmd.io/@kira50/epf-week-7)
+* [Week 8 & 9](https://hackmd.io/@kira50/epf-week-8-and-9)
+* [Week 10 & 11](https://hackmd.io/@kira50/epf-week-10-and-11)
+* [Week 12 & 13](https://hackmd.io/@kira50/epf-week-12-and-13)
+

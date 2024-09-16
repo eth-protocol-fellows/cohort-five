@@ -49,6 +49,7 @@ The goal of the project is to have a working and well-tested implementation of e
 - @[Terrence](https://github.com/terencechain/)
 
 ## Resources
+* [PR-Link](https://github.com/status-im/nimbus-eth2/pull/6443)
 * [eip-7732](https://eips.ethereum.org/EIPS/eip-7732#abstract)
 * [Ethereum Consensus Specs](https://github.com/ethereum/consensus-specs/tree/v1.3.0/#stable-specifications)
 * [Nim Manual](https://nim-lang.org/docs/manual.html)
