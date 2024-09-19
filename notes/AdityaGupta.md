@@ -22,3 +22,6 @@ These are my weekly EPF updates:
 - [Week 9](https://hackmd.io/@adigupta/SklJd9P5A)
 - [Week 10](https://hackmd.io/@adigupta/rySsqDniA)
 - [Week 11](https://hackmd.io/@adigupta/H1fJpPniC)
+- [Week 12](https://hackmd.io/@adigupta/SydVwZPTA)
+- [Week 13](https://hackmd.io/@adigupta/ByKNvWDpC)
+- [Week 14](https://hackmd.io/@adigupta/Hy5Vw-waA)
