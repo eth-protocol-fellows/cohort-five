@@ -11,10 +11,10 @@ Currently lighthouse mostly uses [`slog`](https://slog.rs/) for logging (althoug
 - Replace [`sloggers`](https://github.com/sile/sloggers)(which is currently being used to emit logs into logfile) 
 
 ## Roadmap
-Here's the estimated timeline for Lighthouse-Reth
-- phase 1 (8 weeks): Migrate all crates which are currently using `slog` & `log` to `tracing`
-- phase 2 (3 weeks): Handle SSE logging
-- phase 3 (3 weeks): Replace sloggers
+- phase 1 : Migrate all crates which are currently using `slog` & `log` to `tracing`
+- phase 2 : Replace sloggers
+- phase 3 : Convert the custom formatter to make it compatible with tracing
+- phase 4 : Handle SSE logging
     
 
 
@@ -34,6 +34,7 @@ By the end of fellowship,the goal is to
 [Sayan](https://github.com/ThreeHrSleep/)
 
 ### Mentors
+- [Age Manning](https://github.com/agemanning)
 - [Eitan Seri-Levi](https://github.com/eserilev)
 - [Mac Ladson](https://github.com/macladson)
 
