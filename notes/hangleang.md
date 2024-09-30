@@ -25,3 +25,4 @@ Lastly, thanks to @ghili. I'm permissionlessly fork your note, cause we have som
 - [ENR Viewer](https://enr-viewer.com/): decoding ENR to inspect `csc` field (custody subnet count), maintained by ChainSafe
 - [PeerDAS Custody](https://jimmygchen.github.io/peerdas-custody/): compute custody subnets and columns from node ID or peer ID, maintained by [jimmygchen](https://github.com/jimmygchen) from Lighthouse
     - [My fork with config updates](https://hangleang.github.io/peerdas-custody/)
+- [Beacon Node swagger API](https://ethereum.github.io/beacon-APIs/#/): UI of API specification for the beacon node
