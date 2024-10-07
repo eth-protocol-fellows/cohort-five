@@ -22,11 +22,10 @@ Draft: [EIP-7594: PeerDAS - Peer Data Availability Sampling](https://eips.ethere
 ## Consensus clients
 The overview of the consensus clients:
 
-| Client     | Lang       | Team          | Docs                                                            | Repo                                                         |
-|------------|------------|---------------|-----------------------------------------------------------------|--------------------------------------------------------------|
-| Lighthouse | Rust       | Sigma Prime   | [Lighthouse Book](https://lighthouse-book.sigmaprime.io/)       | [Github](https://github.com/sigp/lighthouse)                 |
-| Lodestar   | TypeScript | ChainSafe     | [Lodestar Docs](https://chainsafe.github.io/lodestar/)          | [Github](https://github.com/ChainSafe/lodestar/tree/v1.19.0) |
-| Nimbus     | Nim        | Status        | [Nimbus Guide](https://nimbus.guide/)                           | [Github](https://github.com/status-im/nimbus-eth2)           |
-| Prysm      | Go         | Offchain Labs | [Prysm Docs](https://docs.prylabs.network/docs/getting-started) | [Github](https://github.com/prysmaticlabs/prysm)             |
-| Teku       | Java       | ConsenSys     | [Teku Docs](https://consensys.io/teku)                          | [Github](https://github.com/Consensys/teku)                  |
-
+| Client | Lang | Team | Docs | Repo |
+| -------- | -------- | -------- | -------- | -------- |
+| Lighthouse     | Rust     | Sigma Prime     | [Lighthouse Book](https://lighthouse-book.sigmaprime.io/)     | [Github](https://github.com/sigp/lighthouse)     |
+| Lodestar     | TypeScript     | ChainSafe     | [Lodestar Docs](https://chainsafe.github.io/lodestar/)    | [Github](https://github.com/ChainSafe/lodestar/tree/v1.19.0)     |
+| Nimbus     | Nim     | Status     | [Nimbus Guide](https://nimbus.guide/)     | [Github](https://github.com/status-im/nimbus-eth2)     |
+| Prysm     | Go     | Offchain Labs     | [Prysm Docs](https://docs.prylabs.network/docs/getting-started)     | [Github](https://github.com/prysmaticlabs/prysm)     |
+| Teku     | Java     | ConsenSys     | [Teku Docs](https://consensys.io/teku)   | [Github](https://github.com/Consensys/teku)     |
