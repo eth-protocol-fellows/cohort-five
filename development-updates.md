@@ -194,7 +194,7 @@ Here’s the table as requested, with plain columns for names, final dev update,
 | [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |   |   |
 | [georgesheth](https://github.com/georgesheth)                |   |   |
 | [ghili](https://github.com/ghiliweld)                        |   |   |
-| [Glory Agatevure](https://github.com/gconnect)               |[Final Update](https://hackmd.io/@gconnect/BJRx9D7Z1l)      | [Project presentation]()  |
+| [Glory Agatevure](https://github.com/gconnect)               |[Final Update](https://hackmd.io/@gconnect/BJRx9D7Z1l)      | [Project presentation](https://www.canva.com/design/DAGVUyEkhXs/aL81kCgJYCOOnMfnKlSN0Q/edit?utm_content=DAGVUyEkhXs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  |
 | [jsvisa](https://github.com/jsvisa)                          |   |   |
 | [Hamid Bateni](https://github.com/irnb)                      |   |   |
 | [Hangleang](https://github.com/hangleang)                    |   |   |
