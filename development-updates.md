@@ -137,7 +137,7 @@ The actual project development is the main part of the program. Post your regula
 | [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) | [Update 6](https://hackmd.io/@katya-blockchain-dev/epf5-week-6) | [Update 7](https://hackmd.io/@katya-blockchain-dev/epf5-week-7) | [Update 8](https://hackmd.io/@katya-blockchain-dev/epf5-week-8) | [Update 9](https://hackmd.io/@katya-blockchain-dev/epf5-week-9) | [Update 10](https://hackmd.io/@katya-blockchain-dev/epf5-week-10) | [Update 11](https://hackmd.io/@katya-blockchain-dev/epf5-week-11)  | [Update 12](https://hackmd.io/@katya-blockchain-dev/epf5-week-12) | [Update 13](https://hackmd.io/@katya-blockchain-dev/epf5-week-13) | [Update 14](https://hackmd.io/@katya-blockchain-dev/epf5-week-14) | [Update 15](https://hackmd.io/@katya-blockchain-dev/epf5-week-15)      | [Update 16](https://hackmd.io/@katya-blockchain-dev/epf5-week-16) | [Update 17](https://hackmd.io/@katya-blockchain-dev/epf5-week-17)   | [Update 18](https://hackmd.io/@katya-blockchain-dev/epf5-week-18)   | [Update 19](https://hackmd.io/@katya-blockchain-dev/epf5-week-19) | [Update 20](https://hackmd.io/@katya-blockchain-dev/epf5-week-20)      |           |
 | [georgesheth](https://github.com/georgesheth)                |                                                                 | [Update 7](https://hackmd.io/@georgesheth/BJ5tkLBtA)            |                                                                 |                                                                 |                                                                   |                                                                    |                                                                   |                                                                   |                                                                   |                                                                        |                                                                   |                                                                     |                                                                     |                                                                   |                                                                        |           |
 | [ghili](https://github.com/ghiliweld)                        | [Update 6](https://hackmd.io/@ghili/HJI5KJQ_A)                  | [Update 7](https://hackmd.io/@ghili/HkBl2pGY0)                  | [Update 8](https://hackmd.io/@ghili/B1dMYUBYR)                  |                                                                 | [Update 9 & 10](https://hackmd.io/@ghili/Hk2iCkliC)               | [Update 11](https://hackmd.io/@ghili/SkidDMOsA)                    | [Update 12](https://hackmd.io/@ghili/rJkOk4-30)                   |                                                                   | [Update 13 & 14](https://hackmd.io/@ghili/SyBYdvV6A)              | [Update 15](https://hackmd.io/@ghili/B1ZNz-9TR)                        | [Update 16](https://hackmd.io/@ghili/H1ddI8vRR)                   | [Update 17](https://hackmd.io/@ghili/Skgliqxy1l)                    |                                                                     |                                                                   |                                                                        |           |
-| [Glory Agatevure](https://github.com/gconnect)               | [Update 6](https://hackmd.io/@gconnect/Sy9n-IKwA)               | [Update 7](https://hackmd.io/@gconnect/ryNMVbXY0)               | [Update 8](https://hackmd.io/@gconnect/r1wHFvpY0)               | [Update 9](https://hackmd.io/@gconnect/r1Q_zrI5A)               | [Update 10](https://hackmd.io/@gconnect/SyZOYSlsA)                | [Update 11](https://hackmd.io/@gconnect/rkSsQBKi0)                 | [Update 12](https://hackmd.io/@gconnect/rJq9H2G2A)                | [Update 13](https://hackmd.io/@gconnect/rydLjkhnA)                | [Update 14](https://hackmd.io/@gconnect/BJVMDpX6R)                | [Update 15](https://hackmd.io/@gconnect/Hk_mkQ06A)                     | [Update 16](https://hackmd.io/@gconnect/HJkPTPDAC)                | [Update 17](https://hackmd.io/@gconnect/HyjkHRgkyl)                 |                                                                     | [Update 18 & 19](https://hackmd.io/@gconnect/SyRyLpmlke)          | [Update 20](https://hackmd.io/@gconnect/BJZMaGTgJg)                    |           |
+| [Glory Agatevure](https://github.com/gconnect)               | [Update 6](https://hackmd.io/@gconnect/Sy9n-IKwA)               | [Update 7](https://hackmd.io/@gconnect/ryNMVbXY0)               | [Update 8](https://hackmd.io/@gconnect/r1wHFvpY0)               | [Update 9](https://hackmd.io/@gconnect/r1Q_zrI5A)               | [Update 10](https://hackmd.io/@gconnect/SyZOYSlsA)                | [Update 11](https://hackmd.io/@gconnect/rkSsQBKi0)                 | [Update 12](https://hackmd.io/@gconnect/rJq9H2G2A)                | [Update 13](https://hackmd.io/@gconnect/rydLjkhnA)                | [Update 14](https://hackmd.io/@gconnect/BJVMDpX6R)                | [Update 15](https://hackmd.io/@gconnect/Hk_mkQ06A)                     | [Update 16](https://hackmd.io/@gconnect/HJkPTPDAC)                | [Update 17](https://hackmd.io/@gconnect/HyjkHRgkyl)                 |                                                                     | [Update 18 & 19](https://hackmd.io/@gconnect/SyRyLpmlke)          | [Update 20](https://hackmd.io/@gconnect/BJZMaGTgJg)                    | [Update 21](https://hackmd.io/@gconnect/BkpMqPXWJg)          |
 | [Hamid Bateni](https://github.com/irnb)                      | [Update 6](https://hackmd.io/@irnb/epf_week6)                   |                                                                 |                                                                 |                                                                 |                                                                   | [Pivot Update](https://hackmd.io/@irnb/epf_week11)                 |                                                                   |                                                                   |                                                                   |                                                                        |                                                                   |                                                                     |                                                                     |                                                                   |                                                                        |           |
 | [Hangleang](https://github.com/hangleang)                    | [Update 6](https://hackmd.io/@hangleang/epf5-week6)             |                                                                 | [Update 7&8](https://hackmd.io/@hangleang/epf5-week7n8)         | [Update 9](https://hackmd.io/@hangleang/epf5-week9)             | [Update 10](https://hackmd.io/@hangleang/epf5-week10)             | [Update 11](https://hackmd.io/@hangleang/epf5-week11)              | [Update 12](https://hackmd.io/@hangleang/epf5-week12)             | [Update 13](https://hackmd.io/@hangleang/epf5-week13)             | [Update 14](https://hackmd.io/@hangleang/epf5-week14)             | [Update 15](https://hackmd.io/@hangleang/epf5-week15)                  | [Update 16](https://hackmd.io/@hangleang/epf5-week16)             | [Update 17](https://hackmd.io/@hangleang/epf5-week17)               | [Update 18](https://hackmd.io/@hangleang/epf5-week18)               | [Update 19](https://hackmd.io/@hangleang/epf5-week19)             | [Update 20](https://hackmd.io/@hangleang/epf5-week20)                  |           |
 | [Hopinheimer](https://github.com/hopinheimer)                |                                                                 | [Update 7](https://hackmd.io/@hopin232/S1VgE2j_A)               | [Update 8](https://hackmd.io/@hopin232/BJrO3ITFA)               |                                                                 |                                                                   | [Week 11](https://hackmd.io/@hopin232/Skm863wjA)                   |                                                                   | [Week 12&13](https://hackmd.io/@hopin232/r1HZmFh2R)               |                                                                   |                                                                        |                                                                   | [Week 15,16 &17](https://hackmd.io/@hopin232/SkEgQbk0A)             |                                                                     |                                                                   |                                                                        |           |
@@ -168,6 +168,58 @@ The actual project development is the main part of the program. Post your regula
 
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
 
+Here’s the table as requested, with plain columns for names, final dev update, and project presentation:
+
 | Name/GH | Final dev update | Project presentation |
 | ------- | ---------------- | -------------------- |
-|         |                  |                      |
+| [0xpanicError](https://github.com/0xpanicError)              |   |   |
+| [0xSulpiride](https://github.com/0xSulpiride)                |   |   |
+| [Abhimanyu](https://github.com/ABresting)                    |   |   |
+| [Aditya Gupta](https://github.com/1010adigupta)              |   |   |
+| [AkshatGada](https://github.com/AkshatGada)                  |   |   |
+| [Amin](https://github.com/amintalebi)                        |   |   |
+| [Another Dev](https://github.com/Another-DevX)               |   |   |
+| [Ashely Yan](https://github.com/AshliaYan)                   |   |   |
+| [Ashen](https://github.com/y1cunhui)                         |   |   |
+| [Bastin](https://github.com/Inspector-Butters)               |   |   |
+| [BobLiu](https://github.com/Akagi201)                        |   |   |
+| [Boma Naps](https://github.com/bomanaps)                     |   |   |
+| [Caleb](https://github.com/Tomi-3-0)                         |   |   |
+| [Chirag](https://github.com/chirag-parmar)                   |   |   |
+| [ChloeZhu](https://github.com/Chloezhu010)                   |   |   |
+| [Cloud](https://github.com/0xClouds/)                        |   |   |
+| [DanGoron](https://github.com/gorondan)                      |   |   |
+| [Dirk Jäckel](https://github.com/biafra23)                   |   |   |
+| [Dsorken](https://github.com/Dsorken)                        |   |   |
+| [Ekaterina Riazantseva](https://github.com/KatyaRyazantseva) |   |   |
+| [georgesheth](https://github.com/georgesheth)                |   |   |
+| [ghili](https://github.com/ghiliweld)                        |   |   |
+| [Glory Agatevure](https://github.com/gconnect)               |[Final Update](https://hackmd.io/@gconnect/BJRx9D7Z1l)      | [Project presentation]()  |
+| [jsvisa](https://github.com/jsvisa)                          |   |   |
+| [Hamid Bateni](https://github.com/irnb)                      |   |   |
+| [Hangleang](https://github.com/hangleang)                    |   |   |
+| [Hopinheimer](https://github.com/hopinheimer)                |   |   |
+| [Jihoon Song](https://github.com/jihoonsong)                 |   |   |
+| [kira](https://github.com/shyam-patel-kira)                  |   |   |
+| [Krishang](https://github.com/kamuik16)                      |   |   |
+| [Ktl_XV](https://github.com/ktl-xv)                          |   |   |
+| [Léa Na](https://github.com/lean-apple)                      |   |   |
+| [MaxDav](https://github.com/MaximeDavin)                     |   |   |
+| [MeldSun](https://github.com/meldsun0)                       |   |   |
+| [Md Amaan](https://github.com/Redidacove)                    |   |   |
+| [Nikhil](https://github.com/nikhilkumar1612)                 |   |   |
+| [Nilav](https://github.com/gerceboss)                        |   |   |
+| [mrk1tty](https://github.com/garv-aga)                       |   |   |
+| [Rahul](https://github.com/guha-rahul)                       |   |   |
+| [raxhvl](https://github.com/raxhvl)                          |   |   |
+| [Richa](https://github.com/Richa-iitr)                       |   |   |
+| [Rodrigo Herrera](https://github.com/)                       |   |   |
+| [RoryArredondo](https://github.com/arredr2)                  |   |   |
+| [Rose Jethani](https://github.com/rose2221)                  |   |   |
+| [Rupam Dey](https://github.com/rupam-04)                     |   |   |
+| [Saeid](https://github.com/xm0onh)                           |   |   |
+| [Sayan](https://github.com/threehrsleep)                     |   |   |
+| [Scar Face](https://github.com/scarfacedotcom)               |   |   |
+| [Siddharth Vaderaa](https://github.com/SiddharthV1)          |   |   |
+| [Vaiz_07](https://github.com/07Vaishnavi-Singh)              |   |   |
+| [Zarathustra](https://github.com/Karrenbelt)                 |   |   |
