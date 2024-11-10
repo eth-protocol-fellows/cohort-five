@@ -34,10 +34,10 @@ The proposed solution is to continually improve existing PeerDAS implementation,
 ## Roadmap
 
 Since a few fellows are working on the same project, we will be dividing the work among ourselves. We got a draft plan from [mentors](#Mentors):
-- Updating `PeerDAS` implementation to the latest specs
-- Backporting `eth2_libp2p` library from [lighthouse](https://github.com/sigp/lighthouse/tree/das-devnet-1/beacon_node/lighthouse_network)
-- Testing, Debugging `kurtosis` local devnets
-- Ensure interop with other clients implementation
+- [x] Updating `PeerDAS` implementation to the latest specs
+- [x] Backporting `eth2_libp2p` library from [lighthouse](https://github.com/sigp/lighthouse/tree/das-devnet-1/beacon_node/lighthouse_network)
+- [x] Testing, Debugging `kurtosis` local devnets
+- [ ] Ensure interop with other clients implementation (based on the `peerdas-devnet-3` crazy-reorg, clients still have some compatibility issue)
 
 ## Possible challenges
 
@@ -55,7 +55,7 @@ Beside implementation, battle tests need to be addressed against unexpected scen
 ### Fellows 
 
 - [Hangleang SUN](https://github.com/hangleang)
-- [Guha Rahul](https://github.com/guha-rahul)
+- [Rahul Guha (short-term contributor)](https://github.com/guha-rahul)
 
 ### Mentors
 
@@ -67,4 +67,4 @@ Beside implementation, battle tests need to be addressed against unexpected scen
 - [PeerDAS Specs](https://github.com/ethereum/consensus-specs/tree/dev/specs/_features/eip7594)
 - [eth2_libp2p Repo](https://github.com/grandinetech/eth2_libp2p/tree/eip_7594)
 - [c-binding KZG Library](https://github.com/ethereum/c-kzg-4844/tree/das)
-- [kurtosis local devnets](https://ethpandaops.io/posts/kurtosis-deep-dive/)
+- [kurtosis local devnets guide](https://ethpandaops.io/posts/kurtosis-deep-dive/)
