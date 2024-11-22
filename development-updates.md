@@ -213,6 +213,6 @@ The final weeks of the cohort should mark the finalization of your project. Subm
 | [Rupam Dey](https://github.com/rupam-04)                     |                                                         |                                                                                         |
 | [Saeid](github.com/xm0onh)                                   |                                                         |                                                                                         |
 | [Sayan](https://github.com/threehrsleep)                     |                                                         |                                                                                         |
-| [Siddharth Vaderaa](https://github.com/SiddharthV1)          |                                                         |                                                                                         |
+| [Siddharth Vaderaa](https://github.com/SiddharthV1)          |  [Final Update](https://hackmd.io/@sidvdr/HJhCWvAfyg)   |  [Project Presentation](https://youtu.be/9UhpqUzsEJE?si=srzyLeDQCnf3Arna)                                                                                       |
 | [Zarathustra](https://github.com/Karrenbelt)                 |                                                         |                                                                                         |
 
