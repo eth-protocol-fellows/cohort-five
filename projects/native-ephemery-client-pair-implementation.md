@@ -69,6 +69,7 @@ The detailed spec can be be found here [eip6916](https://eips.ethereum.org/EIPS/
 **Client Integration (6 weeks):**
 - Implement and test the --ephemery flag in Teku and Besu.
 - Ensure clients correctly handle dynamic genesis.
+- Implement genesis reset on Teku
 
 **Documentation and Website (3 weeks):**
 - Create user documentation and tutorials.
@@ -132,10 +133,12 @@ Comprehensive documentation, tutorials, and a dedicated website are available to
 
 **Fellows**
 - Glory Agatevure
-- Holly Atkinson ( Previous cohort )
 
 **Mentors**
-- Mario Havel
+- Mario Havel (Ephemery team)
+- pk39 (Ephemery team)
+- Paul Harris (Teku team)
+- Sally Macfarla (Besu team)
 
 ## Resources
 - https://ephemery.dev
