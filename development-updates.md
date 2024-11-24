@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # Development Updates
 
 This document includes all development updates by contributors to EPF cohort 5. [Learn more](/program-guide/repo-guide.md#development-updates) about creating your development updates.
@@ -196,7 +194,7 @@ The final weeks of the cohort should mark the finalization of your project. Subm
 | [Ifeoluwa Oderinde](https://github.com/owanikin)             |                                                                           |                                                                                                                              |
 | [Jihoon Song](https://github.com/jihoonsong)                 |                                                                           |                                                                                                                              |
 | [jsvisa](https://github.com/jsvisa)                          | [Final Update](https://hackmd.io/@jsvisa/epf5-final)                      | [Project Presentation](https://tinyurl.com/2yuuuecn)                                                                         |
-| [kira](https://github.com/shyam-patel-kira)                  |                                                                           | [Project Presentation](https://docs.google.com/presentation/d/1XP6W6A3-lCz0aeamZyGShkdG9rB-Lpip1Ceasz22olM/edit?usp=sharing) |
+| [kira](https://github.com/shyam-patel-kira)                  |                                                                          [Final Update](https://hackmd.io/@kira50/epf-final-report) | [Project Presentation](https://docs.google.com/presentation/d/1XP6W6A3-lCz0aeamZyGShkdG9rB-Lpip1Ceasz22olM/edit?usp=sharing) |
 | [Ktl_XV](https://github.com/ktl-xv)                          |                                                                           |                                                                                                                              |
 | [Léa Na](https://github.com/lean-apple)                      |                                                                           |                                                                                                                              |
 | [MaxDav](https://github.com/MaximeDavin)                     |                                                                           |                                                                                                                              |
