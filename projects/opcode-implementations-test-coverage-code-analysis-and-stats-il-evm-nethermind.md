@@ -15,39 +15,32 @@ The objective of my project is to align with the immediate goals of IL-EVM, an o
 
 My project tasks in order of priority can be broken down into the following:
 
-1. Implement LOG0, LOG1, LOG2, LOG3, LOG4 opcodes for the IL-EVM compiler:
+1. Work on Implementing LOG0, LOG1, LOG2, LOG3, LOG4 opcodes for the IL-EVM compiler:
+   - This is the very next task required in the IL-EVM project.
    - This involves learning the underlying IL code generation library, Sigil.
    - Writing a working implementation.
-   - Optimize the implementation
 2. Generate statistics for groups of 2-7 op code patterns
    - Decide on a temporal pattern mining algorithm or strategy
    - Use a script to retrieve stats earlier
-   - Augment the code analyzer with the ability to generate statistics for frequent 2,3,4,5,6 & 7 Op Code patterns that are being executed
-   - Optimize the implementation
-3. Increase Test Coverage :
-   - Write tests, which verify the implementation of all the OpCodes that are compiled by IL-EVM
+   - Augment the node with the ability to generate statistics for frequent 2,3,4,5,6 & 7 Op Code patterns that are being executed
+3. Implementation for groups of 2-7 op code patterns
+   - Select the most frequently called 2-7 op code patterns from the earlier task and implementations for them in the pattern matching mode of IL-EVM.
+4. Testing & Bug fixing:
    - Debug and fix implementation bugs if found
    - Other tests TBD
-4. Generate statistics for which smart contracts are being executed and how frequently.
-   - Add code that helps us query the node for the statistics.
-   - Sync the node and get the statistics
-5. Implementation for groups of 2-7 op code patterns
-   - Select the most frequently called 2-7 op code patterns from the earlier task and create specific implementations for them
-   - Optimize the specific implementations.
-6. Benchmarking (optional: if other tasks are completed)
 
 ## Roadmap
 
-| Week        | Task1 (40%)                                        | Task2 (40%)                                                                  | Task3 (20%)                        |
-| ----------- | -------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------- |
-| Week 6-8    | Implement the 5 LOG0 - LOG4 instructions           |                                                                              |                                    |
-| Week 8-10   | Start work on op code stats                        | Wrap up LOG                                                                  |                                    |
-| Week 10-12  | Op code stats                                      | Start working on tests that verify the IL-EVM implementation of the op codes |                                    |
-| Week 12-14  | Op code stats : get 2-7op code stats with a script | Test coverage                                                                | start work on Smart contract stats |
-| Week 14-16  | Write 2 opcode implementations                     | Smart contract stats & 2 - 7 Op code stats                                   | Test Coverage                      |
-| Week 16-18  | 2-7 Op code stats                                  | 2-7 op code implementation                                                   | Test Coverage                      |
-| Week 18-20  | 2-7 Op code implementations & stats                | Sync & wrap up pending tasks                                                 | Benchmarking                       |
-| Week 20-21+ | Wrap up pending tasks                              | Benchmarking                                                                 | Devcon EPF project presentation    |
+| Week        | Task1 (40%)                                        | 
+| ----------- | -------------------------------------------------- | 
+| Week 6-8    | Implement the 5 LOG0 - LOG4 instructions           | 
+| Week 8-10   | Start work on n-gram stats tool                        | 
+| Week 10-12  | stats tool                                      | 
+| Week 12-14  | "                                                 | 
+| Week 14-16  | Write 2 opcode implementations                     | 
+| Week 16-18  | 2-7 Op code implementations & stats                                  | 
+| Week 18-20  | Testing | 
+| Week 20-21+ | Devcon presentation | 
 
 ## Possible challenges
 
