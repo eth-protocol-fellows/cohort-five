@@ -27,4 +27,7 @@ I'll posting my weekly updates and notes on my [hackmd](https://hackmd.io/@kira5
 * [Week 8 & 9](https://hackmd.io/@kira50/epf-week-8-and-9)
 * [Week 10 & 11](https://hackmd.io/@kira50/epf-week-10-and-11)
 * [Week 12 & 13](https://hackmd.io/@kira50/epf-week-12-and-13)
+* [Week 20 & 21](https://hackmd.io/@kira50/epf-week-20-and-21)
+* [EPF Final Report](https://hackmd.io/@kira50/epf-final-report)
+* [EPF Final Presentation](https://docs.google.com/presentation/d/1XP6W6A3-lCz0aeamZyGShkdG9rB-Lpip1Ceasz22olM/edit?usp=sharing)
 
