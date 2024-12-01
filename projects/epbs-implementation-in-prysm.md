@@ -8,7 +8,7 @@ Currently in the Ethereum, the Proposer-Builder Separation or PBS is handled by 
 
 Ideally, Proposers want their promised transaction bundles to be delivered and get paid safely, while builders want their bundles to avoid front-running. Relays sit between proposers and builders, acting as mutually trusted auctioneers. Due to a lack of sufficient incentives to run relays, we are witnessing another centralizing force. Over the past two weeks, only five relays has produced around [~94% of total blocks](https://mevboost.pics) that were proposed.
 
-### Why ePBS
+### Why enshrine PBS
 
 Referring to this [doc](https://hackmd.io/ZNPG7xPFRnmMOf0j95Hl3w?view#3-Enshrining-PBS) by potuz, The primary problem in the current implementation of PBS in Ethereum is as followed:
 
@@ -17,7 +17,7 @@ Referring to this [doc](https://hackmd.io/ZNPG7xPFRnmMOf0j95Hl3w?view#3-Enshrini
 
 This issue is critical because relying on intermediaries introduces several risks. Trusting intermediaries can lead to censorship, monopolization, and single points of failure. By eliminating the need for these trusted intermediaries, we can enhance censorship resistance, ensuring that no single entity can control or influence which transactions are included in blocks. Also, it promotes decentralization, which is a core principle of blockchains. Note that EIP-7732 purely focuses on changes in Consensus Layer and incorporates the block-auction design for ePBS.
 
-## Project Description
+## Original Project Proposal
 
 The implementation of ePBS is fundamentally about solving trust issues, and **not about transaction ordering or MEV (Maximum Extractable Value)**. MEV considerations, such as MEV stealing and forkchoice attacks are not the core issue here.
 
@@ -60,6 +60,8 @@ At any given slot, the blockchain’s head status can be:
 - A full block for the current slot if both the proposer and the builder revealed on time.
 
 There are various packages, that would require significant changes including but not limited to sync, core, beacon-apis for builder, forkchoice, engine api and blockchain etc. Additionally, there are numerous helper functions and once a working PoC is implemented we would be moving onto Networking packages for the actual p2p auction and bids' gossiping.
+
+Towards the end of the cohort a new simplified fork-choice design was proposed by francesco. More details on the design can be found in a article [here](https://hackmd.io/@kira50/HyFDBzozkl).
 
 ## Roadmap
 
@@ -111,3 +113,4 @@ The goal for this project is to achieve a fully functional and working PoC for e
 - [ePBS Forkchoice annotated spec](https://hackmd.io/@potuz/SJdXM43x0)
 - [ePBS Annotated Validator Spec](https://hackmd.io/@ttsao/epbs-annotated-validator)
 - [Payload boosts in ePBS](https://ethresear.ch/t/payload-boosts-in-epbs/18769/1)
+- [All-in-one fork-choice rule](https://hackmd.io/@kira50/HyFDBzozkl)
