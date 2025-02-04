@@ -98,12 +98,6 @@ The ideas below are for the Ethereum consensus layer client [Grandine](https://g
 - Adapt other consensus clients to run grandine-snapshot-tests;
 - Other - any other mutually agreed Grandine's area that can be improved.
 
-### Lodestar: Deposit Contract Snapshot Interface (EIP-4881)
-
-By Lodestar Team
-
-Our TypeScript based consensus client requires implementing a self-contained specification, [EIP-4881](https://eips.ethereum.org/EIPS/eip-4881) into our `/eth/v1/beacon/deposit_snapshot` endpoint. This project will give a TypeScript-based candidate an understanding of the basic skills required of a protocol engineer by understanding a specification and implementing it into client software. In addition, you will be exposed to how deposits currently function within Ethereum, how weak subjectivity sync enables faster sync times and how merkle proofs secure Ethereum. For more information, please see: https://github.com/ChainSafe/lodestar/issues/4935
-
 
 ### Lodestar: BeaconChain Harness for Client Testing
 
