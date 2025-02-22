@@ -33,7 +33,7 @@ Here are some starting points for learning about the Ethereum protocol.
 
 ### Proof of Stake
    - Overview: https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
-   - Why Proof of Stake? (Vitalik Buterin): https://vitalik.ca/general/2020/11/06/pos2020.html
+   - Why Proof of Stake? (Vitalik Buterin): https://vitalik.eth.limo/general/2020/11/06/pos2020.html
    - The Merge: https://ethereum.org/en/eth2/merge/
    - Clients (Coding Languages of Ethereum 2): https://ethereum.org/en/eth2/get-involved/#clients
    - LMD Ghost Fork Choice Algorithm: https://medium.com/@aditya.asgaonkar/bitwise-lmd-ghost-an-efficient-cbc-casper-fork-choice-rule-6db924e57d1f
@@ -47,14 +47,14 @@ Here are some starting points for learning about the Ethereum protocol.
 - EIPS: https://eips.ethereum.org/
 
 ### Scaling 
-   - Block Chain Scalability: https://vitalik.ca/general/2021/05/23/scaling.html
+   - Block Chain Scalability: https://vitalik.eth.limo/general/2021/05/23/scaling.html
    - Stateless Ethereum: https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-stateless-ethereum/
    - Kate Commitments: https://hackmd.io/yqfI6OPlRZizv9yPaD-8IQ?view#Background
    - Danksharding: https://ethereum.org/en/roadmap/danksharding/
 
 ### Sharding
    - Overview: https://ethereum.org/en/eth2/shard-chains/
-   - Why Sharding? (Vitalik Buterin): https://vitalik.ca/general/2021/04/07/sharding.html
+   - Why Sharding? (Vitalik Buterin): https://vitalik.eth.limo/general/2021/04/07/sharding.html
 
 ### Privacy
    - zkOracle Documentation (Hyper Oracle): https://docs.hyperoracle.io/
