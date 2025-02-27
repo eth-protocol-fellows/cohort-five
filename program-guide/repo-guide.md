@@ -28,7 +28,7 @@ You should:
 
 - Post your first update within the first week of starting into the program, write about your initial research. 
 - Post your update somewhere public. Publishing using an external blog, [HackMD](https://hackmd.io/c/tutorials/%2Fs%2Ftutorials) or own website are all great. Link it in the main [`development-updates.md` document](/development-updates.md) in the corresponding table. Open a PR from a branch dedicated to a specific week in your fork of the repo, check the [guide for using git below](#using-git-for-collaboration) for more details.
-- Ensure that the content is published publicly before adding it's link in the [`development-updates.md` document](/development-updates.md). Trying out the link in your browser's incoginto / private mode is a great way to test this.
+- Ensure that the content is published publicly before adding it's link in the [`development-updates.md` document](/development-updates.md). Trying out the link in your browser's incognito / private mode is a great way to test this.
 - Make sure the markdown table is properly formatted before you push your commits. You can use a local IDE with markdown support, HackMD or [table formatting tool](https://github.com/nvuillam/markdown-table-formatter).
 - Share your development update to current thread in R&D Discord `#protocol-fellowship` channel.
 - Not use an LLM or similar tech for generating your updates. The point is to exercise your technical writing and expressing ideas, generated updates won't be accepted.
