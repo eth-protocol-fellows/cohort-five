@@ -10,10 +10,10 @@ Here are some frequently asked questions about EPF program. Please also watch th
     - Participants have full freedom in deciding what they want to work on. You are free to propose a project but you can also get inspiration from [mentors' project ideas](/projects/project-ideas.md). The project you choose has to be related to the core protocol and touch some area of current Ethereum roadmap. 
 - **I don't know much about ______________.  Can I still apply?**
     - Yes. Applicants are expected to have gaps in their knowledge.  You should still read through the [program details](./program-details.md) to get a sense for what type of prior knowledge you should be working towards to be successful in the program. To learn about the Ethereum core protocol, you can get started with [EPF Study Group materials](https://epf.wiki).
-- **When does it start and is the duration?**
+- **When does it start and what is the duration?**
     - Program will start in June 2024 and continue for 5 months, culminating with an in-person event at [Devcon](https://devcon.org/)  in November. 
 - **What happens after the 5 months is complete?**
-    - If you create a valuable contributions during the cohort, it will be easier for you to continue working in the protocol areas. We do not guarantee any employment after the cohort is over but the experience will make it easier to search for one. This could be continued grant-style funding, job on a team that's working on something interesting to you, or other teams related to the core protocol.
+    - If you create valuable contributions during the cohort, it will be easier for you to continue working in the protocol areas. We do not guarantee any employment after the cohort is over but the experience will make it easier to search for one. This could be continued grant-style funding, a job with a team that's working on something interesting to you, or other teams related to the core protocol.
 - **Where is the fellowship located?**
     - As all core Ethereum teams, EPF is distributed around the globe. We will do our best to accommodate call times for those selected for the program.
 - **Who are the mentors and how can I interact with them?**
