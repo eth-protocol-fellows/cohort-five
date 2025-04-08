@@ -18,7 +18,7 @@ The libP2P protocol has several components for example: Noise, multiplexer, pubs
 
 ## Specification
 
-We'll will following the [CL specs](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md) for the development of this new package.
+We will following the [CL specs](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/p2p-interface.md) for the development of this new package.
 
 Major components used in Prysm:
 * `devp2p/discv5` (outside the project scope)
