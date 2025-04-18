@@ -23,7 +23,7 @@ Things learned:
 * there are also different sync strategies for consensus clients: optimistic and checkpoint. 
 * Based on how a node is synced(mostly execution) it is classified into three types: light node, full node, archive node.
 * Consensus clients need a jwt secret to connect to the execution client. I wonder why this is required if both the clients live on the same machine?
-* ephemery is an ephemeral testnet, a testnet that resets itself every 7 days. For setting up ephemery we start from genesis.json which literally decribes the the genesis block. This is interesting.
+* ephemery is an ephemeral testnet, a testnet that resets itself every 7 days. For setting up ephemery we start from genesis.json which literally decribes the genesis block. This is interesting.
 * Once the node is setup and running we can use the RPC to interact with it. Interestingly enough RPC can be made available through the Tor onion network also.
 
 Open Questions:
@@ -204,7 +204,7 @@ There are more modifications, but the coolest one is the modification on the loo
 * Personal Note - Don't focus too much on what is derived from what because the gossipsub protocol is the default definition flattening everything.
 * consensus client use the gossipsub protocol v1.1
     * the aim of gossip sub is to create a balanced trade-off between network bandwidth and robustness/resiliency of the pub/sub protocol.
-    * it does this by employing two two strategies, first - it limits the networking degree of a peer (no. of connections) - this is controlled by a system wide parameter
+    * it does this by employing two strategies, first - it limits the networking degree of a peer (no. of connections) - this is controlled by a system wide parameter
     * Second it allows a peer to decide how many of its connection are full message connections and how many are metadata only connections
     * metadata connections are aptly represented by the dialogues "I have seen a particular message", "I want that particular message". The actual message is not included in these.
     * and the actual message is only transferred through a full message connection
